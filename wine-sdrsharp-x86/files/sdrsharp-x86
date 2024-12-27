@@ -1,0 +1,4 @@
+#!/bin/sh
+mkdir -p $HOME/.config/SDRSharp
+cd  $HOME/.config/SDRSharp
+exec wine /usr/local/wine-sdrsharp-x86/SDRSharp.exe

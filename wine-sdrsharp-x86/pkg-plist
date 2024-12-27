@@ -1,0 +1,25 @@
+bin/sdrsharp-x86
+share/applications/sdrsharp-x86.desktop
+share/pixmaps/sdrsharp-x86.png
+wine-sdrsharp-x86/BandPlan.xml
+wine-sdrsharp-x86/PortAudio.dll
+wine-sdrsharp-x86/SDRSharp.config
+wine-sdrsharp-x86/SDRSharp.exe
+wine-sdrsharp-x86/airspy.dll
+wine-sdrsharp-x86/airspyhf.dll
+wine-sdrsharp-x86/aor_iq.dll
+wine-sdrsharp-x86/aor_iq_receiver.exe
+wine-sdrsharp-x86/hackrf.dll
+wine-sdrsharp-x86/httpget.exe
+wine-sdrsharp-x86/install-rtlsdr.bat
+wine-sdrsharp-x86/libusb-1.0.dll
+wine-sdrsharp-x86/msvcr100.dll
+wine-sdrsharp-x86/msvcr120.dll
+wine-sdrsharp-x86/pthreadVCE2.dll
+wine-sdrsharp-x86/sdriq.dll
+wine-sdrsharp-x86/shark.dll
+wine-sdrsharp-x86/unzip.exe
+wine-sdrsharp-x86/zip.exe
+@dir wine-sdrsharp-x86/Plugins
+
+

@@ -1,0 +1,16 @@
+bin/sdrsharp
+share/applications/sdrsharp.desktop
+share/pixmaps/sdrsharp.png
+wine-sdrsharp-x64-next/BandPlan.xml
+wine-sdrsharp-x64-next/SDRSharp.config
+wine-sdrsharp-x64-next/SDRSharp.dotnet8.exe
+wine-sdrsharp-x64-next/SDRSharp.dotnet9.exe
+wine-sdrsharp-x64-next/airspy.dll
+wine-sdrsharp-x64-next/airspyhf.dll
+wine-sdrsharp-x64-next/changelog.txt
+wine-sdrsharp-x64-next/libusb-1.0.dll
+wine-sdrsharp-x64-next/portaudio.dll
+wine-sdrsharp-x64-next/pthreadVC2.dll
+wine-sdrsharp-x64-next/shark.dll
+@dir wine-sdrsharp-x64-next/Plugins
+

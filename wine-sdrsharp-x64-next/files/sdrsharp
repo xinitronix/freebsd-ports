@@ -1,0 +1,4 @@
+#!/bin/sh
+mkdir -p $HOME/.config/SDRSharp
+cd  $HOME/.config/SDRSharp
+exec wine /usr/local/wine-sdrsharp-x64-next/SDRSharp.dotnet8.exe
