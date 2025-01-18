@@ -5,5 +5,5 @@ git add --all
 git add .
 git commit -n
 #git push https://github.com/xinitronix/mate.git
-#git push ssh://git@github.com/xinitronix/mate.git
-git push 
+git push ssh://git@github.com/xinitronix/freebsd-ports.git
+
