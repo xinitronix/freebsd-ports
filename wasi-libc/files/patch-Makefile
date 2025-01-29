@@ -1,0 +1,11 @@
+--- Makefile.orig	2025-01-29 08:14:53.127548000 +0300
++++ Makefile	2025-01-29 08:15:36.891861000 +0300
+@@ -412,7 +412,7 @@
+ # TODO: Add -fno-signaling-nans when the compiler supports it.
+ CFLAGS += -fno-trapping-math
+ # Add all warnings, but disable a few which occur in third-party code.
+-CFLAGS += -Wall -Wextra -Werror \
++CFLAGS +=  -mno-reference-types -Wall -Wextra -Werror \
+   -Wno-null-pointer-arithmetic \
+   -Wno-unused-parameter \
+   -Wno-sign-compare \
