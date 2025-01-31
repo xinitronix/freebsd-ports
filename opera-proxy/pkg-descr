@@ -1,0 +1,2 @@
+Standalone Opera VPN client. Younger brother of hola-proxy.
+Just run it and it'll start a plain HTTP proxy server forwarding traffic through "Opera VPN" proxies of your choice. By default the application listens on 127.0.0.1:18080.
