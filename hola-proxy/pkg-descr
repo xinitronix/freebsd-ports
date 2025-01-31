@@ -1,0 +1,1 @@
+Standalone Hola proxy client. Just run it and it'll start a plain HTTP proxy server forwarding traffic through Hola proxies of your choice. By default the application listens on 127.0.0.1:8080.
