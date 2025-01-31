@@ -56,9 +56,6 @@ do-install:
 
 
 
-	rm ${WRKSRC}/dot/modules/workers/PromiseWorker.mjs
-	rm ${WRKSRC}/dot/browser/chrome/devtools/modules/devtools/shared/webconsole/reserved-js-words.js
-
 
 
 
@@ -68,7 +65,7 @@ do-install:
 	cp files/dot-browser.desktop ${STAGEDIR}${PREFIX}/share/applications
 .for sz in 16  32 48 64 128 
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/${sz}x${sz}/apps
-	${CP} ${WRKSRC}/dot/browser/chrome/icons/default/default${sz}.png ${STAGEDIR}${PREFIX}/share/icons/hicolor/${sz}x${sz}/apps/dot-browser.png
+	${CP} ${WRKSRC}/dot/chrome/icons/default/default${sz}.png ${STAGEDIR}${PREFIX}/share/icons/hicolor/${sz}x${sz}/apps/dot-browser.png
 .endfor
 
 .include <bsd.port.mk>
