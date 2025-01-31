@@ -29,7 +29,7 @@ RUN_DEPENDS=	nspr>=4.32:devel/nspr \
 
 ONLY_FOR_ARCHS=	amd64
 
-SHEBANG_FILES=	dot-browser/dot-browser
+SHEBANG_FILES=	dot/dot-browser
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
@@ -53,22 +53,22 @@ SUB_FILES=	dot-browser
 
 
 do-install:
-	rm ${WRKSRC}/dot-browser/browser/chrome/browser/content/browser/built_in_addons.json
-	rm ${WRKSRC}/dot-browser/browser/chrome/devtools/modules/devtools/shared/webconsole/reserved-js-words.js
-	rm ${WRKSRC}/dot-browser/modules/workers/PromiseWorker.mjs
-	rm ${WRKSRC}/dot-browser/modules/workers/PromiseWorker.js
-	rm ${WRKSRC}/dot-browser/modules/RFPTargetConstants.sys.mjs
-	rm ${WRKSRC}/dot-browser/chrome/toolkit/content/global/neterror/aboutNetErrorCodes.js
-	rm ${WRKSRC}/dot-browser/chrome/toolkit/res/nimbus/FeatureManifest.sys.mjs
-	rm ${WRKSRC}/dot-browser/chrome/toolkit/featuregates/feature_definitions.json
-	rm ${WRKSRC}/dot-browser/res/multilocale.txt
+
+
+
+	rm ${WRKSRC}/dot/modules/workers/PromiseWorker.mjs
+	rm ${WRKSRC}/dot/browser/chrome/devtools/modules/devtools/shared/webconsole/reserved-js-words.js
+
+
+
+
 	${INSTALL_SCRIPT} ${WRKDIR}/dot-browser ${STAGEDIR}${PREFIX}/bin
-	cd ${WRKSRC}/ && ${CP} -r dot-browser ${STAGEDIR}${PREFIX}/lib
+	cd ${WRKSRC}/ && ${CP} -r dot ${STAGEDIR}${PREFIX}/lib
 	cd ${WRKSRC}/ && ${COPYTREE_SHARE} \* ${STAGEDIR}${PREFIX}/share
 	cp files/dot-browser.desktop ${STAGEDIR}${PREFIX}/share/applications
 .for sz in 16  32 48 64 128 
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/${sz}x${sz}/apps
-	${CP} ${WRKSRC}/dot-browser/browser/chrome/icons/default/default${sz}.png ${STAGEDIR}${PREFIX}/share/icons/hicolor/${sz}x${sz}/apps/dot-browser.png
+	${CP} ${WRKSRC}/dot/browser/chrome/icons/default/default${sz}.png ${STAGEDIR}${PREFIX}/share/icons/hicolor/${sz}x${sz}/apps/dot-browser.png
 .endfor
 
 .include <bsd.port.mk>
