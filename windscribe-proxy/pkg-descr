@@ -1,0 +1,2 @@
+Standalone Windscribe proxy client. Younger brother of opera-proxy.
+Just run it and it'll start a plain HTTP proxy server forwarding traffic through Windscribe proxies of your choice. By default the application listens on 127.0.0.1:28080.
