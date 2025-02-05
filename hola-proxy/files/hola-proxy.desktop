@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Hola Proxy
+Exec=hola-proxy.py
+Icon=hola-proxy.svg
+Type=Application
+Terminal=false
+Categories=Network;
+Name[ru_RU]=Hola Proxy

@@ -1,2 +1,5 @@
 
 bin/hola-proxy
+bin/hola-proxy.py
+share/applications/hola-proxy.desktop
+share/pixmaps/hola-proxy.svg
