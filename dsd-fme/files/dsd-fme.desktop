@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=dsd-fme
+Name=dsd-fme
+Name[ru]=dsd-fme
+Categories=System;Utility;Core;GTK;
+Exec=socat-dsd.sh
+StartupNotify=true
+Terminal=false

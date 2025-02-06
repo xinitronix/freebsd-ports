@@ -1,4 +1,5 @@
-/usr/local/bin/dsd-fme
 
-
+bin/dsd-fme
+share/applications/dsd-fme.desktop
+share/pixmaps/dsd-fme.png
 
