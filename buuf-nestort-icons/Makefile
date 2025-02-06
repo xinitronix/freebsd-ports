@@ -24,7 +24,7 @@ do-install:
 		rm      ${WRKSRC}/actions/blueman-send.png
 		rm      ${WRKSRC}/actions/document-share.png
 	  	rm      ${WRKSRC}/actions/blueman-send-symbolic.png
-		cp   -r    ${WRKSRC}/.     ${STAGEDIR}${PREFIX}/share/icons/${GL_PROJECT}/
+		cp  -r  ${WRKSRC}/.     ${STAGEDIR}${PREFIX}/share/icons/${GL_PROJECT}/
 
 
 
