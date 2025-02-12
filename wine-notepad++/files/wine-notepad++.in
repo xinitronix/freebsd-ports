@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/notepad++
+export VK_ICD_FILENAMES="/usr/local/share/vulkan/icd.d/nvidia_icd.json"
+export WINE_PATH="/usr/local/share/notepad++/wine-proton/bin/wine64"
+export MC_PATH="/usr/local/share/notepad++/notepad++.exe"
+export WINEPREFIX="$HOME/.config/notepad++/wine"
+
+exec  "$WINE_PATH" "$MC_PATH"   "$@"
+
+
+
+

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Notepad++
+Exec=/usr/local/bin/wine-notepad++ %U
+StartupNotify=true
+Terminal=false
+Icon=wine-notepad++
+Type=Application
+MimeType=text/plain
+Categories=GTK;Utility;TextEditor;
+
+
+
+
+
