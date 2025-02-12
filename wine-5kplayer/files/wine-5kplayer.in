@@ -1,7 +1,7 @@
 #!/bin/sh
 
 mkdir -p $HOME/.config/5kplayer
-
+export VK_ICD_FILENAMES="/usr/local/share/vulkan/icd.d/nvidia_icd.json"
 export WINE_PATH="/usr/local/share/5kplayer/wine-proton/bin/wine64"
 export MC_PATH="/usr/local/share/5kplayer"
 export WINEPREFIX="$HOME/.config/5kplayer/wine"
