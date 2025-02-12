@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/winscp
+export VK_ICD_FILENAMES="/usr/local/share/vulkan/icd.d/nvidia_icd.json"
+export WINE_PATH="/usr/local/bin/wine"
+export MC_PATH="/usr/local/share/winscp/WinSCPPortable.exe"
+export WINEPREFIX="$HOME/.config/winscp/wine"
+
+exec  "$WINE_PATH" "$MC_PATH"   "$@"
+
+
+
+

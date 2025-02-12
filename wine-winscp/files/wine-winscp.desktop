@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Name=WinSCP
+
+Exec=/usr/local/bin/wine-winscp %U
+StartupNotify=true
+Terminal=false
+Icon=wine-winscp
+Type=Application
+Categories=Network;FileTransfer;
+
+
+
+
+
+
