@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/explorer++
+export VK_ICD_FILENAMES="/usr/local/share/vulkan/icd.d/nvidia_icd.json"
+export WINE_PATH="/usr/local/share/explorer++/wine-proton/bin/wine64"
+export MC_PATH="/usr/local/share/explorer++/explorer++.exe"
+export WINEPREFIX="$HOME/.config/explorer++/wine"
+
+exec  "$WINE_PATH" "$MC_PATH"   "$@"
+
+
+
+
