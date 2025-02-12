@@ -1,4 +1,4 @@
-PORTNAME=	mullvad
+PORTNAME=	mullvad2
 PORTVERSION=	${CHROME_VER}
 CATEGORIES=	www linux
 MASTER_SITES=	https://repository.mullvad.net/rpm/stable/x86_64/

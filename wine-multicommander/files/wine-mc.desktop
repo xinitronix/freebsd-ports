@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Multi Commander
+
+Exec=/usr/local/bin/wine-mc %U
+StartupNotify=true
+Terminal=false
+Icon=wine-mc
+Type=Application
+Categories=System;Utility;Core;FileTools;FileManager;
+
+
+
+

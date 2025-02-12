@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomConfigPaths>
+ <ConfigPath Path="/home/definitly/.MultiCommander"/>
+  <LogPath Path="/home/definitly/.MultiCommander"/>
+  <UserDataPath Path="/home/definitly/.MultiCommander"/>
+</CustomConfigPaths>

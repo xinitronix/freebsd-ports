@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.MultiCommander
+
+export WINE_PATH="/usr/local/share/multicommander/bin/wine64"
+export MC_PATH="/usr/local/share/multicommander"
+export WINEPREFIX="$HOME/.MultiCommander/wine"
+
+exec  "$WINE_PATH" "$MC_PATH/MultiCommander.exe"   "$@"
+
+
+
+
