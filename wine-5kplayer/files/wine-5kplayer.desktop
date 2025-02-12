@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=5kplayer
+
+Exec=/usr/local/bin/wine-5kplayer %U
+StartupNotify=true
+Terminal=false
+Icon=wine-5kplayer
+Type=Application
+Categories=AudioVideo;Audio;Video;Player;TV;
+
+
+
+
+
