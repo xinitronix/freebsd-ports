@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=GitKraken
+
+Exec=/usr/local/bin/linux-gitkraken %U
+StartupNotify=true
+Terminal=false
+Icon=gitkraken
+Type=Application
+Categories=Development;GTK;
+
+
