@@ -11,7 +11,7 @@ SUB_FILES=	wine-mc
 
 do-extract:
 		pkg fetch  -y -r FreeBSD wine-devel 
-		tar  -C ${WRKDIR} -xf /var/cache/pkg/wine-devel-10.0.r3,1.pkg  /usr/local                
+		tar  -C ${WRKDIR} -xf /var/cache/pkg/wine-devel-10.1,1.pkg  /usr/local                
 		cp "/usr/ports/distfiles/${DISTFILES}"  ${WRKDIR}/"${DISTFILES}"
 		cd  ${WRKDIR} &&  7z -y x  "${DISTFILES}" -o${PORTNAME}-${DISTVERSION}
 		

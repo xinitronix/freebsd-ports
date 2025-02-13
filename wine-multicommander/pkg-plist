@@ -436,6 +436,8 @@ share/applications/wine-mc.desktop
 %%DATADIR%%/include/wine/windows/d3d8types.h
 %%DATADIR%%/include/wine/windows/d3d9.h
 %%DATADIR%%/include/wine/windows/d3d9caps.h
+%%DATADIR%%/include/wine/windows/d3d9on12.h
+%%DATADIR%%/include/wine/windows/d3d9on12.idl
 %%DATADIR%%/include/wine/windows/d3d9types.h
 %%DATADIR%%/include/wine/windows/d3dcaps.h
 %%DATADIR%%/include/wine/windows/d3dcommon.h
@@ -2642,6 +2644,7 @@ share/applications/wine-mc.desktop
 %%DATADIR%%/lib/wine/x86_64-windows/windows.storage.applicationdata.dll
 %%DATADIR%%/lib/wine/x86_64-windows/windows.system.profile.systemmanufacturers.dll
 %%DATADIR%%/lib/wine/x86_64-windows/windows.ui.dll
+%%DATADIR%%/lib/wine/x86_64-windows/windows.ui.xaml.dll
 %%DATADIR%%/lib/wine/x86_64-windows/windows.web.dll
 %%DATADIR%%/lib/wine/x86_64-windows/windowscodecs.dll
 %%DATADIR%%/lib/wine/x86_64-windows/windowscodecsext.dll
@@ -2770,10 +2773,10 @@ share/applications/wine-mc.desktop
 %%DATADIR%%/share/doc/wine/README.md
 %%DATADIR%%/share/doc/wine/README.winedbg
 %%DATADIR%%/share/doc/wine/README.winedump
-%%DATADIR%%/share/licenses/wine-devel-10.0.r3,1/LGPL21
-%%DATADIR%%/share/licenses/wine-devel-10.0.r3,1/LGPL3
-%%DATADIR%%/share/licenses/wine-devel-10.0.r3,1/LICENSE
-%%DATADIR%%/share/licenses/wine-devel-10.0.r3,1/catalog.mk
+%%DATADIR%%/share/licenses/wine-devel-10.1,1/LGPL21
+%%DATADIR%%/share/licenses/wine-devel-10.1,1/LGPL3
+%%DATADIR%%/share/licenses/wine-devel-10.1,1/LICENSE
+%%DATADIR%%/share/licenses/wine-devel-10.1,1/catalog.mk
 %%DATADIR%%/share/man/de.UTF-8/man1/winemaker.1.gz
 %%DATADIR%%/share/man/de.UTF-8/man1/wineserver.1.gz
 %%DATADIR%%/share/man/fr.UTF-8/man1/winemaker.1.gz
