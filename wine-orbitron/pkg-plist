@@ -1,0 +1,320 @@
+
+bin/wine-orbitron
+share/applications/wine-orbitron.desktop
+%%DATADIR%%/Config/All celestrak satellites.ini
+%%DATADIR%%/Config/Banner.set
+%%DATADIR%%/Config/Blue.owm
+%%DATADIR%%/Config/Coloured.owm
+%%DATADIR%%/Config/Gray.owm
+%%DATADIR%%/Config/Green.owm
+%%DATADIR%%/Config/ISS.ini
+%%DATADIR%%/Config/NASA.owm
+%%DATADIR%%/Config/Printer.owm
+%%DATADIR%%/Config/Private.loc
+%%DATADIR%%/Config/Red.owm
+%%DATADIR%%/Config/Setup.cfg
+%%DATADIR%%/Config/Standard.owm
+%%DATADIR%%/Config/User.owm
+%%DATADIR%%/Config/Working Iridiums.ini
+%%DATADIR%%/Config/World.loc
+%%DATADIR%%/Config/banner.bmp
+%%DATADIR%%/Config/ombs.dat
+%%DATADIR%%/Config/www.celestrak.com - All.upd
+%%DATADIR%%/Config/www.celestrak.com - Common.upd
+%%DATADIR%%/Config/www.space-track.org - Full.upd
+%%DATADIR%%/Config/www.space-track.org.upd
+%%DATADIR%%/Config/www.stoff.pl.upd
+%%DATADIR%%/Data/Bckg-Columbia.jpg
+%%DATADIR%%/Data/Bckg-ISS.jpg
+%%DATADIR%%/Data/Bckg-Iridium.jpg
+%%DATADIR%%/Data/Camera.wav
+%%DATADIR%%/Data/Default.lnx
+%%DATADIR%%/Data/Orbitron.bmp
+%%DATADIR%%/Data/Sat-Ball (big).bmp
+%%DATADIR%%/Data/Sat-Ball (small).bmp
+%%DATADIR%%/Data/Sat-ISS.bmp
+%%DATADIR%%/Data/Sat-Square.bmp
+%%DATADIR%%/Data/Sat-Standard.bmp
+%%DATADIR%%/Data/Sat-Star.bmp
+%%DATADIR%%/Data/Saver.bmp
+%%DATADIR%%/Data/Snd_01.wav
+%%DATADIR%%/Data/World-Coloured.bmp
+%%DATADIR%%/Data/World-Standard.bmp
+%%DATADIR%%/Data/constell.dat
+%%DATADIR%%/Data/crMap.cur
+%%DATADIR%%/Data/crMapMove.cur
+%%DATADIR%%/Data/crMiniRadar.cur
+%%DATADIR%%/Data/iridium.dat
+%%DATADIR%%/Data/molczan.dat
+%%DATADIR%%/Data/moon.bmp
+%%DATADIR%%/Data/ntp.dat
+%%DATADIR%%/Data/radar.bmp
+%%DATADIR%%/Data/sun.bmp
+%%DATADIR%%/Help.plk/cardware.htm
+%%DATADIR%%/Help.plk/cnt.htm
+%%DATADIR%%/Help.plk/index.htm
+%%DATADIR%%/Help.plk/top.htm
+%%DATADIR%%/Help/banner.htm
+%%DATADIR%%/Help/cardware.htm
+%%DATADIR%%/Help/cardware.jpg
+%%DATADIR%%/Help/cnt.htm
+%%DATADIR%%/Help/command.htm
+%%DATADIR%%/Help/constellations.htm
+%%DATADIR%%/Help/credits.htm
+%%DATADIR%%/Help/faq.htm
+%%DATADIR%%/Help/glossary.htm
+%%DATADIR%%/Help/important.htm
+%%DATADIR%%/Help/index.htm
+%%DATADIR%%/Help/keys.htm
+%%DATADIR%%/Help/links.htm
+%%DATADIR%%/Help/preview.htm
+%%DATADIR%%/Help/screen-map.gif
+%%DATADIR%%/Help/screen.htm
+%%DATADIR%%/Help/setup.htm
+%%DATADIR%%/Help/style.css
+%%DATADIR%%/Help/timezones.htm
+%%DATADIR%%/Help/tips.htm
+%%DATADIR%%/Help/tool_bar.gif
+%%DATADIR%%/Help/top.htm
+%%DATADIR%%/Help/whatsnew.htm
+%%DATADIR%%/Lang/Afrikaans.lng
+%%DATADIR%%/Lang/Arabic.lng
+%%DATADIR%%/Lang/Belarusian.lng
+%%DATADIR%%/Lang/Bulgarian.lng
+%%DATADIR%%/Lang/Catalan.lng
+%%DATADIR%%/Lang/Cesky (Czech).lng
+%%DATADIR%%/Lang/Chinese simplified.lng
+%%DATADIR%%/Lang/Chinese traditional.lng
+%%DATADIR%%/Lang/Dansk (Danish).lng
+%%DATADIR%%/Lang/Deutsch (German).lng
+%%DATADIR%%/Lang/Espanol (Spanish).lng
+%%DATADIR%%/Lang/Francais (French).lng
+%%DATADIR%%/Lang/Hrvatski (Croatian).lng
+%%DATADIR%%/Lang/Italiano (Italian).lng
+%%DATADIR%%/Lang/Japanese.lng
+%%DATADIR%%/Lang/Kannada.lng
+%%DATADIR%%/Lang/Korean.lng
+%%DATADIR%%/Lang/Lietuviu (Lithuanian).lng
+%%DATADIR%%/Lang/Magyar (Hungarian).lng
+%%DATADIR%%/Lang/Makedonski (Macedonian).lng
+%%DATADIR%%/Lang/Nederlands (Dutch).lng
+%%DATADIR%%/Lang/Polski (Polish).lng
+%%DATADIR%%/Lang/Portugues (Portuguese) BRA.lng
+%%DATADIR%%/Lang/Portugues (Portuguese) EUR.lng
+%%DATADIR%%/Lang/Romana (Romanian).lng
+%%DATADIR%%/Lang/Russkiy (Russian).lng
+%%DATADIR%%/Lang/Shqip (Albanian).lng
+%%DATADIR%%/Lang/Slovenski (Slovenian).lng
+%%DATADIR%%/Lang/Slovensky (Slovak).lng
+%%DATADIR%%/Lang/Srpski (Serbian).lng
+%%DATADIR%%/Lang/Suomi (Finnish).lng
+%%DATADIR%%/Lang/Svenska (Swedish).lng
+%%DATADIR%%/Lang/Turkce (Turkish).lng
+%%DATADIR%%/Lang/Ukrainska (Ukrainian).lng
+%%DATADIR%%/Notes/00000.txt
+%%DATADIR%%/Notes/03029.txt
+%%DATADIR%%/Notes/07530.txt
+%%DATADIR%%/Notes/14129.txt
+%%DATADIR%%/Notes/14781.txt
+%%DATADIR%%/Notes/15935.txt
+%%DATADIR%%/Notes/15936.txt
+%%DATADIR%%/Notes/16969.txt
+%%DATADIR%%/Notes/18361.txt
+%%DATADIR%%/Notes/18362.txt
+%%DATADIR%%/Notes/19070.txt
+%%DATADIR%%/Notes/19071.txt
+%%DATADIR%%/Notes/19419.txt
+%%DATADIR%%/Notes/19420.txt
+%%DATADIR%%/Notes/19802.txt
+%%DATADIR%%/Notes/19822.txt
+%%DATADIR%%/Notes/20061.txt
+%%DATADIR%%/Notes/20185.txt
+%%DATADIR%%/Notes/20302.txt
+%%DATADIR%%/Notes/20361.txt
+%%DATADIR%%/Notes/20437.txt
+%%DATADIR%%/Notes/20439.txt
+%%DATADIR%%/Notes/20440.txt
+%%DATADIR%%/Notes/20441.txt
+%%DATADIR%%/Notes/20442.txt
+%%DATADIR%%/Notes/20452.txt
+%%DATADIR%%/Notes/20480.txt
+%%DATADIR%%/Notes/20508.txt
+%%DATADIR%%/Notes/20533.txt
+%%DATADIR%%/Notes/20724.txt
+%%DATADIR%%/Notes/20830.txt
+%%DATADIR%%/Notes/20959.txt
+%%DATADIR%%/Notes/21089.txt
+%%DATADIR%%/Notes/21152.txt
+%%DATADIR%%/Notes/21263.txt
+%%DATADIR%%/Notes/21552.txt
+%%DATADIR%%/Notes/21575.txt
+%%DATADIR%%/Notes/21577.txt
+%%DATADIR%%/Notes/21655.txt
+%%DATADIR%%/Notes/21890.txt
+%%DATADIR%%/Notes/21930.txt
+%%DATADIR%%/Notes/22014.txt
+%%DATADIR%%/Notes/22077.txt
+%%DATADIR%%/Notes/22108.txt
+%%DATADIR%%/Notes/22231.txt
+%%DATADIR%%/Notes/22275.txt
+%%DATADIR%%/Notes/22446.txt
+%%DATADIR%%/Notes/22487.txt
+%%DATADIR%%/Notes/22581.txt
+%%DATADIR%%/Notes/22657.txt
+%%DATADIR%%/Notes/22698.txt
+%%DATADIR%%/Notes/22700.txt
+%%DATADIR%%/Notes/22779.txt
+%%DATADIR%%/Notes/22782.txt
+%%DATADIR%%/Notes/22825.txt
+%%DATADIR%%/Notes/22826.txt
+%%DATADIR%%/Notes/22827.txt
+%%DATADIR%%/Notes/22828.txt
+%%DATADIR%%/Notes/22829.txt
+%%DATADIR%%/Notes/22877.txt
+%%DATADIR%%/Notes/23027.txt
+%%DATADIR%%/Notes/23092.txt
+%%DATADIR%%/Notes/23179.txt
+%%DATADIR%%/Notes/23317.txt
+%%DATADIR%%/Notes/23439.txt
+%%DATADIR%%/Notes/23455.txt
+%%DATADIR%%/Notes/23463.txt
+%%DATADIR%%/Notes/23603.txt
+%%DATADIR%%/Notes/23657.txt
+%%DATADIR%%/Notes/23833.txt
+%%DATADIR%%/Notes/23953.txt
+%%DATADIR%%/Notes/24278.txt
+%%DATADIR%%/Notes/24320.txt
+%%DATADIR%%/Notes/24677.txt
+%%DATADIR%%/Notes/24772.txt
+%%DATADIR%%/Notes/24876.txt
+%%DATADIR%%/Notes/24953.txt
+%%DATADIR%%/Notes/25030.txt
+%%DATADIR%%/Notes/25338.txt
+%%DATADIR%%/Notes/25394.txt
+%%DATADIR%%/Notes/25396.txt
+%%DATADIR%%/Notes/25397.txt
+%%DATADIR%%/Notes/25417.txt
+%%DATADIR%%/Notes/25418.txt
+%%DATADIR%%/Notes/25419.txt
+%%DATADIR%%/Notes/25479.txt
+%%DATADIR%%/Notes/25509.txt
+%%DATADIR%%/Notes/25520.txt
+%%DATADIR%%/Notes/25544.txt
+%%DATADIR%%/Notes/25567.txt
+%%DATADIR%%/Notes/25590.txt
+%%DATADIR%%/Notes/25636.txt
+%%DATADIR%%/Notes/25693.txt
+%%DATADIR%%/Notes/25722.txt
+%%DATADIR%%/Notes/25730.txt
+%%DATADIR%%/Notes/25756.txt
+%%DATADIR%%/Notes/25860.txt
+%%DATADIR%%/Notes/25892.txt
+%%DATADIR%%/Notes/25933.txt
+%%DATADIR%%/Notes/25940.txt
+%%DATADIR%%/Notes/26063.txt
+%%DATADIR%%/Notes/26102.txt
+%%DATADIR%%/Notes/26360.txt
+%%DATADIR%%/Notes/26384.txt
+%%DATADIR%%/Notes/26407.txt
+%%DATADIR%%/Notes/26536.txt
+%%DATADIR%%/Notes/26545.txt
+%%DATADIR%%/Notes/26548.txt
+%%DATADIR%%/Notes/26549.txt
+%%DATADIR%%/Notes/26605.txt
+%%DATADIR%%/Notes/26609.txt
+%%DATADIR%%/Notes/26690.txt
+%%DATADIR%%/Notes/26931.txt
+%%DATADIR%%/Notes/26932.txt
+%%DATADIR%%/Notes/27416.txt
+%%DATADIR%%/Notes/27422.txt
+%%DATADIR%%/Notes/27431.txt
+%%DATADIR%%/Notes/27453.txt
+%%DATADIR%%/Notes/27531.txt
+%%DATADIR%%/Notes/27534.txt
+%%DATADIR%%/Notes/27537.txt
+%%DATADIR%%/Notes/27552.txt
+%%DATADIR%%/Notes/27556.txt
+%%DATADIR%%/Notes/27559.txt
+%%DATADIR%%/Notes/27560.txt
+%%DATADIR%%/Notes/27566.txt
+%%DATADIR%%/Notes/27605.txt
+%%DATADIR%%/Notes/27607.txt
+%%DATADIR%%/Notes/27630.txt
+%%DATADIR%%/Notes/27642.txt
+%%DATADIR%%/Notes/27643.txt
+%%DATADIR%%/Notes/27647.txt
+%%DATADIR%%/Notes/27651.txt
+%%DATADIR%%/Notes/27663.txt
+%%DATADIR%%/Notes/27704.txt
+%%DATADIR%%/Notes/27783.txt
+%%DATADIR%%/Notes/27818.txt
+%%DATADIR%%/Notes/27838.txt
+%%DATADIR%%/Notes/27843.txt
+%%DATADIR%%/Notes/27942.txt
+%%DATADIR%%/Notes/27943.txt
+%%DATADIR%%/Notes/27945.txt
+%%DATADIR%%/Notes/28129.txt
+%%DATADIR%%/Notes/28190.txt
+%%DATADIR%%/Notes/28361.txt
+%%DATADIR%%/Notes/28366.txt
+%%DATADIR%%/Notes/28368.txt
+%%DATADIR%%/Notes/28369.txt
+%%DATADIR%%/Notes/28370.txt
+%%DATADIR%%/Notes/28371.txt
+%%DATADIR%%/Notes/28372.txt
+%%DATADIR%%/Notes/28373.txt
+%%DATADIR%%/Notes/28375.txt
+%%DATADIR%%/Notes/28376.txt
+%%DATADIR%%/Notes/28444.txt
+%%DATADIR%%/Notes/28474.txt
+%%DATADIR%%/Notes/28485.txt
+%%DATADIR%%/Notes/28494.txt
+%%DATADIR%%/Notes/28495.txt
+%%DATADIR%%/Notes/28496.txt
+%%DATADIR%%/Notes/28497.txt
+%%DATADIR%%/Notes/28503.txt
+%%DATADIR%%/Notes/28624.txt
+%%DATADIR%%/Notes/28640.txt
+%%DATADIR%%/Notes/28650.txt
+%%DATADIR%%/Notes/28654.txt
+%%DATADIR%%/Orbitron.exe
+%%DATADIR%%/Tle/amateur.txt
+%%DATADIR%%/Tle/classfd.txt
+%%DATADIR%%/Tle/cubesat.txt
+%%DATADIR%%/Tle/dmc.txt
+%%DATADIR%%/Tle/education.txt
+%%DATADIR%%/Tle/engineering.txt
+%%DATADIR%%/Tle/geo.txt
+%%DATADIR%%/Tle/geodetic.txt
+%%DATADIR%%/Tle/glo-ops.txt
+%%DATADIR%%/Tle/globalstar.txt
+%%DATADIR%%/Tle/goes.txt
+%%DATADIR%%/Tle/gorizont.txt
+%%DATADIR%%/Tle/gps-ops.txt
+%%DATADIR%%/Tle/intelsat.txt
+%%DATADIR%%/Tle/iridium.txt
+%%DATADIR%%/Tle/military.txt
+%%DATADIR%%/Tle/molniya.txt
+%%DATADIR%%/Tle/musson.txt
+%%DATADIR%%/Tle/nnss.txt
+%%DATADIR%%/Tle/noaa.txt
+%%DATADIR%%/Tle/orbcomm.txt
+%%DATADIR%%/Tle/other-comm.txt
+%%DATADIR%%/Tle/other.txt
+%%DATADIR%%/Tle/radar.txt
+%%DATADIR%%/Tle/raduga.txt
+%%DATADIR%%/Tle/resource.txt
+%%DATADIR%%/Tle/sarsat.txt
+%%DATADIR%%/Tle/science.txt
+%%DATADIR%%/Tle/stations.txt
+%%DATADIR%%/Tle/tdrss.txt
+%%DATADIR%%/Tle/tle-new.txt
+%%DATADIR%%/Tle/visual.txt
+%%DATADIR%%/Tle/weather.txt
+%%DATADIR%%/Tle/x-comm.txt
+%%DATADIR%%/files.crc
+%%DATADIR%%/history.txt
+%%DATADIR%%/read_me.txt
+%%DATADIR%%/tester.txt
+share/pixmaps/orbitron.png
+@dir %%DATADIR%%/Output

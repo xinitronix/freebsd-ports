@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Orbitron
+
+Exec=/usr/local/bin/wine-orbitron %U
+StartupNotify=true
+Terminal=false
+Icon=orbitron
+Type=Application
+Categories=System;Utility;Core;FileTools;FileManager;
+
+
+
+

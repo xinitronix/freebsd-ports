@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/orbitron
+
+export WINE_PATH="/usr/local/bin/wine"
+export MC_PATH="/usr/local/share/orbitron"
+export WINEPREFIX="$HOME/.config/orbitron/wine"
+
+exec  "$WINE_PATH" "$MC_PATH/Orbitron.exe"   "$@"
+
+
+
+

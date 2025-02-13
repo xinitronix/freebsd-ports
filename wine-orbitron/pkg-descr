@@ -1,0 +1,30 @@
+Orbitron is a satellite tracking system for radio amateur and observing purposes. It's also used by weather professionals, satellite communication users, astronomers, UFO hobbyist and even astrologers.
+
+Application shows the positions of satellites at any given moment (in real or simulated time). It's FREE (Cardware) and it's probably one of the easiest and most powerful satellite trackers,
+ according to opinions of thousands of users from all over the world. I'm still working on it, waiting for your opinions and bug reports. Please try it. If you like it - tell your friends about 
+it and send me a postcard...
+
+FEATURES:
+
+    NORAD SGP4/SDP4 prediction models
+    20 000 satellites can be loaded from TLE file(s) (auto: PC/Unix, 2/3 line)
+    ALL of them can be tracked at the same time
+    Sun and Moon tracking
+    Full-screen, presentation modes
+    Supported screen resolutions from 640x480
+    Real-time mode / Simulation mode (free time control)
+    Advanced passes & Iridium flares search engine (results printing)
+    Miscellaneous options of visualisation
+    Nightlife (dark color-scheme for night usage)
+    Orbit info
+    Notes for each object
+    Radar
+    Easy, flexible interface
+    Database of cities around the world
+    Database of satellite frequencies
+    PC clock synchronization via NTP
+    Internet TLE updater (with ZIP support) via HTTP
+    Rotor/radio control (built-in or user's driver support)
+    Windows screen-saver included
+    Translations supported
+    and many, many, more...
