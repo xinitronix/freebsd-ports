@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/local/share/streamlink2/pipx/venvs/streamlink/bin/streamlink
