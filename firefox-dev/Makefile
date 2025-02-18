@@ -1,7 +1,7 @@
 PORTNAME=	firefox-dev
 PORTVERSION=	${CHROME_VER}
 CATEGORIES=	www 
-MASTER_SITES=	https://github.com/xinitronix/firefox-dev-browser-freebsd/releases/download/v0.0.1/
+MASTER_SITES=	https://github.com/xinitronix/firefox-dev-browser-freebsd/releases/download/v0.0.2/
 
 DISTNAME=	firefox-dev
 
@@ -41,7 +41,7 @@ SRC_SUFX?=		.src${EXTRACT_SUFX}
 
 
 
-CHROME_VER?=	v0.0.1
+CHROME_VER?=	v0.0.2
 CHROME_BUILD?=	1
 
 DATADIR=	${PREFIX}/share/${PORTNAME}
@@ -55,7 +55,7 @@ SUB_FILES=	firefox-dev
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/firefox-dev  ${STAGEDIR}${PREFIX}/bin
 
-	cd ${WRKSRC}/ && ${CP} -r firefox-dev ${STAGEDIR}${PREFIX}/lib
+	cd ${WRKSRC}/ && ${CP} -r  -LP firefox-dev ${STAGEDIR}${PREFIX}/lib
 	cd ${WRKSRC}/ && ${COPYTREE_SHARE} \* ${STAGEDIR}${PREFIX}/share
 	cp files/firefox-dev.desktop ${STAGEDIR}${PREFIX}/share/applications
 .for sz in 16  32 48 64 128 

@@ -20,9 +20,9 @@ lib/firefox-dev/fonts/TwemojiMozilla.ttf
 lib/firefox-dev/glxtest
 lib/firefox-dev/gmp-clearkey/0.1/libclearkey.so
 lib/firefox-dev/gmp-clearkey/0.1/manifest.json
+lib/firefox-dev/icons/updater.png
 lib/firefox-dev/libfreebl3.so
 lib/firefox-dev/libgkcodecs.so
-lib/firefox-dev/libipcclientcerts.so
 lib/firefox-dev/liblgpllibs.so
 lib/firefox-dev/libmozavcodec.so
 lib/firefox-dev/libmozavutil.so
@@ -44,6 +44,9 @@ lib/firefox-dev/pingsender
 lib/firefox-dev/platform.ini
 lib/firefox-dev/precomplete
 lib/firefox-dev/removed-files
+lib/firefox-dev/update-settings.ini
+lib/firefox-dev/updater
+lib/firefox-dev/updater.ini
 lib/firefox-dev/vaapitest
 share/applications/firefox-dev.desktop
 %%DATADIR%%/application.ini
@@ -66,9 +69,9 @@ share/applications/firefox-dev.desktop
 %%DATADIR%%/glxtest
 %%DATADIR%%/gmp-clearkey/0.1/libclearkey.so
 %%DATADIR%%/gmp-clearkey/0.1/manifest.json
+%%DATADIR%%/icons/updater.png
 %%DATADIR%%/libfreebl3.so
 %%DATADIR%%/libgkcodecs.so
-%%DATADIR%%/libipcclientcerts.so
 %%DATADIR%%/liblgpllibs.so
 %%DATADIR%%/libmozavcodec.so
 %%DATADIR%%/libmozavutil.so
@@ -90,6 +93,9 @@ share/applications/firefox-dev.desktop
 %%DATADIR%%/platform.ini
 %%DATADIR%%/precomplete
 %%DATADIR%%/removed-files
+%%DATADIR%%/update-settings.ini
+%%DATADIR%%/updater
+%%DATADIR%%/updater.ini
 %%DATADIR%%/vaapitest
 share/icons/hicolor/128x128/apps/firefox-dev.png
 share/icons/hicolor/16x16/apps/firefox-dev.png
