@@ -1,0 +1,9 @@
+#!/bin/sh
+#!/bin/sh
+
+export LD_LIBRARY_PATH="/usr/local/lib/firefox-nightly"
+export CHROME_PATH="/usr/local/lib/firefox-nightly/firefox"
+export CHROME_WRAPPER="$(readlink -f "$0")"
+export LIBGL_DRI3_DISABLE=1
+
+exec "$CHROME_PATH"  "$@"

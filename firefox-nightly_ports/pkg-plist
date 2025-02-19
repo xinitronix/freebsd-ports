@@ -1,5 +1,5 @@
+
 bin/firefox-nightly
-lib/firefox-nightly/Makefile
 lib/firefox-nightly/application.ini
 lib/firefox-nightly/browser/chrome/icons/default/default128.png
 lib/firefox-nightly/browser/chrome/icons/default/default16.png
@@ -16,7 +16,6 @@ lib/firefox-nightly/defaults/pref/channel-prefs.js
 lib/firefox-nightly/dependentlibs.list
 lib/firefox-nightly/firefox
 lib/firefox-nightly/firefox-bin
-lib/firefox-nightly/firefox-nightly
 lib/firefox-nightly/fonts/TwemojiMozilla.ttf
 lib/firefox-nightly/glxtest
 lib/firefox-nightly/gmp-clearkey/0.1/libclearkey.so
@@ -24,7 +23,6 @@ lib/firefox-nightly/gmp-clearkey/0.1/manifest.json
 lib/firefox-nightly/icons/updater.png
 lib/firefox-nightly/libfreebl3.so
 lib/firefox-nightly/libgkcodecs.so
-lib/firefox-nightly/libipcclientcerts.so
 lib/firefox-nightly/liblgpllibs.so
 lib/firefox-nightly/libmozavcodec.so
 lib/firefox-nightly/libmozavutil.so
@@ -41,7 +39,6 @@ lib/firefox-nightly/libsmime3.so
 lib/firefox-nightly/libsoftokn3.so
 lib/firefox-nightly/libssl3.so
 lib/firefox-nightly/libxul.so
-lib/firefox-nightly/nightly.desktop
 lib/firefox-nightly/omni.ja
 lib/firefox-nightly/pingsender
 lib/firefox-nightly/platform.ini
@@ -53,5 +50,3 @@ lib/firefox-nightly/updater.ini
 lib/firefox-nightly/vaapitest
 share/applications/nightly.desktop
 share/pixmaps/firefox-nightly.png
-
-
