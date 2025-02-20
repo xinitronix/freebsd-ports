@@ -55,12 +55,15 @@ SUB_FILES=	mercury
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/mercury  ${STAGEDIR}${PREFIX}/bin
 
-	cd ${WRKSRC}/ && ${CP} -r mercury ${STAGEDIR}${PREFIX}/lib
+	cd ${WRKSRC}/ && ${CP} -r mercury ${STAGEDIR}${PREFIX}/share
 	cd ${WRKSRC}/ && ${COPYTREE_SHARE} \* ${STAGEDIR}${PREFIX}/share
 	cp files/mercury.desktop ${STAGEDIR}${PREFIX}/share/applications
 .for sz in 16  32 48 64 128 
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/${sz}x${sz}/apps
 	${CP} ${WRKSRC}/mercury/browser/chrome/icons/default/default${sz}.png ${STAGEDIR}${PREFIX}/share/icons/hicolor/${sz}x${sz}/apps/mercury.png
 .endfor
+
+post-install:
+	chmod +x ${STAGEDIR}${PREFIX}/share/mercury/mercury
 
 .include <bsd.port.mk>
