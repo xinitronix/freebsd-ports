@@ -1,0 +1,58 @@
+#!/bin/sh
+#
+# xboxdrv RCng startup script
+# by Emanuele Cipolla (mail at emanuelecipolla dot net)
+# Shamelessly ripped off the aMule startup script by Gabriele Cecchetti (amule.org forum)
+#
+
+# PROVIDE: xboxdrv
+# BEFORE: DAEMON
+# KEYWORD: shutdown
+
+#
+# Add the following lines to /etc/rc.conf to enable rtorrent at startup
+# xboxdrv (bool): Set to "NO" by default.
+#                Set it to "YES" to enable rtorrent
+# xboxdrv_user (str): Set to user running rtorrent
+
+. /etc/rc.subr
+
+name="xboxdrv"
+rcvar=`set_rcvar`
+
+load_rc_config $name
+
+
+
+
+start_cmd="${name}_start"
+stop_cmd="${name}_stop"
+
+xboxdrv_start()
+{
+if [ ! -f /var/run/${name}.run ]
+    then
+ 
+ /usr/local/bin/screen -dmS xboxdrv_init /usr/local/bin/xboxdrv
+ sleep 2
+ chmod 0666 /dev/input/event10
+ touch /var/run/${name}.run
+ echo "Started ${name}."
+ echo `date` : "Started ${name}." >> /var/log/${name}.log
+ else
+ echo "${name} seems to be already running -- remove /var/run/${name}.run manually if needed."
+ fi
+ }
+ xboxdrv_stop()
+ {
+ if [ -f /var/run/${name}.run ]
+ then
+ killall -INT $(echo -n 'ps aux | grep xboxdrv | grep -v xboxdrv_init') 2>>/var/log/${name}.log >>/var/log/${name}.log
+ rm -f /var/run/${name}.run
+ echo "Stopped ${name}."
+ echo `date` : "Stopped ${name}." >> /var/log/${name}.log
+ else
+ echo "${name} doesn't seem to be running -- create /var/run/${name}.run if needed."
+ fi
+   }
+ run_rc_command "$1"

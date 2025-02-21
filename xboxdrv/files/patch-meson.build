@@ -1,0 +1,13 @@
+--- meson.build.orig	2025-02-15 04:46:31.000000000 +0300
++++ meson.build	2025-02-21 04:50:25.555641000 +0300
+@@ -13,8 +13,8 @@
+ libudev = dependency('libudev')
+ x11 = dependency('x11')
+ 
+-python = find_program('python')
+-sed = find_program('sed')
++python = find_program('python3')
++sed = find_program('gsed')
+ 
+ xboxdrv_vfs_in = custom_target(
+   command: [python, '@CURRENT_SOURCE_DIR@/bin2h.py', '--namespace', 'xboxdrv_vfs', '-o', '@OUTPUT@', '@INPUT@'],

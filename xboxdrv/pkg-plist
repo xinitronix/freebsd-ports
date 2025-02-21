@@ -1,0 +1,6 @@
+
+bin/xboxdrv
+bin/xboxdrvctl
+etc/default/xboxdrv
+etc/rc.d/xboxdrv
+share/man/man1/xboxdrv.1.gz
