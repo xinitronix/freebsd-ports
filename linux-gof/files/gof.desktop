@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Guns of Fury
+Exec=/usr/local/bin/linux-gof %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/pixmaps/gof.png
+Type=Application
+Categories=Games;Game
+Actions=new-window;new-private-window;

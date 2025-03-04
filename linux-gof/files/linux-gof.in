@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export LD_LIBRARY_PATH=/usr/local/share/gof/lib_x64
+export CHROME_PATH="/usr/local/share/gof/gof.x86_64"
+exec "$CHROME_PATH"  "$@"
