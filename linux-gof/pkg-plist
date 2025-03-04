@@ -15,4 +15,3 @@ share/applications/gof.desktop
 %%DATADIR%%/lib_x64/libssl.so.1.0.0
 %%DATADIR%%/run.sh
 %%DATADIR%%/uninstall.sh
-share/pixmaps/gof.png

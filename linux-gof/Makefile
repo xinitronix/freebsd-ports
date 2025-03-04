@@ -24,7 +24,6 @@ do-install:
 
 	cd ${WRKSRC}/ && ${CP} -r gof ${STAGEDIR}${PREFIX}/share
 	cp files/gof.desktop ${STAGEDIR}${PREFIX}/share/applications
-	cp files/icon.png  ${STAGEDIR}${PREFIX}/share/pixmaps/gof.png
 
 
 .include <bsd.port.mk>
