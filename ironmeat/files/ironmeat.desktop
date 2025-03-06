@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Iron Meat
+Exec=/usr/local/bin/ironmeat %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/GOG/IronMeat/gog.ico
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;
