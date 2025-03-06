@@ -1,0 +1,6 @@
+#!/bin/sh
+
+mkdir -p  "$HOME/.config/Hollow Knight"
+export WINEPREFIX="$HOME/.config/Hollow Knight/proton"
+export CHROME_PATH="proton-e"
+exec "$CHROME_PATH"  "/usr/local/share/GOG/HollowKnight/Hollow Knight.exe" "$@"
