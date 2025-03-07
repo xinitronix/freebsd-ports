@@ -1,0 +1,5 @@
+#!/bin/sh
+mkdir -p "$HOME/.config/Fury Unleashed"
+export WINEPREFIX="$HOME/.config/Fury Unleashed/proton"
+export CHROME_PATH="wine"
+exec "$CHROME_PATH"  "/usr/local/share/GOG/FuryUnleashed/Fury Unleashed.exe" "$@"

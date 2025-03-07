@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Fury Unleashed
+Exec=/usr/local/bin/FuryUnleashed %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/pixmaps/FuryUnleashed.png
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;

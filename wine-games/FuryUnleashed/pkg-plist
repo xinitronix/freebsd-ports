@@ -1,0 +1,293 @@
+
+bin/FuryUnleashed
+share/GOG/FuryUnleashed/1
+share/GOG/FuryUnleashed/EULA.txt
+share/GOG/FuryUnleashed/Fury Unleashed.exe
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Accessibility.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/AppsFlyer.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Assembly-CSharp-firstpass.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Assembly-CSharp.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/ConsoleUtilsImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/DataPlatformImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/FriendsImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/GalaxyCSharp.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/GamepadImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/MarketplaceImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Mono.Data.Sqlite.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Mono.Posix.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Mono.Security.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Mono.WebBrowser.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/MultiplayerImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Novell.Directory.Ldap.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Photon3Unity3D.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/PhotonChat.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/PhotonRealtime.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/PhotonUnityNetworking.Utilities.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/PhotonUnityNetworking.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Rewired_Core.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Rewired_Windows_Lib.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/StorageImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/StreamingInstallImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.ComponentModel.Composition.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.ComponentModel.DataAnnotations.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Configuration.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Core.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Data.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Design.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Diagnostics.StackTrace.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.DirectoryServices.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Drawing.Design.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Drawing.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.EnterpriseServices.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Globalization.Extensions.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.IO.Compression.FileSystem.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.IO.Compression.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Net.Http.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Numerics.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Runtime.Serialization.Xml.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Runtime.Serialization.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Security.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.ServiceModel.Internals.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Transactions.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Web.ApplicationServices.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Web.Services.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Web.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Windows.Forms.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Xml.Linq.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Xml.XPath.XDocument.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.Xml.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/System.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/TextSystemsImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/TwitchLib.Unity.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Unity.DeltaDNA.SDK.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Unity.MemoryProfiler.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/Unity.TextMeshPro.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.AIModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.ARModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.AccessibilityModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.AnimationModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.AssetBundleModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.AudioModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.BaselibModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.ClothModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.ClusterInputModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.ClusterRendererModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.CoreModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.CrashReportingModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.DirectorModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.FileSystemHttpModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.GameCenterModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.GridModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.HotReloadModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.IMGUIModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.ImageConversionModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.InputModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.JSONSerializeModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.LocalizationModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.Networking.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.ParticleSystemModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.PerformanceReportingModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.Physics2DModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.PhysicsModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.ProfilerModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.ScreenCaptureModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.SharedInternalsModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.SpatialTracking.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.SpriteMaskModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.SpriteShapeModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.StreamingModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.StyleSheetsModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.SubstanceModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.TLSModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.TerrainModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.TerrainPhysicsModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.TextCoreModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.TextRenderingModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.TilemapModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.Timeline.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.TimelineModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UI.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UIElementsModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UIModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UNETModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UmbraModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UnityAnalyticsModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UnityConnectModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UnityTestProtocolModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UnityWebRequestModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.VFXModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.VRModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.VehiclesModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.VideoModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.WindModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.XRModule.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEngine.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityEtx.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UnityPluginLogImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/UsersImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/XboxOneCommonImport.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/mscorlib.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/netstandard.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Managed/websocket-sharp.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Plugins/Galaxy.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Plugins/GalaxyCSharpGlue.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Plugins/Steamworks.NET.txt
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Plugins/UnityNativeChromaSDK.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Plugins/UnityNativeChromaSDK3.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Plugins/fmodstudio.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Plugins/fmodstudiol.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Plugins/gvraudio.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Plugins/resonanceaudio.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Plugins/steam_api.dll
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Resources/unity default resources
+share/GOG/FuryUnleashed/Fury Unleashed_Data/Resources/unity_builtin_extra
+share/GOG/FuryUnleashed/Fury Unleashed_Data/ScreenSelector.png
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/loadingatlases
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/loadingatlaseslow
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/playeratlas
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/playeratlaslow
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/spriteatlasbundle
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/spriteatlasbundlelow
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w01additional
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w01atlases
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w01atlaseslow
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w01rooms
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w01sketchatlases
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w01sketchatlaseslow
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w02additional
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w02atlases
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w02atlaseslow
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w02rooms
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w02sketchatlases
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w02sketchatlaseslow
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w03additional
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w03atlases
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w03atlaseslow
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w03rooms
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w03sketchatlases
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w03sketchatlaseslow
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w04additional
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w04atlases
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w04atlaseslow
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/AssetBundles/w04rooms
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaGameOver.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaGameOverHeadset.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaGameOverKeypad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaGameOverLink.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaGameOverMouse.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaGameOverMousepad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaHitEffect.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaHitEffectHeadset.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaHitEffectKeypad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaHitEffectLink.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaHitEffectMouse.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaHitEffectMousepad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaInactive.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaInactiveHeadset.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaInactiveKeypad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaInactiveLink.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaInactiveMouse.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaInactiveMousepad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaLowHealth.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaLowHealthHeadset.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaLowHealthKeypad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaLowHealthLink.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaLowHealthMouse.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaLowHealthMousepad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaPackage.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaPackageHeadset.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaPackageKeypad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaPackageLink.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaPackageMouse.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaPackageMousepad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaShop.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaShopHeadset.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaShopKeypad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaShopLink.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaShopMouse.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaShopMousepad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerReady.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerReadyHeadset.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerReadyKeypad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerReadyLink.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerReadyMouse.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerReadyMousepad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerStart.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerStartHeadset.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerStartKeypad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerStartLink.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerStartMouse.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaSuperpowerStartMousepad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaVictory.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaVictoryHeadset.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaVictoryKeypad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaVictoryLink.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaVictoryMouse.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/ChromaVictoryMousepad.chroma
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/EU_PS4SessionImage.jpg
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/FuryUnleashed_Music.bank
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/FuryUnleashed_Music_PostCERT.bank
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/FuryUnleashed_Placeholders_YetAnotherZombieDefence.bank
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/FuryUnleashed_Sounds.bank
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/FuryUnleashed_Sounds.strings.bank
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/FuryUnleashed_Sounds_DLC.bank
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/FuryUnleashed_Sounds_PostCERT.bank
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/JP_PS4SessionImage.jpg
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/PS4SaveIcon.png
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/PS4SessionImage.jpg
+share/GOG/FuryUnleashed/Fury Unleashed_Data/StreamingAssets/interactiveconfig.json
+share/GOG/FuryUnleashed/Fury Unleashed_Data/app.info
+share/GOG/FuryUnleashed/Fury Unleashed_Data/boot.config
+share/GOG/FuryUnleashed/Fury Unleashed_Data/globalgamemanagers
+share/GOG/FuryUnleashed/Fury Unleashed_Data/globalgamemanagers.assets
+share/GOG/FuryUnleashed/Fury Unleashed_Data/level0
+share/GOG/FuryUnleashed/Fury Unleashed_Data/level1
+share/GOG/FuryUnleashed/Fury Unleashed_Data/resources.assets
+share/GOG/FuryUnleashed/Fury Unleashed_Data/resources.assets.resS
+share/GOG/FuryUnleashed/Fury Unleashed_Data/sharedassets0.assets
+share/GOG/FuryUnleashed/Fury Unleashed_Data/sharedassets0.assets.resS
+share/GOG/FuryUnleashed/Fury Unleashed_Data/sharedassets1.assets
+share/GOG/FuryUnleashed/Fury Unleashed_Data/sharedassets1.assets.resS
+share/GOG/FuryUnleashed/Fury Unleashed_Data/sharedassets1.resource
+share/GOG/FuryUnleashed/Galaxy.dll
+share/GOG/FuryUnleashed/GalaxyCSharpGlue.dll
+share/GOG/FuryUnleashed/Launch Fury Unleashed.lnk
+share/GOG/FuryUnleashed/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll
+share/GOG/FuryUnleashed/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/2.0/machine.config
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/2.0/settings.map
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/2.0/web.config
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/4.0/machine.config
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/4.0/settings.map
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/4.0/web.config
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/4.5/machine.config
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/4.5/settings.map
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/4.5/web.config
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/browscap.ini
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/config
+share/GOG/FuryUnleashed/MonoBleedingEdge/etc/mono/mconfig/config.xml
+share/GOG/FuryUnleashed/UnityCrashHandler32.exe
+share/GOG/FuryUnleashed/UnityPlayer.dll
+share/GOG/FuryUnleashed/gog.ico
+share/GOG/FuryUnleashed/goggame-1559572798.hashdb
+share/GOG/FuryUnleashed/goggame-1559572798.ico
+share/GOG/FuryUnleashed/goggame-1559572798.info
+share/GOG/FuryUnleashed/support.ico
+share/GOG/FuryUnleashed/unins000.dat
+share/GOG/FuryUnleashed/unins000.exe
+share/GOG/FuryUnleashed/unins000.ini
+share/GOG/FuryUnleashed/unins000.msg
+share/GOG/FuryUnleashed/webcache.zip
+share/applications/FuryUnleashed.desktop
+share/pixmaps/FuryUnleashed.png
