@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Monster in My Pocket
+Exec=/usr/local/bin/mmp-nes %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/pixmaps/mmp-nes.jpg
+Type=Application
+Categories=Games;Game
+
+
+
+
+
+

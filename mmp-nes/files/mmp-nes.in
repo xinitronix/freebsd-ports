@@ -1,0 +1,9 @@
+#!/bin/sh
+
+export EMU_PATH="/usr/local/share/mmp-nes/bin/mednafen"
+export NES_FILE_PATH="/usr/local/share/mmp-nes/Batman Flash [p1][T+Rus1.0 PSCD (29.05.2015)].zip"
+exec  "$EMU_PATH" "$NES_FILE_PATH"   "$@"
+
+
+
+
