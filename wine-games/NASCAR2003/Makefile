@@ -20,7 +20,8 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/nr2003  ${STAGEDIR}${PREFIX}/bin
 	mkdir -p                              ${STAGEDIR}${PREFIX}/share/
 	cd ${WRKSRC}/ && ${CP} -r NASCAR2003  ${STAGEDIR}${PREFIX}/share/
-	cp files/4F2E_NR2003.0.png   ${STAGEDIR}${PREFIX}/share/pixmaps
+	cp  files/nr2003.reg          ${STAGEDIR}${PREFIX}/share/NASCAR2003
+	cp  files/4F2E_NR2003.0.png   ${STAGEDIR}${PREFIX}/share/pixmaps
 	cp "files/NASCAR Racing 2003 Season.desktop" ${STAGEDIR}${PREFIX}/share/applications
 
 

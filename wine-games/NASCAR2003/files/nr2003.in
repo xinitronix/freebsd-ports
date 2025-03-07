@@ -1,5 +1,6 @@
 #!/bin/sh
+export CHROME_PATH="proton-e"
 mkdir -p "$HOME/.config/NASCAR Racing 2003 Season"
 export WINEPREFIX="$HOME/.config/NASCAR Racing 2003 Season/proton"
-export CHROME_PATH="proton-e"
+exec "$CHROME_PATH"  reg import "/usr/local/share/NASCAR2003/nr2003.reg" &
 exec "$CHROME_PATH"  "/usr/local/share/NASCAR2003/NR2003.exe" "$@"
