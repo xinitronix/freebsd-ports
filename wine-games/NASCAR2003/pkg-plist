@@ -7,6 +7,7 @@ share/NASCAR2003/PapyRes.dll
 share/NASCAR2003/SierraPt.dll
 share/NASCAR2003/SierraUp.cfg
 share/NASCAR2003/SierraUp.exe
+share/NASCAR2003/app.ini
 share/NASCAR2003/binkw32.dll
 share/NASCAR2003/config.cnt
 share/NASCAR2003/config.exe
@@ -47,6 +48,7 @@ share/NASCAR2003/readme.txt
 share/NASCAR2003/readme12.txt
 share/NASCAR2003/rend_dxg.dll
 share/NASCAR2003/rend_ogl.dll
+share/NASCAR2003/rend_ogl.ini
 share/NASCAR2003/rendserv.dll
 share/NASCAR2003/rts.dll
 share/NASCAR2003/series/cup/2003season.ini

@@ -15,14 +15,15 @@ CHROME_BUILD?=	0b1
 
 SUB_FILES=	nr2003
 
-
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/nr2003  ${STAGEDIR}${PREFIX}/bin
 	mkdir -p                              ${STAGEDIR}${PREFIX}/share/
 	cd ${WRKSRC}/ && ${CP} -r NASCAR2003  ${STAGEDIR}${PREFIX}/share/
+	touch                         ${STAGEDIR}${PREFIX}/share/NASCAR2003/rend_ogl.ini
+	chmod 0766                    ${STAGEDIR}${PREFIX}/share/NASCAR2003/rend_ogl.ini
+	touch                         ${STAGEDIR}${PREFIX}/share/NASCAR2003/app.ini
+	chmod 0766                    ${STAGEDIR}${PREFIX}/share/NASCAR2003/app.ini
 	cp  files/nr2003.reg          ${STAGEDIR}${PREFIX}/share/NASCAR2003
 	cp  files/4F2E_NR2003.0.png   ${STAGEDIR}${PREFIX}/share/pixmaps
 	cp "files/NASCAR Racing 2003 Season.desktop" ${STAGEDIR}${PREFIX}/share/applications
-
-
 .include <bsd.port.mk>
