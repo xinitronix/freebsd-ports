@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Jungle Strike
+Exec=/usr/local/bin/js-nes %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/pixmaps/js.jpg
+Type=Application
+Categories=Games;Game
+
+
+
+
+
+

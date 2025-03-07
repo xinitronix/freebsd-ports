@@ -8,13 +8,6 @@ COMMENT=        game Monster in My Pocket
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 
-LIB_DEPENDS=	libFLAC.so:audio/flac \
-		liblzo2.so:archivers/lzo2 \
-		libtrio.so:devel/trio \
-		libvorbisfile.so:audio/libvorbis \
-		libzstd.so:archivers/zstd
-
-
 EXTRACT_SUFX?=		.tar.xz
 
 CHROME_VER?=	v0.0.1

@@ -1,0 +1,11 @@
+#!/bin/sh
+mkdir -p $HOME/.mednafen
+cp  /usr/local/share/js-nes/mednafen.cfg $HOME/.mednafen
+export LD_LIBRARY_PATH="/usr/local/share/js-nes/lib"
+export EMU_PATH="/usr/local/share/js-nes/mednafen"
+export NES_FILE_PATH="/usr/local/share/js-nes/Jungle Strike (Europe).zip"
+exec  "$EMU_PATH" "$NES_FILE_PATH"   "$@"
+
+
+
+

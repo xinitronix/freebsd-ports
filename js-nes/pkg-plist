@@ -1,0 +1,12 @@
+
+bin/js-nes
+share/applications/js-nes.desktop
+share/js-nes/Jungle Strike (Europe).zip
+share/js-nes/lib/libFLAC.so.14
+share/js-nes/lib/liblzo2.so.2
+share/js-nes/lib/libtrio.so.2
+share/js-nes/lib/libvorbisfile.so.3
+share/js-nes/lib/libzstd.so.1
+share/js-nes/mednafen
+share/js-nes/mednafen.cfg
+share/pixmaps/js.jpg
