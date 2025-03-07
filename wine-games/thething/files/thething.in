@@ -1,0 +1,6 @@
+#!/bin/sh
+
+mkdir -p  "$HOME/.config/The Thing: Remastered"
+export WINEPREFIX="$HOME/.config/The Thing: Remastered/proton"
+export CHROME_PATH="proton-e"
+exec "$CHROME_PATH"  "/usr/local/share/GOG/thething/amun_Develop_x64.exe" "$@"

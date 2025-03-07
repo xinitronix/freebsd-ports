@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Valfaris
+Exec=/usr/local/bin/valfaris %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/GOG/valfaris/gog.ico
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;

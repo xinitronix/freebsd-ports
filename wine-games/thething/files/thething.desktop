@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=The Thing: Remastered
+Exec=/usr/local/bin/thething %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/pixmaps/thething.png
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;

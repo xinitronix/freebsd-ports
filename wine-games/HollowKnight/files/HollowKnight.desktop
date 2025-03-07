@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Hollow Knight
+Exec=/usr/local/bin/HollowKnight %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/pixmaps/HollowKnight.jpg
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;
