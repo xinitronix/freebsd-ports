@@ -1,0 +1,12 @@
+
+bin/bdd-nes
+share/applications/bdd-nes.desktop
+%%DATADIR%%/Battletoads & Double Dragon (U) [T+Rus1.04 Chief-Net (02.11.2016)].zip
+%%DATADIR%%/lib/libFLAC.so.14
+%%DATADIR%%/lib/liblzo2.so.2
+%%DATADIR%%/lib/libtrio.so.2
+%%DATADIR%%/lib/libvorbisfile.so.3
+%%DATADIR%%/lib/libzstd.so.1
+%%DATADIR%%/mednafen
+%%DATADIR%%/mednafen.cfg
+share/pixmaps/bdd.jpg

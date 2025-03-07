@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Battletoads & Double Dragon: The Ultimate Team
+Exec=/usr/local/bin/bdd-nes %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/pixmaps/bdd.jpg
+Type=Application
+Categories=Games;Game
+
+
+
+
+
+

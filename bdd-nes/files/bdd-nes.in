@@ -1,0 +1,11 @@
+#!/bin/sh
+mkdir -p $HOME/.mednafen
+cp  /usr/local/share/bdd-nes/mednafen.cfg $HOME/.mednafen
+export LD_LIBRARY_PATH="/usr/local/share/bdd-nes/lib"
+export EMU_PATH="/usr/local/share/bdd-nes/mednafen"
+export NES_FILE_PATH="/usr/local/share/bdd-nes/Battletoads & Double Dragon (U) [T+Rus1.04 Chief-Net (02.11.2016)].zip"
+exec  "$EMU_PATH" "$NES_FILE_PATH"   "$@"
+
+
+
+
