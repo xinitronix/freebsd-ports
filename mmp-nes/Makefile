@@ -23,11 +23,7 @@ CHROME_BUILD?=	0b1
 SUB_FILES=	mmp-nes
 
 do-install:
-	pkg fetch  -y -r FreeBSD mednafen
-	tar  -C ${WRKDIR} -xf /var/cache/pkg/mednafen-1.32.1_2,1.pkg  /usr/local
 	${INSTALL_SCRIPT} ${WRKDIR}/mmp-nes   ${STAGEDIR}${PREFIX}/bin
-	${CP} -r     ${WRKDIR}/usr/local/                                  ${STAGEDIR}${PREFIX}/share/mmp-nes
-	mkdir -p                              ${STAGEDIR}${PREFIX}/share/
 	cd ${WRKSRC}/ && ${CP} -r mmp-nes     ${STAGEDIR}${PREFIX}/share/
 	${CP}  files/mmp-nes.jpg       ${STAGEDIR}${PREFIX}/share/pixmaps
 	${CP} files/mmp-nes.desktop             ${STAGEDIR}${PREFIX}/share/applications
