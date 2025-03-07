@@ -19,8 +19,11 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/nr2003  ${STAGEDIR}${PREFIX}/bin
 	mkdir -p                              ${STAGEDIR}${PREFIX}/share/
 	cd ${WRKSRC}/ && ${CP} -r NASCAR2003  ${STAGEDIR}${PREFIX}/share/
+	chmod -R 0776                 ${STAGEDIR}${PREFIX}/share/NASCAR2003/players
 	touch                         ${STAGEDIR}${PREFIX}/share/NASCAR2003/rend_ogl.ini
 	chmod 0766                    ${STAGEDIR}${PREFIX}/share/NASCAR2003/rend_ogl.ini
+	touch                         ${STAGEDIR}${PREFIX}/share/NASCAR2003/core.ini
+	chmod 0766                    ${STAGEDIR}${PREFIX}/share/NASCAR2003/core.ini
 	touch                         ${STAGEDIR}${PREFIX}/share/NASCAR2003/app.ini
 	chmod 0766                    ${STAGEDIR}${PREFIX}/share/NASCAR2003/app.ini
 	cp  files/nr2003.reg          ${STAGEDIR}${PREFIX}/share/NASCAR2003
