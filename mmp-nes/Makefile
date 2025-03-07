@@ -4,7 +4,7 @@ CATEGORIES=	games
 MASTER_SITES=	https://github.com/definitly486/wine-games/releases/download/MonsterinMyPocket/
 DISTNAME=	mmp-nes
 PKGNAMEPREFIX=	
-COMMENT=        game Monster in My Pocket
+COMMENT=        game "Monster in My Pocket" nes emulator
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 

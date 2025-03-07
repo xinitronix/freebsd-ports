@@ -4,7 +4,7 @@ CATEGORIES=	games emulators
 MASTER_SITES=	https://github.com/definitly486/wine-games/releases/download/JungleStrike/
 DISTNAME=	js-nes
 PKGNAMEPREFIX=	
-COMMENT=        game Jungle Strike nes emulator
+COMMENT=        game "Jungle Strike" nes emulator
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 
