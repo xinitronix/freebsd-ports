@@ -1,0 +1,7 @@
+#!/bin/sh
+export CHROME_PATH="proton-e"
+mkdir -p "$HOME/.config/Operation Flashpoint: Cold War Crisis"
+export WINEPREFIX="$HOME/.config/Operation Flashpoint: Cold War Crisis/proton"
+exec "$CHROME_PATH"  reg import "/usr/local/share/flashpoint/flashpoint.reg" &
+cd   "$HOME/.config/Operation Flashpoint: Cold War Crisis"
+exec "$CHROME_PATH"  "/usr/local/share/flashpoint/OPERATIONFLASHPOINT.EXE" "$@"
