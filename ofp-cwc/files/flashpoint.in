@@ -4,4 +4,10 @@ mkdir -p "$HOME/.config/Operation Flashpoint: Cold War Crisis"
 export WINEPREFIX="$HOME/.config/Operation Flashpoint: Cold War Crisis/proton"
 exec "$CHROME_PATH"  reg import "/usr/local/share/flashpoint/flashpoint.reg" &
 cd   "$HOME/.config/Operation Flashpoint: Cold War Crisis"
+ln -s /usr/local/share/flashpoint/BIN BIN
+ln -s /usr/local/share/flashpoint/rimg rimg
+ln -s /usr/local/share/flashpoint/Campaigns Campaigns
+ln -s /usr/local/share/flashpoint/AddOns AddOns
+ln -s /usr/local/share/flashpoint/DTA DTA
+ln -s /usr/local/share/flashpoint/Worlds Worlds
 exec "$CHROME_PATH"  "/usr/local/share/flashpoint/OPERATIONFLASHPOINT.EXE" "$@"
