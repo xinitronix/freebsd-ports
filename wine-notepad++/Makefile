@@ -15,7 +15,7 @@ do-extract:
 		pkg fetch  -y -r FreeBSD wine-proton 
 		tar  -C ${WRKDIR} -xf /var/cache/pkg/wine-proton-9.0.3.pkg  /usr/local   
 		cp "/usr/ports/distfiles/${DISTFILES}"       ${WRKDIR}/"${DISTFILES}" 
-		cd  ${WRKDIR} &&  7z -y x  "${DISTFILES}" -o ${PORTNAME}-${DISTVERSION} 
+		cd  ${WRKDIR} &&  7z -y x  "${DISTFILES}"  -o${PORTNAME}-${DISTVERSION} 
 
 do-install:
 		${INSTALL_SCRIPT} ${WRKDIR}/wine-notepad++                          ${STAGEDIR}${PREFIX}/bin
