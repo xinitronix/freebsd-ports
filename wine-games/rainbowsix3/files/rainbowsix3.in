@@ -1,0 +1,5 @@
+#!/bin/sh
+export CHROME_PATH="proton-e"
+mkdir -p "$HOME/.config/Tom Clancy’s Rainbow Six 3: Raven Shield"
+export WINEPREFIX="$HOME/.config/Tom Clancy’s Rainbow Six 3: Raven Shield/proton"
+exec "$CHROME_PATH"  "/usr/local/share/rainbowsix3/system/ravenshield.exe" "$@"
