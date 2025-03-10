@@ -22,8 +22,8 @@ SUB_FILES=	valfaris
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/valfaris  ${STAGEDIR}${PREFIX}/bin
 	mkdir -p                              ${STAGEDIR}${PREFIX}/share/GOG
-	cd ${WRKSRC}/ && ${CP} -r valfaris ${STAGEDIR}${PREFIX}/share/GOG
-	cp files/valfaris.desktop ${STAGEDIR}${PREFIX}/share/applications
+	cd ${WRKSRC}/ && ${CP} -r valfaris    ${STAGEDIR}${PREFIX}/share/GOG
+	cp files/valfaris.desktop             ${STAGEDIR}${PREFIX}/share/applications
 
 
 .include <bsd.port.mk>
