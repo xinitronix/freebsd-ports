@@ -48,7 +48,6 @@ share/applications/flashpoint.desktop
 %%DATADIR%%/DTA/anims.pbo
 %%DATADIR%%/DTA/dtaext.pbo
 %%DATADIR%%/DTA/scripts.pbo
-%%DATADIR%%/Flashpoint.cfg
 %%DATADIR%%/IFC22.dll
 %%DATADIR%%/MPMissions/1-10_T_TeamFlagFight.Abel.pbo
 %%DATADIR%%/MPMissions/1-2_C_AirAssault.EDEN.pbo

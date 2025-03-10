@@ -21,6 +21,5 @@ do-install:
 	cd ${WRKSRC}/ && ${CP} -r flashpoint    ${STAGEDIR}${PREFIX}/share/
 	chmod -R 0776                           ${STAGEDIR}${PREFIX}/share/flashpoint/Users
 	cp  files/flashpoint.png                ${STAGEDIR}${PREFIX}/share/pixmaps
-	cp  files/Flashpoint.cfg                ${STAGEDIR}${PREFIX}/share/flashpoint/
 	cp "files/flashpoint.desktop"           ${STAGEDIR}${PREFIX}/share/applications
 .include <bsd.port.mk>
