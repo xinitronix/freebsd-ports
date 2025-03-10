@@ -1,0 +1,11 @@
+#!/bin/sh
+mkdir -p $HOME/.mednafen
+cp  /usr/local/share/contra-nes/mednafen.cfg $HOME/.mednafen
+export LD_LIBRARY_PATH="/usr/local/share/contra-nes/lib"
+export EMU_PATH="/usr/local/share/contra-nes/mednafen"
+export NES_FILE_PATH="/usr/local/share/contra-nes/Contra (J) [T+Rus1.00 Chief-Net (06.10.2012)].zip"
+exec  "$EMU_PATH" "$NES_FILE_PATH"   "$@"
+
+
+
+
