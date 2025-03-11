@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=AIMP (Wine)
+Comment=Freeware powerful audio player (Wine)
+Exec=aimp
+Icon=/usr/local/share/AIMP/Assets/Square70x70Logo.png
+Terminal=false
+Type=Application
+Categories=Audio;
+StartupWMClass=aimp.exe
+
+
+

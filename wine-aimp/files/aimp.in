@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/AIMP
+export VK_ICD_FILENAMES="/usr/local/share/vulkan/icd.d/nvidia_icd.json"
+export WINE_PATH="/usr/local/share/AIMP/wine-proton/bin/wine64"
+export MC_PATH="/usr/local/share/AIMP/AIMP.exe"
+export WINEPREFIX="$HOME/.config/AIMP/wine"
+
+exec  "$WINE_PATH" "$MC_PATH"   "$@"
+
+
+
+
