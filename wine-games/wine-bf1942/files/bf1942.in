@@ -1,0 +1,7 @@
+#!/bin/sh
+export CHROME_PATH="proton-e"
+mkdir -p "$HOME/.config/Battlefield 1942"
+export WINEPREFIX="$HOME/.config/Battlefield 1942/proton"
+cd   "$HOME/.config/Battlefield 1942"
+ln -s /usr/local/share/Battlefield1942/Mods  Mods
+exec "$CHROME_PATH"  "/usr/local/share/Battlefield1942/BF1942.exe" +restart 1 "$@"

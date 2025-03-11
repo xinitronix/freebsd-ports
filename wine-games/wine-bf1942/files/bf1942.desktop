@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Battlefield 1942
+Exec=/usr/local/bin/bf1942 %U
+StartupNotify=true
+Terminal=false
+Icon=bf1942
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;
