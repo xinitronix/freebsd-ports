@@ -90,8 +90,6 @@ share/Battlefield1942/Mods/bf1942/Music/Theme2.bik
 share/Battlefield1942/Mods/bf1942/Music/Vehicle3.bik
 share/Battlefield1942/Mods/bf1942/Music/Vehicle4.bik
 share/Battlefield1942/Mods/bf1942/SECDRV.SYS
-share/Battlefield1942/Mods/bf1942/Settings/AliasedCommands.con
-share/Battlefield1942/Mods/bf1942/Settings/Controls.con
 share/Battlefield1942/Mods/bf1942/Settings/Default.con
 share/Battlefield1942/Mods/bf1942/Settings/Default/Controls.con
 share/Battlefield1942/Mods/bf1942/Settings/Default/Controls/Air.con
@@ -114,13 +112,6 @@ share/Battlefield1942/Mods/bf1942/Settings/Default/VideoCustom.con
 share/Battlefield1942/Mods/bf1942/Settings/Default/VideoHigh.con
 share/Battlefield1942/Mods/bf1942/Settings/Default/VideoLow.con
 share/Battlefield1942/Mods/bf1942/Settings/Default/VideoMedium.con
-share/Battlefield1942/Mods/bf1942/Settings/GeneralOptions.con
-share/Battlefield1942/Mods/bf1942/Settings/Profile.con
-share/Battlefield1942/Mods/bf1942/Settings/ServerSettings.con
-share/Battlefield1942/Mods/bf1942/Settings/Sound.con
-share/Battlefield1942/Mods/bf1942/Settings/Video.con
-share/Battlefield1942/Mods/bf1942/Settings/VideoDefault.con
-share/Battlefield1942/Mods/bf1942/Settings/maplist.con
 share/Battlefield1942/Mods/bf1942/bfdist.vlu
 share/Battlefield1942/Mods/bf1942/contentCrc32.con
 share/Battlefield1942/Mods/bf1942/lexiconAll.dat

@@ -1,7 +1,14 @@
 #!/bin/sh
 export CHROME_PATH="proton-e"
-mkdir -p "$HOME/.config/Battlefield 1942"
+mkdir -p "$HOME/.config/Battlefield 1942/Mods/bf1942/Settings"
+cp    -R /usr/local/share/Battlefield1942/Mods/bf1942/Settings/*  "$HOME/.config/Battlefield 1942/Mods/bf1942/Settings"
 export WINEPREFIX="$HOME/.config/Battlefield 1942/proton"
-cd   "$HOME/.config/Battlefield 1942"
-ln -s /usr/local/share/Battlefield1942/Mods  Mods
+cd    "$HOME/.config/Battlefield 1942/Mods/bf1942"
+ln -s "/usr/local/share/Battlefield1942/Mods/bf1942/Archives"  Archives
+ln -s "/usr/local/share/Battlefield1942/Mods/bf1942/Movies"  Movies
+ln -s "/usr/local/share/Battlefield1942/Mods/bf1942/Music"  Music
+ln -s "/usr/local/share/Battlefield1942/Mods/bf1942/contentCrc32.con"  contentCrc32.con
+ln -s "/usr/local/share/Battlefield1942/Mods/bf1942/Init.con"  Init.con
+ln -s "/usr/local/share/Battlefield1942/Mods/bf1942/lexiconAll.dat"  lexiconAll.dat
+cd    "$HOME/.config/Battlefield 1942/"
 exec "$CHROME_PATH"  "/usr/local/share/Battlefield1942/BF1942.exe" +restart 1 "$@"

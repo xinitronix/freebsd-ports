@@ -22,6 +22,6 @@ do-install:
 		${CP} -r     ${WRKDIR}/usr/local/                                    ${STAGEDIR}${PREFIX}/share/AIMP
 		${CP} -r     ${WRKDIR}/${PORTNAME}-${DISTVERSION}/AIMP/*             ${STAGEDIR}${PREFIX}/share/AIMP
 		${CP}        files/aimp.desktop                                      ${STAGEDIR}${PREFIX}/share/applications
-		mkdir  -p    ${STAGEDIR}${PREFIX}/share/AIMP/Profile
+		mkdir  -p       ${STAGEDIR}${PREFIX}/share/AIMP/Profile
 		chmod -R 0776 	${STAGEDIR}${PREFIX}/share/AIMP/Profile
 .include <bsd.port.mk>

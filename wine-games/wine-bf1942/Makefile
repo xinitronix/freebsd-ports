@@ -23,7 +23,6 @@ do-install:
 	cd ${WRKSRC}/ && ${CP} -r Battlefield1942    ${STAGEDIR}${PREFIX}/share/
 	cp files/bf1942.png                          ${STAGEDIR}${PREFIX}/share/pixmaps
 	cp files/bf1942.desktop                      ${STAGEDIR}${PREFIX}/share/applications
-	chmod -R 0776 	                             ${STAGEDIR}${PREFIX}/share/Battlefield1942/Mods
-post-install:
-		chmod -R 0776 	                     /usr/local/share/Battlefield1942/Mods
+	rm -R                                        ${STAGEDIR}${PREFIX}/share/Battlefield1942/Mods/bf1942/Settings
+	cp -R files/Settings                         ${STAGEDIR}${PREFIX}/share/Battlefield1942/Mods/bf1942/
 .include <bsd.port.mk>

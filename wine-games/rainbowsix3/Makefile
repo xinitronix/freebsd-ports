@@ -24,6 +24,6 @@ do-install:
 	cd ${WRKSRC}/ && ${CP} -r rainbowsix3    ${STAGEDIR}${PREFIX}/share/
 	rm -R                                    ${STAGEDIR}${PREFIX}/share/rainbowsix3/Save
 	cp -R files/Save                         ${STAGEDIR}${PREFIX}/share/rainbowsix3/
-	chmod -R 0776                             ${STAGEDIR}${PREFIX}/share/rainbowsix3/Save
+	chmod -R 0776                            ${STAGEDIR}${PREFIX}/share/rainbowsix3/Save
 	cp files/rainbowsix3.desktop             ${STAGEDIR}${PREFIX}/share/applications
 .include <bsd.port.mk>
