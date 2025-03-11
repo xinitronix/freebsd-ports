@@ -1,0 +1,108 @@
+
+bin/lightalloy
+share/applications/lightalloy.desktop
+%%DATADIR%%/Bass/bass.dll
+%%DATADIR%%/Bass/bass_aac.dll
+%%DATADIR%%/Bass/bass_flac.dll
+%%DATADIR%%/Bass/bass_hls.dll
+%%DATADIR%%/Bass/bass_midi.dll
+%%DATADIR%%/Bass/bass_opus.dll
+%%DATADIR%%/Bass/bass_tags.dll
+%%DATADIR%%/Bass/bass_wma.dll
+%%DATADIR%%/Icons/Dub.icl
+%%DATADIR%%/Icons/Dub.xml
+%%DATADIR%%/Icons/Metro Black.icl
+%%DATADIR%%/Icons/Metro Black.xml
+%%DATADIR%%/Icons/PK69.icl
+%%DATADIR%%/Icons/PK69.xml
+%%DATADIR%%/Icons/Plasma.icl
+%%DATADIR%%/Icons/Plasma.xml
+%%DATADIR%%/LA.exe
+%%DATADIR%%/LA.portable
+%%DATADIR%%/LABassSrc.ax
+%%DATADIR%%/LADsp.dll
+%%DATADIR%%/LAadd.ico
+%%DATADIR%%/LAplay.ico
+%%DATADIR%%/Langs/Hongkongese.txt
+%%DATADIR%%/Langs/Hungarian.txt
+%%DATADIR%%/Langs/Portuguese (Brazil).txt
+%%DATADIR%%/Langs/Simplified Chinese.txt
+%%DATADIR%%/Langs/Turkish.txt
+%%DATADIR%%/Langs/belarusian.txt
+%%DATADIR%%/Langs/bulgarian.txt
+%%DATADIR%%/Langs/czech.txt
+%%DATADIR%%/Langs/dutch.txt
+%%DATADIR%%/Langs/english.txt
+%%DATADIR%%/Langs/french.txt
+%%DATADIR%%/Langs/german.txt
+%%DATADIR%%/Langs/italian.txt
+%%DATADIR%%/Langs/japanese.txt
+%%DATADIR%%/Langs/korean.txt
+%%DATADIR%%/Langs/polish.txt
+%%DATADIR%%/Langs/romanian.txt
+%%DATADIR%%/Langs/russian.txt
+%%DATADIR%%/Langs/slovak.txt
+%%DATADIR%%/Langs/spanish.txt
+%%DATADIR%%/Langs/ukrainian.txt
+%%DATADIR%%/Plugins/AviSynth/BlockBuster.avs
+%%DATADIR%%/Plugins/AviSynth/Clean2D.avs
+%%DATADIR%%/Plugins/AviSynth/Version.avs
+%%DATADIR%%/Plugins/AviSynth/VersionFaded.avs
+%%DATADIR%%/Radio/EN ABC Lounge.lau
+%%DATADIR%%/Radio/EN ABC Love.lau
+%%DATADIR%%/Radio/EN Acoustic Guitar.lau
+%%DATADIR%%/Radio/EN Cinemix.lau
+%%DATADIR%%/Radio/RU Chillout Radio.lau
+%%DATADIR%%/Radio/RU Radio Premium.lau
+%%DATADIR%%/Radio/RU Record Russian Mix.lau
+%%DATADIR%%/Radio/RU Spokoinoe Radio.lau
+%%DATADIR%%/Report/Extended HTML.txt
+%%DATADIR%%/Shaders/0-255 to 16-235.psh
+%%DATADIR%%/Shaders/16-235 to 0-255 [SD].psh
+%%DATADIR%%/Shaders/16-235 to 0-255 [SD][HD].psh
+%%DATADIR%%/Shaders/3D OAU GreenMagenta.psh
+%%DATADIR%%/Shaders/3D OAU RedCyan.psh
+%%DATADIR%%/Shaders/3D OAU to 2D.psh
+%%DATADIR%%/Shaders/3D SBS GreenMagenta.psh
+%%DATADIR%%/Shaders/3D SBS RedCyan.psh
+%%DATADIR%%/Shaders/3D SBS to 2D.psh
+%%DATADIR%%/Shaders/BT.601 to BT.709.psh
+%%DATADIR%%/Shaders/LCD angle correction.psh
+%%DATADIR%%/Shaders/Levels.psh
+%%DATADIR%%/Shaders/Levels2.psh
+%%DATADIR%%/Shaders/Sharpen_3x3.psh
+%%DATADIR%%/Shaders/Sharpen_5x5.psh
+%%DATADIR%%/Shaders/YV12 Chroma Upsampling.psh
+%%DATADIR%%/Shaders/contour.psh
+%%DATADIR%%/Shaders/deinterlace (blend).psh
+%%DATADIR%%/Shaders/denoise.psh
+%%DATADIR%%/Shaders/edge sharpen.psh
+%%DATADIR%%/Shaders/emboss.psh
+%%DATADIR%%/Shaders/grayscale.psh
+%%DATADIR%%/Shaders/invert.psh
+%%DATADIR%%/Shaders/letterbox.psh
+%%DATADIR%%/Shaders/sharpen complex 2.psh
+%%DATADIR%%/Shaders/sharpen complex.psh
+%%DATADIR%%/Shaders/sharpen flou.psh
+%%DATADIR%%/Shaders/sharpen.psh
+%%DATADIR%%/Skins/Ei8ht.las
+%%DATADIR%%/Skins/Flattery black.las
+%%DATADIR%%/Skins/Illusion.las
+%%DATADIR%%/Skins/N10.las
+%%DATADIR%%/Skins/Omega Audio.las
+%%DATADIR%%/Skins/PK-69 dark.las
+%%DATADIR%%/Skins/PK-69.las
+%%DATADIR%%/Skins/Sky Audio.las
+%%DATADIR%%/Skins/Sky.las
+%%DATADIR%%/Skins/Webform.las
+%%DATADIR%%/Skins/XP_Blue.las
+%%DATADIR%%/VTRenderer.dll
+%%DATADIR%%/d3dcompiler_47.dll
+%%DATADIR%%/d3dx9_43.dll
+%%DATADIR%%/libeay32.dll
+%%DATADIR%%/msvcp100.dll
+%%DATADIR%%/msvcp120.dll
+%%DATADIR%%/msvcr100.dll
+%%DATADIR%%/msvcr120.dll
+%%DATADIR%%/ssleay32.dll
+%%DATADIR%%/wheeltray.dll

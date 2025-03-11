@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/lightalloy
+export VK_ICD_FILENAMES="/usr/local/share/vulkan/icd.d/nvidia_icd.json"
+export WINE_PATH="wine"
+export MC_PATH="/usr/local/share/lightalloy/LA.exe"
+export WINEPREFIX="$HOME/.config/lightalloy/wine"
+
+exec  "$WINE_PATH" "$MC_PATH"   "$@"
+
+
+
+
