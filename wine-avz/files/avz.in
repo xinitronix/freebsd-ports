@@ -1,0 +1,12 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/avz
+export WINE_PATH="wine"
+export MC_PATH="/usr/local/share/avz/avz.exe"
+export WINEPREFIX="$HOME/.config/avz/wine"
+
+exec  "$WINE_PATH" "$MC_PATH"   "$@"
+
+
+
+

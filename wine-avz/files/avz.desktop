@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=AVZ (Wine)
+Comment=
+Exec=avz
+Icon=/usr/local/share/avz5/avz.png
+Terminal=false
+Type=Application
+Categories=Audio;
+StartupWMClass=avz.exe
+
+
+
+
