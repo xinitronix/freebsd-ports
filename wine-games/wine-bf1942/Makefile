@@ -4,7 +4,7 @@ CATEGORIES=	games
 MASTER_SITES=	https://github.com/definitly486/wine-games/releases/download/Battlefield1942/
 DISTNAME=	Battlefield1942
 PKGNAMEPREFIX=	wine-
-COMMENT=        game  "Battlefield 1942"
+COMMENT=        game  "Battlefield 1942" wine
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 
