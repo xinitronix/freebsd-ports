@@ -11,7 +11,6 @@ ln -s /usr/local/share/rFactor/Plugins Plugins
 ln -s /usr/local/share/rFactor/ReplayFridge ReplayFridge
 ln -s /usr/local/share/rFactor/rFm rFm
 ln -s /usr/local/share/rFactor/UIData UIData
-ln -s /usr/local/share/rFactor/UserData
 ln -s /usr/local/share/rFactor/MovieFiles MovieFiles
 winetricks d3dx9 
 exec "$CHROME_PATH"  "/usr/local/share/rFactor/rFactor.exe" "$@"
