@@ -1,7 +1,7 @@
 PORTNAME=	rfactor
 PORTVERSION=	${CHROME_VER}
 CATEGORIES=	games 
-MASTER_SITES=	https://github.com/definitly486/wine-games/releases/download/rFactor/
+MASTER_SITES=	https://github.com/definitly486/wine-games/releases/download/rFactor/ 
 DISTNAME=	rFactor
 PKGNAMEPREFIX=	wine-
 COMMENT=        game  "rFactor" wine
@@ -23,6 +23,4 @@ do-install:
 	cd ${WRKSRC}/ && ${CP} -r  rFactor           ${STAGEDIR}${PREFIX}/share/
 	cp files/rfactor.png                         ${STAGEDIR}${PREFIX}/share/pixmaps
 	cp files/rfactor.desktop                     ${STAGEDIR}${PREFIX}/share/applications
-#	rm -R                                        ${STAGEDIR}${PREFIX}/share/Battlefield1942/Mods/bf1942/Settings
-#	cp -R files/Settings                         ${STAGEDIR}${PREFIX}/share/Battlefield1942/Mods/bf1942/
 .include <bsd.port.mk>

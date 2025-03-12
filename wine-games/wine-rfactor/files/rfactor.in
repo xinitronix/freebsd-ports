@@ -2,6 +2,8 @@
 export CHROME_PATH="proton-e"
 mkdir -p "$HOME/.config/rFactor"
 export WINEPREFIX="$HOME/.config/rFactor/proton"
+export WINESERVER="/usr/local/wine-proton-e/bin/wineserver"
+export WINE=/usr/local/wine-proton-e/bin/wine64
 cd   "$HOME/.config/rFactor/"
 ln -s /usr/local/share/rFactor/GameData  GameData
 ln -s /usr/local/share/rFactor/Music Music
@@ -11,4 +13,5 @@ ln -s /usr/local/share/rFactor/rFm rFm
 ln -s /usr/local/share/rFactor/UIData UIData
 ln -s /usr/local/share/rFactor/UserData
 ln -s /usr/local/share/rFactor/MovieFiles MovieFiles
+winetricks d3dx9 
 exec "$CHROME_PATH"  "/usr/local/share/rFactor/rFactor.exe" "$@"
