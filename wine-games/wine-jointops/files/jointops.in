@@ -1,0 +1,14 @@
+#!/bin/sh
+export CHROME_PATH="proton-e"
+mkdir -p "$HOME/.config/Joint Operations: Typhoon Rising"
+export WINEPREFIX="$HOME/.config/Joint Operations: Typhoon Rising/proton"
+cd   "$HOME/.config/Joint Operations: Typhoon Rising/"
+ln -s /usr/local/share/jointops/resource.pff   resource.pff
+ln -s /usr/local/share/jointops/localres.pff   localres.pff
+ln -s /usr/local/share/jointops/language.pff   language.pff
+ln -s /usr/local/share/jointops/main.bik  main.bik
+ln -s /usr/local/share/jointops/intro.bik intro.bik
+ln -s /usr/local/share/jointops/header.bik header.bik
+ln -s /usr/local/share/jointops/footer.bik footer.bik
+
+exec "$CHROME_PATH"  "/usr/local/share/jointops/jointops.exe" "$@"

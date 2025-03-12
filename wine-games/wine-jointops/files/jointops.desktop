@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Joint Operations: Typhoon Rising (Wine)
+Exec=/usr/local/bin/jointops %U
+StartupNotify=true
+Terminal=false
+Icon=jointops
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;
