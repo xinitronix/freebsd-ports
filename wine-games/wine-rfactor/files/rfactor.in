@@ -1,0 +1,14 @@
+#!/bin/sh
+export CHROME_PATH="proton-e"
+mkdir -p "$HOME/.config/rFactor"
+export WINEPREFIX="$HOME/.config/rFactor/proton"
+cd   "$HOME/.config/rFactor/"
+ln -s /usr/local/share/rFactor/GameData  GameData
+ln -s /usr/local/share/rFactor/Music Music
+ln -s /usr/local/share/rFactor/Plugins Plugins
+ln -s /usr/local/share/rFactor/ReplayFridge ReplayFridge
+ln -s /usr/local/share/rFactor/rFm rFm
+ln -s /usr/local/share/rFactor/UIData UIData
+ln -s /usr/local/share/rFactor/UserData
+ln -s /usr/local/share/rFactor/MovieFiles MovieFiles
+exec "$CHROME_PATH"  "/usr/local/share/rFactor/rFactor.exe" "$@"

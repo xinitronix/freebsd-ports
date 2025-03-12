@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=rFactor (Wine)
+Exec=/usr/local/bin/rfactor %U
+StartupNotify=true
+Terminal=false
+Icon=rfactor
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;
