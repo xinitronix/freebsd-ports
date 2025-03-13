@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Halo: Combat Evolved (Wine)
+Exec=/usr/local/bin/halo %U
+StartupNotify=true
+Terminal=false
+Icon=halo
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;
