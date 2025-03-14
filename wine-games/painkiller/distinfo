@@ -1,3 +1,5 @@
-TIMESTAMP = 1741900663
-SHA256 (Halo.tar.xz) = 4fd9d3b0fc6036a7b7910dac40fe01d26d933ddb3d1fac8a7919b81486e523b4
-SIZE (Halo.tar.xz) = 526793236
+TIMESTAMP = 1741933257
+SHA256 (painkiller.tar.xz.part_aa) = e7fbd44e8b8a8f823020c82764cdabcecc13f7f53fd1e25c80d89d1104bb1df4
+SIZE (painkiller.tar.xz.part_aa) = 1941527390
+SHA256 (painkiller.tar.xz.part_ab) = c036e5305af25b12465e7855b8614a71a524f12ba84a412d9d21e83c1270323a
+SIZE (painkiller.tar.xz.part_ab) = 1941527390

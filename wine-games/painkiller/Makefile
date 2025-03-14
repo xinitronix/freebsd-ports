@@ -10,15 +10,23 @@ NO_WRKSUBDIR=	yes
 
 CHROME_VER?=	v0.0.1
 
+#RUN_DEPENDS=    wine-proton-e>0:emulators/wine-proton-e
+
 SUB_FILES=	painkiller
 
 do-extract:
-	cat  ${DISTDIR}/thething.part_*  >  ${WRKSRC}/thething.tar.xz
-	tar -xvf ${WRKSRC}/thething.tar.xz  -C  ${WRKSRC}
+	cat  ${DISTDIR}/painkiller.tar.xz.part_*  >  ${WRKSRC}/painkiller.tar.xz
+	tar -xvf ${WRKSRC}/painkiller.tar.xz  -C     ${WRKSRC}
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/painkiller            ${STAGEDIR}${PREFIX}/bin
 	mkdir -p                                          ${STAGEDIR}${PREFIX}/share/GOG
 	cd ${WRKSRC}/ && ${CP} -r   painkiller            ${STAGEDIR}${PREFIX}/share/GOG
+	rm -R                                             ${STAGEDIR}${PREFIX}/share/GOG/painkiller/SaveGames
+	mkdir -p 					  ${STAGEDIR}${PREFIX}/share/GOG/painkiller/SaveGames
+	chmod -R  0776	                                  ${STAGEDIR}${PREFIX}/share/GOG/painkiller/SaveGames/
+	rm -R                                             ${STAGEDIR}${PREFIX}/share/GOG/painkiller/Bin/config.ini
+	touch   					  ${STAGEDIR}${PREFIX}/share/GOG/painkiller/Bin/config.ini
+	chmod -R  0776	                                  ${STAGEDIR}${PREFIX}/share/GOG/painkiller/Bin/config.ini
 	cp files/painkiller.desktop                       ${STAGEDIR}${PREFIX}/share/applications
 .include <bsd.port.mk>
