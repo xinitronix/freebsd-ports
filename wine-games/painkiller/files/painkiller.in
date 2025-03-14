@@ -13,4 +13,4 @@ cd   "$HOME/.config/Painkiller/"
 #ln -s /usr/local/share/rFactor/UIData UIData
 #ln -s /usr/local/share/rFactor/MovieFiles MovieFiles
 #winetricks d3dx9
-exec "$CHROME_PATH"  "/usr/local/share/GOG/painkiller/Painkiller.exe" "$@"
+exec "$CHROME_PATH"  "/usr/local/share/GOG/painkiller/Bin/Painkiller.exe" "$@"
