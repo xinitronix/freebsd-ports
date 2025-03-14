@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name= Call of Juarez (Wine)
+Exec=/usr/local/bin/coj %U
+StartupNotify=true
+Terminal=false
+Icon=coj
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;
