@@ -1,18 +1,16 @@
 #!/bin/sh
 export CHROME_PATH="proton-e"
-mkdir -p "$HOME/.config/Halo"
-export WINEPREFIX="$HOME/.config/Halo/proton"
+mkdir -p "$HOME/.config/Painkiller"
+export WINEPREFIX="$HOME/.config/Painkiller/proton"
 export WINESERVER="/usr/local/wine-proton-e/bin/wineserver"
 export WINE=/usr/local/wine-proton-e/bin/wine64
-cd   "$HOME/.config/Halo/"
-ln -s /usr/local/share/Halo/MAPS MAPS
-ln -s /usr/local/share/Halo/SHADERS SHADERS
-ln -s /usr/local/share/Halo/CONTENT CONTENT
-ln -s /usr/local/share/Halo/CONTROLS CONTROLS
+cd   "$HOME/.config/Painkiller/"
+#ln -s /usr/local/share/Halo/MAPS MAPS
+#ln -s /usr/local/share/Halo/SHADERS SHADERS
+#ln -s /usr/local/share/Halo/CONTENT CONTENT
+#ln -s /usr/local/share/Halo/CONTROLS CONTROLS
 #ln -s /usr/local/share/rFactor/rFm rFm
 #ln -s /usr/local/share/rFactor/UIData UIData
 #ln -s /usr/local/share/rFactor/MovieFiles MovieFiles
 #winetricks d3dx9
-touch config.txt
-exec "$CHROME_PATH"  reg import "/usr/local/share/Halo/halo.reg" &
-exec "$CHROME_PATH"  "/usr/local/share/Halo/halo.exe" "$@"
+exec "$CHROME_PATH"  "/usr/local/share/GOG/painkiller/Painkiller.exe" "$@"
