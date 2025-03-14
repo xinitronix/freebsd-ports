@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name= Tom Clancy's Splinter Cell: Pandora Tomorrow (Wine)
+Exec=/usr/local/bin/pandora %U
+StartupNotify=true
+Terminal=false
+Icon=pandora
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;
