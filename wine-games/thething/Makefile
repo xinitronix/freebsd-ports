@@ -2,7 +2,6 @@ PORTNAME=	thething
 PORTVERSION=	${CHROME_VER}
 CATEGORIES=	games 
 MASTER_SITES=	https://github.com/definitly486/wine-games/releases/download/v0.0.1/ 
-                
 DISTFILES= 	thething.part_aa thething.part_ab
 PKGNAMEPREFIX=	wine-
 COMMENT=        game GOG version "The Thing: Remastered"
