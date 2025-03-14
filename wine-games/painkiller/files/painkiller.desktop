@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name= Painkiller: Black Edition GOG (Wine)
+Exec=/usr/local/bin/painkiller %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/GOG/painkiller/AA98_goggame-1207658715.0.png
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;
