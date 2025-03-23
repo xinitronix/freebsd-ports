@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name= Tom Clancy's Splinter Cell (Wine)
+Exec=/usr/local/bin/sprintell %U
+StartupNotify=true
+Terminal=false
+Icon=sprintell
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;

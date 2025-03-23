@@ -1,0 +1,29 @@
+#!/bin/sh
+
+order=$(ls -l /usr/local/share/ | grep TCSC | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/)   *2^(8-i));if(k)printf("%0o ",k);print}' | awk '{print $1}')
+
+if [ "776" = "$order"  ] ; then
+
+pkg=$(pkg info | grep wine-proton-e)
+
+if [ -n  $pkg ]; then 
+
+zenity --warning --text="wine-proton-e не установлен" --width=300
+
+else 
+
+export CHROME_PATH="proton-e"
+mkdir -p "$HOME/.config/Splinter Cell"
+cp    /usr/local/share/TCSC/tcsc.gamecontroller.amgp "$HOME/.config/Splinter Cell"
+export WINEPREFIX="$HOME/.config/Splinter Cell/proton"
+export WINESERVER="/usr/local/wine-proton-e/bin/wineserver"
+export WINE=/usr/local/wine-proton-e/bin/wine64
+exec "$CHROME_PATH"  "/usr/local/share/TCSC/system/SplinterCell.exe" "$@"
+
+fi 
+
+else 
+
+zenity --warning --text="установить права 0776 на папку /usr/local/share/TCSC" --width=300
+
+fi
