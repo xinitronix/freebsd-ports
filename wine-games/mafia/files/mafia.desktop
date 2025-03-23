@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name= Mafia: The City of Lost Heaven (Wine)
+Exec=/usr/local/bin/mafia %U
+StartupNotify=true
+Terminal=false
+Icon=mafia
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;

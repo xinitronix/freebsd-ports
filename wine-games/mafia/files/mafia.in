@@ -1,0 +1,7 @@
+#!/bin/sh
+export CHROME_PATH="proton-e"
+mkdir -p "$HOME/.config/Mafia"
+export WINEPREFIX="$HOME/.config/Mafia/proton"
+export WINESERVER="/usr/local/wine-proton-e/bin/wineserver"
+export WINE=/usr/local/wine-proton-e/bin/wine64
+exec "$CHROME_PATH"  "/usr/local/share/GOG/Mafia/MafiaSetupXPHotfix.exe" "$@"
