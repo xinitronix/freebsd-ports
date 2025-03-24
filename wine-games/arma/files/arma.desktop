@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name= Arma: Armed Assault (Wine)
+Exec=/usr/local/bin/arma %U
+StartupNotify=true
+Terminal=false
+Icon=arma
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;
