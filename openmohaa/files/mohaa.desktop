@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name= Medal of Honor: Allied Assault 
+Exec=/usr/local/lib/openmohaa/openmohaa.x86_64 %U
+StartupNotify=true
+Terminal=false
+Icon=mohaa
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;

@@ -1,0 +1,15 @@
+
+lib/openmohaa/cgame.x86_64.so
+lib/openmohaa/game.x86_64.so
+lib/openmohaa/launch_openmohaa_base.x86_64
+lib/openmohaa/launch_openmohaa_breakthrough.x86_64
+lib/openmohaa/launch_openmohaa_spearhead.x86_64
+lib/openmohaa/omohaaded.x86_64
+lib/openmohaa/openmohaa.x86_64
+share/applications/mohaa.desktop
+share/applications/org.openmoh.openmohaa.desktop
+share/applications/org.openmoh.openmohaab.desktop
+share/applications/org.openmoh.openmohaas.desktop
+share/icons/hicolor/symbolic/apps/org.openmoh.openmohaa.svg
+share/metainfo/org.openmoh.openmohaa.metainfo.xml
+share/pixmaps/mohaa.png
