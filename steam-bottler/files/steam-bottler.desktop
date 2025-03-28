@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment=Launches steam-bottler
+Exec=steam-bottler
+Icon=steam-bottler
+Categories=Game;
+Name=steam-bottler
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application

@@ -1,0 +1,5 @@
+
+bin/steam-bottler
+share/applications/steam-bottler-Configurator.desktop
+share/applications/steam-bottler.desktop
+share/pixmaps/steam-bottler.png

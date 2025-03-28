@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment=Launches steam-bottler configurator application
+Exec=steam-bottler configure
+Icon=steam-bottler-configurator
+Categories=Game;
+Name=steam-bottler Configurator
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
