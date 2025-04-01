@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Nvtop
+
+Icon=nvtop
+Exec=nvtop
+Terminal=true
+Categories=System;Monitor;ConsoleOnly;
+Keywords=system;process;task
