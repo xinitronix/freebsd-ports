@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=WebCatalog (Linux)
+Exec=webcatalog --no-sandbox %U
+Terminal=false
+Type=Application
+Icon=//usr/local/share/pixmaps/@webcatalogdesktop.png
+StartupWMClass=WebCatalog
+X-AppImage-Version=65.3.0
+Comment=App store for web apps
+MimeType=x-scheme-handler/webcatalog;
+Categories=Network;
