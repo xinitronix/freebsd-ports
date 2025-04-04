@@ -1,0 +1,10 @@
+
+bin/kylin-video
+share/applications/kylin-video.desktop
+%%DATADIR%%/translations/kylin-video_bo.qm
+%%DATADIR%%/translations/kylin-video_fr.qm
+%%DATADIR%%/translations/kylin-video_pt.qm
+%%DATADIR%%/translations/kylin-video_ru.qm
+%%DATADIR%%/translations/kylin-video_zh_CN.qm
+%%DATADIR%%/translations/qtbase_zh_CN.qm
+share/pixmaps/kylin-video.png
