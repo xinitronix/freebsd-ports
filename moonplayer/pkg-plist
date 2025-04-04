@@ -1,0 +1,11 @@
+
+bin/moonplayer
+bin/moonplayer-hlsdl
+share/applications/com.github.coslyk.MoonPlayer.desktop
+share/icons/hicolor/128x128/apps/com.github.coslyk.MoonPlayer.png
+share/icons/hicolor/16x16/apps/com.github.coslyk.MoonPlayer.png
+share/icons/hicolor/24x24/apps/com.github.coslyk.MoonPlayer.png
+share/icons/hicolor/32x32/apps/com.github.coslyk.MoonPlayer.png
+share/icons/hicolor/48x48/apps/com.github.coslyk.MoonPlayer.png
+share/icons/hicolor/64x64/apps/com.github.coslyk.MoonPlayer.png
+share/metainfo/com.github.coslyk.MoonPlayer.appdata.xml
