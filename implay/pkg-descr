@@ -1,0 +1,3 @@
+ImPlay is a Cross-Platform Desktop Media Player, built on top of mpv and ImGui.
+
+ImPlay aims to be mpv compatible, which means almost all mpv features from the manual are (or will be) available.

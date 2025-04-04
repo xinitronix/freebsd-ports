@@ -16,7 +16,7 @@ GH_ACCOUNT=	Snawoot
 
 do-build:
 
-		cd  ${WRKSRC}/  && make
+		cd  ${WRKSRC}/  && gmake
 do-install:
 	
 		cp 	${WRKSRC}/bin/hola-proxy       ${STAGEDIR}${PREFIX}/bin
