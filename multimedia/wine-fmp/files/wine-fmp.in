@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/fmp
+
+export WINE_PATH="/usr/local/bin/wine"
+export MC_PATH="/usr/local/share/FreeMediaPlayer"
+export WINEPREFIX="$HOME/.config/fmp/wine"
+
+exec  "$WINE_PATH" "$MC_PATH/Free Media Player.exe"   "$@"
+
+
+
+

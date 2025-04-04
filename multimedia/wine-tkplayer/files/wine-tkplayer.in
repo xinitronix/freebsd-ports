@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/TKPlayer
+
+export WINE_PATH="/usr/local/bin/wine"
+export MC_PATH="/usr/local/share/TKPlayer"
+export WINEPREFIX="$HOME/.config/TKPlayer/wine"
+
+exec  "$WINE_PATH" "$MC_PATH/TKPlayer.exe"   "$@"
+
+
+
+
