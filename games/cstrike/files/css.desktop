@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Counter-Strike: Source
+Exec=/usr/local/bin/css
+StartupNotify=true
+Terminal=false
+Icon=css
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;

@@ -1,0 +1,7 @@
+#!/bin/sh
+mkdir $HOME/.config/cstrike
+cd    $HOME/.config/cstrike
+ln -s /usr/local/share/cstrike/bin bin
+ln -s /usr/local/share/cstrike/hl2_launcher hl2_launcher
+ln -s "/home/definitly/2TB/steam-bottler/drive_c/Program Files (x86)/Steam/steamapps/common/Counter-Strike Source/cstrike" cstrike
+./hl2_launcher -game cstrike
