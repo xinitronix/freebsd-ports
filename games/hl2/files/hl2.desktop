@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Half-Life 2
+Exec=/usr/local/bin/hl2
+StartupNotify=true
+Terminal=false
+Icon=hl2
+Type=Application
+Categories=Game
+Actions=new-window;new-private-window;

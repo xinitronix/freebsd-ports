@@ -1,0 +1,8 @@
+#!/bin/sh
+
+mkdir $HOME/.config/HL2
+cd    $HOME/.config/HL2
+ln -s /usr/local/share/HL2/bin bin
+ln -s /usr/local/share/HL2/hl2_launcher hl2_launcher
+ln -s "/ntfs-2TB/steam-bottler/drive_c/Program Files (x86)/Steam/steamapps/common/Half-Life 2/hl2" hl2
+./hl2_launcher -games hl2
