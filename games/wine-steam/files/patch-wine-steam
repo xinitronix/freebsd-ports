@@ -1,5 +1,5 @@
 --- src/steam-bottler.orig	2025-04-09 22:24:59.031380000 +0300
-+++ src/steam-bottler	2025-04-09 23:40:06.965857000 +0300
++++ src/steam-bottler	2025-04-10 00:27:06.921918000 +0300
 @@ -5,23 +5,39 @@
          exit 1
  fi
@@ -43,7 +43,12 @@
          ;;
  
  "install")
-@@ -100,7 +116,7 @@
+@@ -96,11 +112,11 @@
+ 
+         zenity --info --text="Let's install DXVK and required fonts for Steam and video games to function properly, along with creating our prefix."
+ 
+-        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/bin/wine winetricks dxvk corefonts
++        WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks dxvk corefonts
  
          zenity --info --text="The next step will install Steam."
  
@@ -65,7 +70,7 @@
          zenity --info --text="Hello! It appears you have reached the end of the steam-bottler installer. If you experience any issues, please report them at https://github.com/es-j3/steam-bottler/issues. Thanks for using this program!"
  
 -        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks sound=pulse
-+        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/bin/wine winetricks sound=pulse
++        WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks sound=pulse
  
 -        WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer" /t "REG_SZ" /d "" /f
 -        WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer64" /t "REG_SZ" /d "" /f
@@ -77,7 +82,14 @@
          ;;
  
  "configure")
-@@ -203,12 +219,12 @@
+@@ -197,18 +213,18 @@
+ 
+                         DXVK_HUD="${CHOICES:-0}"
+ 
+-                        env DXVK_HUD="$DXVK_HUD" steam-bottler
++                        env DXVK_HUD="$DXVK_HUD" wine-steam
+                         ;;
+ 
                  "Run an EXE")
                          EXECUTABLE=$(zenity --file-selection --title="Choose an executable to run")
                          if [ -n "$EXECUTABLE" ]; then
