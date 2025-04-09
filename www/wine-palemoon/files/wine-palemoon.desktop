@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Pale Moon (Wine)
+Exec=/usr/local/bin/wine-palemoon %U
+StartupNotify=true
+Terminal=false
+Icon=palemoon
+Type=Application
+MimeType=text/plain
+Categories=Network;WebBrowser;
+
+
+
+
+

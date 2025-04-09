@@ -1,0 +1,10 @@
+#!/bin/sh
+mkdir -p $HOME/.config/wine-palemoon
+export WINE_PATH="/usr/local/bin/wine64"
+export MC_PATH="/usr/local/share/wine-palemoon/palemoon.exe"
+export WINEPREFIX="$HOME/.config/wine-palemoon/wine"
+exec  "$WINE_PATH" "$MC_PATH"   "$@"
+
+
+
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment=Launches Steam (Wine)
+Exec=wine-steam
+Icon=wine-steam
+Categories=Game;
+Name=Steam (Wine)
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
