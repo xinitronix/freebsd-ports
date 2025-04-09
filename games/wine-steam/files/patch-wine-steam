@@ -1,21 +1,37 @@
 --- src/steam-bottler.orig	2025-04-09 22:24:59.031380000 +0300
-+++ src/steam-bottler	2025-04-09 22:06:59.714264000 +0300
-@@ -6,7 +6,8 @@
++++ src/steam-bottler	2025-04-09 23:40:06.965857000 +0300
+@@ -5,23 +5,39 @@
+         exit 1
  fi
  
++
++if [  -f "$HOME/.config/wine-steam/config" ]; then
++    echo "Файл $HOME/.config/wine-steam/config   существует"
++     
++     
++else
++          mkdir -p     	$HOME/.config/wine-steam/
++	  echo "WINE_DIR="/usr/local/wine-proton-e/bin"
++	  PROJECT_DIR="$HOME/.wine"
++          STEAM_DIR="/ntfs-2TB/steam-bottler"" > $HOME/.config/wine-steam/config
++fi
++
++
++. $HOME/.config/wine-steam/config
++
++
  COMMAND="$1"
 -PROJECT_DIR="$HOME/.steam-bottler"
-+PROJECT_DIR="$HOME/.wine-steam"
-+STEAM_DIR="/ntfs-2TB/steam-bottler"
  
++
  case "$COMMAND" in
  "")
-@@ -14,14 +15,14 @@
+         if [ ! -d "$PROJECT_DIR" ]; then
                  echo "Looks like steam-bottler isn't installed yet. Install it with 'steam-bottler install'"
                  exit 1
          fi
 -        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks sound=pulse && WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine "$PROJECT_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
-+        WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
++        WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
          ;;
  "oss")
          if [ ! -d "$PROJECT_DIR" ]; then
@@ -23,11 +39,28 @@
                  exit 1
          fi
 -        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks sound=oss && WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine "$PROJECT_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
-+        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/bin/wine winetricks sound=oss && WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
++        WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks sound=oss && WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
          ;;
  
  "install")
-@@ -142,12 +143,12 @@
+@@ -100,7 +116,7 @@
+ 
+         zenity --info --text="The next step will install Steam."
+ 
+-        WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine /tmp/SteamSetup.exe
++        WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine /tmp/SteamSetup.exe
+ 
+         while pgrep -f "SteamSetup.exe" >/dev/null; do
+                 sleep 1
+@@ -135,19 +151,19 @@
+         fi
+ 
+         if zenity --question --text="Do you want to enable DX12 support?"; then
+-                WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks vkd3d
++                WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks vkd3d
+         else
+                 zenity --info --text="Alright, let's move on."
+         fi
  
          zenity --info --text="Hello! It appears you have reached the end of the steam-bottler installer. If you experience any issues, please report them at https://github.com/es-j3/steam-bottler/issues. Thanks for using this program!"
  
@@ -36,46 +69,61 @@
  
 -        WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer" /t "REG_SZ" /d "" /f
 -        WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer64" /t "REG_SZ" /d "" /f
-+        WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer" /t "REG_SZ" /d "" /f
-+        WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer64" /t "REG_SZ" /d "" /f
++        WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer" /t "REG_SZ" /d "" /f
++        WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer64" /t "REG_SZ" /d "" /f
  
 -        WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine "$PROJECT_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
-+        WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
++        WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
          ;;
  
  "configure")
-@@ -203,12 +204,12 @@
+@@ -203,12 +219,12 @@
                  "Run an EXE")
                          EXECUTABLE=$(zenity --file-selection --title="Choose an executable to run")
                          if [ -n "$EXECUTABLE" ]; then
 -                                WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine "$EXECUTABLE" -no-cef-sandbox
-+                                WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine "$EXECUTABLE" -no-cef-sandbox
++                                WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine "$EXECUTABLE" -no-cef-sandbox
                          fi
                          ;;
  
                  "Run winetricks")
 -                        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks
-+                        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/bin/wine winetricks
++                        WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks
                          ;;
  
                  "Kill steam-bottler if it's frozen")
-@@ -258,15 +259,15 @@
+@@ -234,9 +250,9 @@
+                                 zenity --info --text="Alright, let's move on."
+                         fi
  
-                         WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks sound=pulse
+-                        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/bin/wine winetricks dxvk corefonts
++                        WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks dxvk corefonts
+ 
+-                        WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine /tmp/SteamSetup.exe
++                        WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine /tmp/SteamSetup.exe
+ 
+                         while pgrep -f "SteamSetup.exe" >/dev/null; do
+                                 sleep 1
+@@ -256,17 +272,17 @@
+                                 zenity --info --text="Alright, let's move on."
+                         fi
+ 
+-                        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks sound=pulse
++                        WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks sound=pulse
  
 -                        WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer" /t "REG_SZ" /d "" /f
 -                        WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer64" /t "REG_SZ" /d "" /f
-+                        WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer" /t "REG_SZ" /d "" /f
-+                        WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer64" /t "REG_SZ" /d "" /f
++                        WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer" /t "REG_SZ" /d "" /f
++                        WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine reg.exe ADD "HKEY_CURRENT_USER\Software\Wine\DllOverrides" /v "gameoverlayrenderer64" /t "REG_SZ" /d "" /f
  
 -                        WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine "$PROJECT_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
-+                        WINEPREFIX="$PROJECT_DIR" /usr/local/bin/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
++                        WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
                          ;;
  
                  "Launch Steam with no sound")
                          echo "Launching steam-bottler without sound..."
 -                        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks sound=alsa && WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine "$PROJECT_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
-+                        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/bin/wine winetricks sound=alsa && WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
++                        WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks sound=alsa && WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
                          ;;
                  esac
          done
