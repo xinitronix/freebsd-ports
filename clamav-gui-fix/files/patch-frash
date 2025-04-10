@@ -1,0 +1,26 @@
+--- src/freshclamsetter.cpp.orig	2025-04-10 20:48:11.650656000 +0300
++++ src/freshclamsetter.cpp	2025-04-10 20:57:01.133498000 +0300
+@@ -848,20 +848,12 @@
+             }
+         }
+     } else {
+-        setupFile->setSectionValue("FreshclamSettings","FreshclamLocation","not found");
+-        ui->freshclamLocationLineEdit->setText("not found");
+-        QMessageBox::warning(this,"WARNING","Freshclam is missing. Please install!",QMessageBox::Ok);
+-        setForm(false);        //emit disableUpdateButtons();
+-        emit quitApplication();
+-    }
++    
++  }  
+ }
+ 
+ void freshclamsetter::slot_clamscanLocationProcessFinished(){
+-    clamscanlocationProcessOutput = clamscanlocationProcessOutput + clamscanLocationProcess->readAll();
+-    if (clamscanlocationProcessOutput.length() < 13) {
+-        QMessageBox::warning(this,"ERROR","Clamav is missing. Please install!",QMessageBox::Ok);
+-        emit quitApplication();
+-    }
++    
+ }
+ 
+ void freshclamsetter::slot_freshclamLocationProcessHasOutput(){

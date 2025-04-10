@@ -1,0 +1,26 @@
+--- extra/ClamAV-GUI.desktop.orig	2025-04-10 21:42:18.771284000 +0300
++++ extra/ClamAV-GUI.desktop	2025-04-10 21:43:18.089687000 +0300
+@@ -1,8 +1,8 @@
+ [Desktop Entry]
+-Name=ClamAV-GUI
+-Name[de_DE]=ClamAV-GUI
+-GenericName=ClamAV-GUI
+-GenericName[de_DE]=ClamAV-GUI
++Name=ClamAV-GUI-fix
++Name[de_DE]=ClamAV-GUI-fix
++GenericName=ClamAV-GUI-fix
++GenericName[de_DE]=ClamAV-GUI-fix
+ Comment=Graphical Interface for ClamAV
+ Comment[de_DE]=Graphische Oberfläche für ClamAV
+ Comment[da_DK]=Grafisk brugerflade til ClamAV
+@@ -11,8 +11,8 @@
+ Comment[pt]=Interface gráfica para o ClamAV
+ Comment[pt_BR]=Interface gráfica para o ClamAV
+ Comment[uk]=Графічний інтерфейс для ClamAV
+-Exec=clamav-gui
+-Icon=clamav-gui
++Exec=clamav-gui-fix
++Icon=clamav-gui-fix
+ Type=Application
+ Terminal=false
+ X-KDE-StartupNotify=true

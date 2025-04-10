@@ -1,0 +1,11 @@
+--- src/clamav_gui.cpp.orig	2025-04-10 20:48:11.648425000 +0300
++++ src/clamav_gui.cpp	2025-04-10 20:59:11.789348000 +0300
+@@ -642,7 +642,7 @@
+             if (values.size() > 1) {
+                 if (values.length() > 0) setupFile->setSectionValue("Settings","SudoGUI",values[1]);
+             } else {
+-                QMessageBox::warning(this,tr("WARNING"),tr("Neither \"pkexec\" nor \"kdesu\" is installed. Please install at least one of this to apps!"));
++
+             }
+         }
+     }
