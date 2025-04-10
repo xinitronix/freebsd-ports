@@ -1,5 +1,5 @@
 --- src/steam-bottler.orig	2025-04-09 22:24:59.031380000 +0300
-+++ src/steam-bottler	2025-04-10 05:57:21.917132000 +0300
++++ src/steam-bottler	2025-04-10 07:45:18.294853000 +0300
 @@ -5,23 +5,39 @@
          exit 1
  fi
@@ -82,7 +82,7 @@
          ;;
  
  "configure")
-@@ -160,8 +176,8 @@
+@@ -160,15 +176,15 @@
          while true; do
                  CHOICE=$(zenity --ok-label="Continue" --cancel-label="Exit" \
                          --list --radiolist --window-icon="$ICO" --height=300 --width=400 \
@@ -93,12 +93,20 @@
                          --hide-header \
                          --column "Select" --column "Option" \
                          FALSE "Uninstall" \
+                         FALSE "Launch with DXVK HUD" \
+                         FALSE "Run an EXE" \
+                         FALSE "Run winetricks" \
+-                        FALSE "Kill steam-bottler if it's frozen" \
++                        FALSE "Kill wine-steam if it's frozen" \
+                         FALSE "Soft-reinstall Steam Client (save/game data is preserved)" \
+                         FALSE "Launch Steam with no sound")
+ 
 @@ -197,21 +213,21 @@
  
                          DXVK_HUD="${CHOICES:-0}"
  
 -                        env DXVK_HUD="$DXVK_HUD" steam-bottler
-+                        env DXVK_HUD="$DXVK_HUD" wine-steam
++                        env DXVK_HUD="$DXVK_HUD" WINEPREFIX="$PROJECT_DIR" $WINE_DIR/wine "$STEAM_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
                          ;;
  
                  "Run an EXE")
