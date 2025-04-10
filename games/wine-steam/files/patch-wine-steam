@@ -1,5 +1,5 @@
 --- src/steam-bottler.orig	2025-04-09 22:24:59.031380000 +0300
-+++ src/steam-bottler	2025-04-10 00:27:06.921918000 +0300
++++ src/steam-bottler	2025-04-10 05:57:21.917132000 +0300
 @@ -5,23 +5,39 @@
          exit 1
  fi
@@ -82,7 +82,18 @@
          ;;
  
  "configure")
-@@ -197,18 +213,18 @@
+@@ -160,8 +176,8 @@
+         while true; do
+                 CHOICE=$(zenity --ok-label="Continue" --cancel-label="Exit" \
+                         --list --radiolist --window-icon="$ICO" --height=300 --width=400 \
+-                        --title="steam-bottler Configurator" \
+-                        --text="Configure steam-bottler with one of the following options" \
++                        --title="wine-steam Configurator" \
++                        --text="Configure wine-steam with one of the following options" \
+                         --hide-header \
+                         --column "Select" --column "Option" \
+                         FALSE "Uninstall" \
+@@ -197,21 +213,21 @@
  
                          DXVK_HUD="${CHOICES:-0}"
  
@@ -103,7 +114,11 @@
 +                        WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks
                          ;;
  
-                 "Kill steam-bottler if it's frozen")
+-                "Kill steam-bottler if it's frozen")
++                "Kill wine-steam if it's frozen")
+                         pkill -f "wineserver"
+                         pkill -f "system32"
+                         pkill -f "Steam.exe"
 @@ -234,9 +250,9 @@
                                  zenity --info --text="Alright, let's move on."
                          fi
@@ -116,7 +131,13 @@
  
                          while pgrep -f "SteamSetup.exe" >/dev/null; do
                                  sleep 1
-@@ -256,17 +272,17 @@
+@@ -251,22 +267,22 @@
+                         pkill -f "steamwebhelper.exe"
+ 
+                         if zenity --question --text="Do you want to enable DX12 support?"; then
+-                                WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks vkd3d
++                                WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks vkd3d
+                         else
                                  zenity --info --text="Alright, let's move on."
                          fi
  
@@ -139,3 +160,22 @@
                          ;;
                  esac
          done
+@@ -301,15 +317,15 @@
+                 sleep 1
+         fi
+ 
+-        if zenity --question --text="Now finally, would you like to remove the steam-bottler application?"; then
+-                su -l root -c 'pkg remove steam-bottler'
++        if zenity --question --text="Now finally, would you like to remove the wine-steam application?"; then
++                su -l root -c 'pkg remove wine-steam'
+         else
+                 sleep 1
+         fi
+         ;;
+ 
+ *)
+-        echo "steam-bottler (run this plain to launch Steam) [oss|install|configure|remove]"
++        echo "wine-steam (run this plain to launch Steam) [oss|install|configure|remove]"
+         exit 1
+         ;;
+ esac

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment=Launches wine-steam configurator application
+Exec=wine-steam configure
+Icon=wine-steam
+Categories=Game;
+Name=wine-steam Configurator (Wine)
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application

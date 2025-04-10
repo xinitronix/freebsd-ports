@@ -24,6 +24,6 @@ PLIST_FILES=    bin/wine-steam
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/src/steam-bottler ${STAGEDIR}${PREFIX}/bin/wine-steam
 	${CP}   files/wine-steam.png   ${STAGEDIR}${PREFIX}/share/pixmaps
-
+	${CP}   files/wine-steam-Configurator.desktop  ${STAGEDIR}${PREFIX}/share/applications
 	${CP}   files/wine-steam.desktop   ${STAGEDIR}${PREFIX}/share/applications
 .include <bsd.port.mk>
