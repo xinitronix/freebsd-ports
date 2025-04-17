@@ -1,5 +1,5 @@
---- src/steam-bottler.orig	2025-04-09 22:24:59.031380000 +0300
-+++ src/steam-bottler	2025-04-10 07:45:18.294853000 +0300
+--- src/steam-bottler.orig	2025-03-16 09:52:12.000000000 +0300
++++ src/steam-bottler	2025-04-17 08:54:51.890601000 +0300
 @@ -5,23 +5,39 @@
          exit 1
  fi
@@ -27,7 +27,8 @@
  case "$COMMAND" in
  "")
          if [ ! -d "$PROJECT_DIR" ]; then
-                 echo "Looks like steam-bottler isn't installed yet. Install it with 'steam-bottler install'"
+-                echo "Looks like steam-bottler isn't installed yet. Install it with 'steam-bottler install'"
++                echo "Looks like steam-bottler isn't installed yet. Install it with 'wine-steam install'"
                  exit 1
          fi
 -        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks sound=pulse && WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine "$PROJECT_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
@@ -35,7 +36,8 @@
          ;;
  "oss")
          if [ ! -d "$PROJECT_DIR" ]; then
-                 echo "Looks like steam-bottler isn't installed yet. Install it with 'steam-bottler install'"
+-                echo "Looks like steam-bottler isn't installed yet. Install it with 'steam-bottler install'"
++                echo "Looks like steam-bottler isn't installed yet. Install it with 'wine-steam install'"
                  exit 1
          fi
 -        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks sound=oss && WINEPREFIX="$PROJECT_DIR" /usr/local/wine-proton/bin/wine "$PROJECT_DIR"/drive_c/Program\ Files\ \(x86\)/Steam/steam.exe -cef-disable-sandbox -cef-disable-gpu-compositing -cef-in-process-gpu
@@ -57,7 +59,7 @@
  
          while pgrep -f "SteamSetup.exe" >/dev/null; do
                  sleep 1
-@@ -135,19 +151,19 @@
+@@ -135,24 +151,24 @@
          fi
  
          if zenity --question --text="Do you want to enable DX12 support?"; then
@@ -67,7 +69,8 @@
                  zenity --info --text="Alright, let's move on."
          fi
  
-         zenity --info --text="Hello! It appears you have reached the end of the steam-bottler installer. If you experience any issues, please report them at https://github.com/es-j3/steam-bottler/issues. Thanks for using this program!"
+-        zenity --info --text="Hello! It appears you have reached the end of the steam-bottler installer. If you experience any issues, please report them at https://github.com/es-j3/steam-bottler/issues. Thanks for using this program!"
++        zenity --info --text="Hello! It appears you have reached the end of the wine-steam installer. If you experience any issues, please report them at https://github.com/es-j3/steam-bottler/issues. Thanks for using this program!"
  
 -        WINEPREFIX="$PROJECT_DIR" WINE=/usr/local/wine-proton/bin/wine winetricks sound=pulse
 +        WINEPREFIX="$PROJECT_DIR" WINE=$WINE_DIR/wine winetricks sound=pulse
@@ -82,6 +85,12 @@
          ;;
  
  "configure")
+         if [ ! -d "$PROJECT_DIR" ]; then
+-                echo "Looks like steam-bottler isn't installed yet. Install it with 'steam-bottler install'"
++                echo "Looks like steam-bottler isn't installed yet. Install it with 'wine-steam install'"
+                 exit 1
+         fi
+         ICO="$HOME/.local/share/icons/hicolor/256x256/apps/steam-bottler-configurator.png"
 @@ -160,15 +176,15 @@
          while true; do
                  CHOICE=$(zenity --ok-label="Continue" --cancel-label="Exit" \
