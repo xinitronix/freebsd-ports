@@ -1,0 +1,11 @@
+--- kdelibs/kimgio/CMakeLists.txt.orig	2024-11-16 14:49:25.000000000 +0300
++++ kdelibs/kimgio/CMakeLists.txt	2025-04-30 23:09:36.936737000 +0300
+@@ -6,7 +6,7 @@
+ 
+ add_library(kimgio SHARED ${KIMGIO_SRCS})
+ set_target_properties(kimgio PROPERTIES VERSION 2.0.0 SOVERSION 2)
+-target_link_libraries(kimgio kdecore ${PNG_LIBRARY} ${JPEG_LIBRARY} ${TIFF_LIBRARY} Qt::Qt1)
++target_link_libraries(kimgio kdecore ${PNG_LIBRARY} ${JPEG_LIBRARY} ${TIFF_LIBRARY} /usr/local/lib/libtiff.so.6.1.0 Qt::Qt1)
+ install(TARGETS kimgio LIBRARY DESTINATION ${KDE1_LIBRARIES})
+ 
+ install(FILES kimgio.h DESTINATION ${KDE1_INCLUDES})

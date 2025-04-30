@@ -1,0 +1,11 @@
+--- kdeutils/CMakeLists.txt.orig	2024-11-17 20:52:29.000000000 +0300
++++ kdeutils/CMakeLists.txt	2025-04-30 23:21:24.778590000 +0300
+@@ -51,7 +51,7 @@
+ #add_subdirectory(karm)
+ add_subdirectory(khexdit)
+ #add_subdirectory(klpq)
+-add_subdirectory(ktop)
++
+ add_subdirectory(kjots)
+ #add_subdirectory(kab)
+ #add_subdirectory(ark)

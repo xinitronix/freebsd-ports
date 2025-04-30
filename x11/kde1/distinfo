@@ -1,0 +1,17 @@
+TIMESTAMP = 1746044693
+SHA256 (nishiowo-kde1-1.1.1-ga601aa5_GH0.tar.gz) = f657360d7a94b472af6f768c71db16969e8df6bfa6e05f973160524f50756cb6
+SIZE (nishiowo-kde1-1.1.1-ga601aa5_GH0.tar.gz) = 1365
+SHA256 (nishiowo-kde1-kdebase-c9ef09a62075d2542d6a496b0ce7e9391322417d_GH0.tar.gz) = 529c0fddd1a26909f1f2996c0a63eea627b164e964956e59cb5a3f415f404f30
+SIZE (nishiowo-kde1-kdebase-c9ef09a62075d2542d6a496b0ce7e9391322417d_GH0.tar.gz) = 8982396
+SHA256 (nishiowo-qt1-02c4673d20e25428c6f3e19b928d70e3dfe0514c_GH0.tar.gz) = 2f8270cff1ad0f543accaaa3570294414e045a7ad1a3a576799b34eace54723a
+SIZE (nishiowo-qt1-02c4673d20e25428c6f3e19b928d70e3dfe0514c_GH0.tar.gz) = 2897472
+SHA256 (nishiowo-kde1-kdegames-81e3523b30451e9ee36fd597b92023bc296985ed_GH0.tar.gz) = 45542247b47be1703addf2e4ce0a3fb66b0808f065ca7e5903edb6a15f9a9c44
+SIZE (nishiowo-kde1-kdegames-81e3523b30451e9ee36fd597b92023bc296985ed_GH0.tar.gz) = 2451525
+SHA256 (nishiowo-kde1-kdenetwork-2e2acf062228058672f33706bce4d97edb930f83_GH0.tar.gz) = 3cfd0787052f61e15dfc76bc90674ede18f22e7f804e08a697c216a59699f207
+SIZE (nishiowo-kde1-kdenetwork-2e2acf062228058672f33706bce4d97edb930f83_GH0.tar.gz) = 3034801
+SHA256 (nishiowo-kde1-kdeutils-8063f81f9a684f5bd6fa8872662b35dab9d42524_GH0.tar.gz) = 85fce3ce69b29050eb7ceede37b18a2b07700cfec6b9de0ea301cc1d34f2164e
+SIZE (nishiowo-kde1-kdeutils-8063f81f9a684f5bd6fa8872662b35dab9d42524_GH0.tar.gz) = 1505773
+SHA256 (nishiowo-kde1-kdelibs-93d3ecb7e98be959896d63e77b9dfd2872583df0_GH0.tar.gz) = afc20c68ea285b5e6d5a703197ef7ac021405835ac35d78a910921a857424a97
+SIZE (nishiowo-kde1-kdelibs-93d3ecb7e98be959896d63e77b9dfd2872583df0_GH0.tar.gz) = 1391425
+SHA256 (nishiowo-kde1-kdetoys-fecc457ae1290fde0b42ff3938ecc2b51a4ac589_GH0.tar.gz) = 9b3107d909a409c240036f133ee12df5b2f4c0ce8bba840c505bbb3fa86246a4
+SIZE (nishiowo-kde1-kdetoys-fecc457ae1290fde0b42ff3938ecc2b51a4ac589_GH0.tar.gz) = 171819
