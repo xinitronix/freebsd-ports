@@ -19,8 +19,8 @@ BUILD_DEPENDS= gcc>0:lang/gcc
 
 do-build:
 		cd  ${WRKSRC} && ./build.sh --prefix=${STAGEDIR}/opt/kde1
-
-               
+		rm -R       ${STAGEDIR}/opt/kde1/share/locale
+		cp files/libkdecore.so.2.0.0     ${STAGEDIR}/opt/kde1/lib
 
 do-install:
 		cp -R 	${STAGEDIR}/opt/ /
