@@ -1,12 +1,2 @@
-WinSCP Portable is a free SFTP, FTP and SCP client for Windows with lots of great features:
-
-    Automatic PuTTY Portable or KiTTY Portable integration
-    Graphical user interface
-    Translated into several languages
-    All common operations with files
-    Support for SFTP and SCP protocols over SSH-1 and SSH-2 and plain old FTP protocol
-    Directory synchronization in several semi or fully automatic ways
-    Integrated text editor
-    Support for SSH password, keyboard-interactive, public key and Kerberos (GSS) authentication
-    Windows Explorer-like and Norton Commander-like interfaces
-
+HxD is a carefully designed and fast hex editor which, additionally to raw disk editing
+ and modifying of main memory (RAM), handles files of any size.
