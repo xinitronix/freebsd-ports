@@ -1,0 +1,11 @@
+
+bin/wine-hxd
+share/applications/wine-hxd.desktop
+%%DATADIR%%/HxD32.exe
+%%DATADIR%%/HxD64.exe
+%%DATADIR%%/Settings/HxD Hex Editor.ini
+%%DATADIR%%/Settings/HxD Hex Editor.lang
+%%DATADIR%%/changelog.txt
+%%DATADIR%%/license.txt
+%%DATADIR%%/readme.txt
+share/pixmaps/wine-hxd.png

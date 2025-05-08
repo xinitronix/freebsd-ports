@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/hxd
+export VK_ICD_FILENAMES="/usr/local/share/vulkan/icd.d/nvidia_icd.json"
+export WINE_PATH="/usr/local/wine-proton/bin/wine"
+export MC_PATH="/usr/local/share/hxd/HxD32.exe"
+export WINEPREFIX="$HOME/.config/hxd/wine"
+
+exec  "$WINE_PATH" "$MC_PATH"   "$@"
+
+
+
+

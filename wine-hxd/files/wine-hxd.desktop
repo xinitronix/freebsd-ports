@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Name=HxD
+
+Exec=/usr/local/bin/wine-hxd %U
+StartupNotify=true
+Terminal=false
+Icon=wine-hxd
+Type=Application
+Categories=GTK;Utility;TextEditor;
+
+
+
+
+
+
