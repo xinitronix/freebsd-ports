@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Previous A NeXT Computer Emulator
+
+Exec=/usr/local/bin/previous
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/previous/Previous-icon.bmp
+Type=Application
+Categories=Emulator;System;
+Actions=new-window;new-private-window;
+
