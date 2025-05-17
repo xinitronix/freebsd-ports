@@ -1,0 +1,12 @@
+---libweston/meson.build.orig	2025-04-29 11:35:46.000000000 +0300
++++ libweston/meson.build	2025-05-17 03:02:10.461953000 +0300
+@@ -5,7 +5,8 @@
+ 	dep_libdl,
+ 	dep_libdrm,
+ 	dep_xkbcommon,
+-	dep_matrix_c
++	dep_matrix_c,
++        dep_libepoll
+ ]
+ srcs_libweston = [
+ 	git_version_h,

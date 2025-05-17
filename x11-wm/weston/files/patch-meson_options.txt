@@ -1,0 +1,14 @@
+--- meson_options.txt.orig	2025-04-29 11:35:46.000000000 +0300
++++ meson_options.txt	2025-05-17 02:57:54.813515000 +0300
+@@ -71,6 +71,11 @@
+ 	description: 'Weston renderer: EGL / OpenGL ES 2.x'
+ )
+ 
++option('epoll-dir',
++       type: 'string',
++       value: '',
++       description: 'libepoll-shim base directory (for non-Linux OS) [default=$prefix]')
++
+ option(
+ 	'xwayland',
+ 	type: 'boolean',

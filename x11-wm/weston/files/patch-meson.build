@@ -1,0 +1,38 @@
+--- meson.build.orig	2025-04-29 11:35:46.000000000 +0300
++++ meson.build	2025-05-17 02:56:29.253255000 +0300
+@@ -136,6 +136,35 @@
+ 	config_h.set('HAVE_XKBCOMMON_COMPOSE', '1')
+ endif
+ 
++############ libepoll-shim (BSD) ############
++
++if cc.has_header_symbol('sys/epoll.h', 'epoll_create1')
++	# epoll is built-in (Linux, illumos)
++	dep_libepoll = declare_dependency()
++else
++	# epoll is implemented in userspace by libepoll-shim (FreeBSD)
++	dir_libepoll = get_option('epoll-dir')
++	if dir_libepoll == ''
++		dir_libepoll = get_option('prefix')
++	endif
++	includes_epoll = include_directories(join_paths(dir_libepoll, 'include/libepoll-shim'))
++	dep_libepoll = cc.find_library('epoll-shim', dirs : join_paths(dir_libepoll, 'lib'))
++	code = '''
++	#include <sys/epoll.h>
++	int main(void) { epoll_create1(0); }
++	'''
++	if not cc.links(code,
++		name : 'libepoll-shim check',
++		dependencies : [dep_libepoll],
++		include_directories : includes_epoll) # note: wants an include_directories object
++		error('No built-in epoll or libepoll-shim found.')
++	endif
++	dep_libepoll = declare_dependency(
++		include_directories : includes_epoll,
++		dependencies : [dep_libepoll])
++endif
++
++
+ dep_wayland_server = dependency('wayland-server', version: '>= 1.20.0')
+ dep_wayland_client = dependency('wayland-client', version: '>= 1.20.0')
+ dep_pixman = dependency('pixman-1', version: '>= 0.25.2')
