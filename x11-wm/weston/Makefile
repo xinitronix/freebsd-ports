@@ -12,4 +12,8 @@ MESON_ARGS=    	-Dbackend-rdp=false\
 		-Dsystemd=false\
 		-Db_lundef=false
 
+post-install:
+		${CP} files/weston.desktop           ${STAGEDIR}${PREFIX}/share/applications
+		${CP} ${WRKDIR}/${PORTNAME}-${DISTVERSION}/data/wayland.png   ${STAGEDIR}${PREFIX}/share/pixmaps/weston.png
+
 .include <bsd.port.mk>

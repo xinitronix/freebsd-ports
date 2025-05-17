@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Weston 
+Exec=/usr/local/bin/weston
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/pixmaps/weston.png
+Type=Application
+Categories=System;
+
+
+
+
+
+

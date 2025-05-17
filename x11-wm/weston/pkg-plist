@@ -124,3 +124,5 @@ share/wayland-sessions/weston.desktop
 %%DATADIR%%/tiling.png
 %%DATADIR%%/wayland.png
 %%DATADIR%%/wayland.svg
+share/applications/weston.desktop
+share/pixmaps/weston.png
