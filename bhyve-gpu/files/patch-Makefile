@@ -1,0 +1,20 @@
+--- bhyve/Makefile.orig	2025-06-03 08:42:05.000000000 +0300
++++ bhyve/Makefile	2025-06-03 09:04:55.443076000 +0300
+@@ -1,7 +1,7 @@
+ #
+ #
+ 
+-.include <src.opts.mk>
++.include </usr/src/share/mk/src.opts.mk>
+ 
+ PROG=	bhyve
+ PACKAGE=	bhyve
+@@ -80,7 +80,7 @@
+ .endif
+ 
+ CFLAGS+=-I${.CURDIR}		\
+-	-I${.CURDIR}/../../contrib/lib9p \
++	-I/usr/src/contrib/lib9p/ \
+ 	-I${SRCTOP}/sys
+ 
+ LIBADD=	vmmapi md nv pthread z util sbuf cam 9p
