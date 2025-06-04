@@ -16,11 +16,13 @@ GH_ACCOUNT=	Snawoot
 
 do-build:
 
-		cd  ${WRKSRC}/  && make
+		cd  ${WRKSRC}/  && make 
 do-install:
 	
-		cp 	${WRKSRC}/bin/opera-proxy   ${STAGEDIR}${PREFIX}/bin
-                     
+		cp 	${WRKSRC}/bin/opera-proxy    ${STAGEDIR}${PREFIX}/bin
+		cp      files/opera-proxy.jpg        ${STAGEDIR}${PREFIX}/share/pixmaps
+		cp      files/opera-proxy.py         ${STAGEDIR}${PREFIX}/bin
+		cp      files/opera-proxy.desktop    ${STAGEDIR}${PREFIX}/share/applications    
 
 
 .include <bsd.port.mk>

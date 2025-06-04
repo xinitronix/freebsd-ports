@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Opera Proxy
+Exec=opera-proxy.py
+Icon=/usr/local/share/pixmaps/opera-proxy.jpg
+Type=Application
+Terminal=false
+Categories=Network;
+Name[ru_RU]=Opera Proxy

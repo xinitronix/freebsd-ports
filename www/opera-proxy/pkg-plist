@@ -1,2 +1,5 @@
 
 bin/opera-proxy
+bin/opera-proxy.py
+share/applications/opera-proxy.desktop
+share/pixmaps/opera-proxy.jpg
