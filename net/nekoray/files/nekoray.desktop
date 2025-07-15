@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=nekoray
+Name=nekoray
+Name[ru]=nekoray
+Categories=System;Utility;Network;;
+Exec=/usr/local/share/nekoray/nekoray
+StartupNotify=true
+Terminal=false

@@ -1,0 +1,5 @@
+
+lib/libQvPlugin-BuiltinProtocolSupport.so
+lib/libQvPlugin-BuiltinSubscriptionSupport.so
+share/applications/qv2ray.desktop
+share/qv2ray/qv2ray

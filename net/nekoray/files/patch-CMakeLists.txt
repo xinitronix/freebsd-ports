@@ -1,0 +1,18 @@
+--- CMakeLists.txt.orig	2024-12-12 11:03:36.000000000 +0300
++++ CMakeLists.txt	2025-07-15 10:13:18.473318000 +0300
+@@ -82,12 +82,10 @@
+ endif ()
+ 
+ # yaml-cpp
+-if (NKR_NO_YAML)
+-    nkr_add_compile_definitions(NKR_NO_YAML)
+-else ()
++
+     find_package(yaml-cpp CONFIG REQUIRED) # only Release is built
+-    list(APPEND NKR_EXTERNAL_TARGETS yaml-cpp)
+-endif ()
++    list(APPEND NKR_EXTERNAL_TARGETS yaml-cpp::yaml-cpp)
++
+ 
+ # zxing-cpp
+ if (NKR_NO_ZXING)

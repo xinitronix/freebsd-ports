@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=qv2ray
+Name=qv2ray
+Name[ru]=qv2ray
+Categories=System;Utility;Network;;
+Exec=qv2ray
+StartupNotify=true
+Terminal=false
