@@ -6,6 +6,5 @@ git config --global user.name "Your Name"
 git add --all
 git add .
 git commit -n
-#git push https://github.com/xinitronix/mate.git
-git push ssh://git@github.com/xinitronix/freebsd-ports.git
-
+#git push ssh://git@github.com/xinitronix/freebsd-ports.git
+git push git@github.com2:xinitronix/freebsd-ports.git
