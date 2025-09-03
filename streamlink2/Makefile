@@ -1,6 +1,6 @@
 PORTNAME=	streamlink2
 CATEGORIES=	multimedia 
-MASTER_SITES=	https://bitbucket.org/vcore/streamlink/downloads/
+MASTER_SITES=	https://github.com/definitly486/definitly486/releases/download/streamlink2/
 DISTNAME=	streamlink2
 
 
