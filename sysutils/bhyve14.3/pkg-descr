@@ -1,0 +1,11 @@
+This patch introduces userspace-only USB passthrough using libusb. It
+supports configuring passthrough via a (passthru.vid.pid) tuple.
+Currently, only vendor and product ID-based selection is implemented;
+selecting specific ugen devices (to differentiate between identical
+devices) would require changes to libusb.
+
+All USB transfer types—control, bulk, interrupt, and isochronous—are
+supported. Hotplugging is also handled, allowing devices to be unplugged
+when guest startup and replugged afterward without issue.
+
+Sponsored by: The FreeBSD Foundation

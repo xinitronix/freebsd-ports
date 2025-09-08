@@ -1,0 +1,7 @@
+
+/usr/lib/libusb.so
+/usr/lib/libusb.so.3
+lib/libvmmapi.a
+lib/libvmmapi.so
+lib/libvmmapi.so.6
+sbin/bhyve
