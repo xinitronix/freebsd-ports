@@ -1,0 +1,465 @@
+
+share/applications/ghostty.desktop
+share/ghostty/bin/ghostty
+share/ghostty/share/bash-completion/completions/ghostty.bash
+share/ghostty/share/bat/syntaxes/ghostty.sublime-syntax
+share/ghostty/share/fish/vendor_completions.d/ghostty.fish
+share/ghostty/share/ghostty/doc/ghostty.1.html
+share/ghostty/share/ghostty/doc/ghostty.1.md
+share/ghostty/share/ghostty/doc/ghostty.5.html
+share/ghostty/share/ghostty/doc/ghostty.5.md
+share/ghostty/share/ghostty/shell-integration/bash/bash-preexec.sh
+share/ghostty/share/ghostty/shell-integration/bash/ghostty.bash
+share/ghostty/share/ghostty/shell-integration/elvish/lib/ghostty-integration.elv
+share/ghostty/share/ghostty/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish
+share/ghostty/share/ghostty/shell-integration/zsh/.zshenv
+share/ghostty/share/ghostty/shell-integration/zsh/ghostty-integration
+share/ghostty/share/ghostty/themes/0x96f
+share/ghostty/share/ghostty/themes/12-bit Rainbow
+share/ghostty/share/ghostty/themes/3024 Day
+share/ghostty/share/ghostty/themes/3024 Night
+share/ghostty/share/ghostty/themes/Aardvark Blue
+share/ghostty/share/ghostty/themes/Abernathy
+share/ghostty/share/ghostty/themes/Adventure
+share/ghostty/share/ghostty/themes/Adventure Time
+share/ghostty/share/ghostty/themes/Adwaita
+share/ghostty/share/ghostty/themes/Adwaita Dark
+share/ghostty/share/ghostty/themes/Afterglow
+share/ghostty/share/ghostty/themes/Alabaster
+share/ghostty/share/ghostty/themes/Alien Blood
+share/ghostty/share/ghostty/themes/Andromeda
+share/ghostty/share/ghostty/themes/Apple Classic
+share/ghostty/share/ghostty/themes/Apple System Colors
+share/ghostty/share/ghostty/themes/Apple System Colors Light
+share/ghostty/share/ghostty/themes/Arcoiris
+share/ghostty/share/ghostty/themes/Ardoise
+share/ghostty/share/ghostty/themes/Argonaut
+share/ghostty/share/ghostty/themes/Arthur
+share/ghostty/share/ghostty/themes/Atelier Sulphurpool
+share/ghostty/share/ghostty/themes/Atom
+share/ghostty/share/ghostty/themes/Atom One Dark
+share/ghostty/share/ghostty/themes/Atom One Light
+share/ghostty/share/ghostty/themes/Aura
+share/ghostty/share/ghostty/themes/Aurora
+share/ghostty/share/ghostty/themes/Ayu
+share/ghostty/share/ghostty/themes/Ayu Light
+share/ghostty/share/ghostty/themes/Ayu Mirage
+share/ghostty/share/ghostty/themes/Banana Blueberry
+share/ghostty/share/ghostty/themes/Batman
+share/ghostty/share/ghostty/themes/Belafonte Day
+share/ghostty/share/ghostty/themes/Belafonte Night
+share/ghostty/share/ghostty/themes/Birds Of Paradise
+share/ghostty/share/ghostty/themes/Black Metal
+share/ghostty/share/ghostty/themes/Black Metal (Bathory)
+share/ghostty/share/ghostty/themes/Black Metal (Burzum)
+share/ghostty/share/ghostty/themes/Black Metal (Dark Funeral)
+share/ghostty/share/ghostty/themes/Black Metal (Gorgoroth)
+share/ghostty/share/ghostty/themes/Black Metal (Immortal)
+share/ghostty/share/ghostty/themes/Black Metal (Khold)
+share/ghostty/share/ghostty/themes/Black Metal (Marduk)
+share/ghostty/share/ghostty/themes/Black Metal (Mayhem)
+share/ghostty/share/ghostty/themes/Black Metal (Nile)
+share/ghostty/share/ghostty/themes/Black Metal (Venom)
+share/ghostty/share/ghostty/themes/Blazer
+share/ghostty/share/ghostty/themes/Blue Berry Pie
+share/ghostty/share/ghostty/themes/Blue Dolphin
+share/ghostty/share/ghostty/themes/Blue Matrix
+share/ghostty/share/ghostty/themes/Bluloco Dark
+share/ghostty/share/ghostty/themes/Bluloco Light
+share/ghostty/share/ghostty/themes/Borland
+share/ghostty/share/ghostty/themes/Box
+share/ghostty/share/ghostty/themes/Breadog
+share/ghostty/share/ghostty/themes/Breeze
+share/ghostty/share/ghostty/themes/Bright Lights
+share/ghostty/share/ghostty/themes/Broadcast
+share/ghostty/share/ghostty/themes/Brogrammer
+share/ghostty/share/ghostty/themes/Builtin Dark
+share/ghostty/share/ghostty/themes/Builtin Light
+share/ghostty/share/ghostty/themes/Builtin Pastel Dark
+share/ghostty/share/ghostty/themes/Builtin Solarized Dark
+share/ghostty/share/ghostty/themes/Builtin Solarized Light
+share/ghostty/share/ghostty/themes/Builtin Tango Dark
+share/ghostty/share/ghostty/themes/Builtin Tango Light
+share/ghostty/share/ghostty/themes/C64
+share/ghostty/share/ghostty/themes/CGA
+share/ghostty/share/ghostty/themes/CLRS
+share/ghostty/share/ghostty/themes/Calamity
+share/ghostty/share/ghostty/themes/Catppuccin Frappe
+share/ghostty/share/ghostty/themes/Catppuccin Latte
+share/ghostty/share/ghostty/themes/Catppuccin Macchiato
+share/ghostty/share/ghostty/themes/Catppuccin Mocha
+share/ghostty/share/ghostty/themes/Chalk
+share/ghostty/share/ghostty/themes/Chalkboard
+share/ghostty/share/ghostty/themes/Challenger Deep
+share/ghostty/share/ghostty/themes/Chester
+share/ghostty/share/ghostty/themes/Ciapre
+share/ghostty/share/ghostty/themes/Citruszest
+share/ghostty/share/ghostty/themes/Cobalt Neon
+share/ghostty/share/ghostty/themes/Cobalt Next
+share/ghostty/share/ghostty/themes/Cobalt Next Dark
+share/ghostty/share/ghostty/themes/Cobalt Next Minimal
+share/ghostty/share/ghostty/themes/Cobalt2
+share/ghostty/share/ghostty/themes/Coffee Theme
+share/ghostty/share/ghostty/themes/Crayon Pony Fish
+share/ghostty/share/ghostty/themes/Cursor Dark
+share/ghostty/share/ghostty/themes/Cutie Pro
+share/ghostty/share/ghostty/themes/Cyberdyne
+share/ghostty/share/ghostty/themes/Cyberpunk
+share/ghostty/share/ghostty/themes/Cyberpunk Scarlet Protocol
+share/ghostty/share/ghostty/themes/Dark Modern
+share/ghostty/share/ghostty/themes/Dark Pastel
+share/ghostty/share/ghostty/themes/Dark+
+share/ghostty/share/ghostty/themes/Darkermatrix
+share/ghostty/share/ghostty/themes/Darkmatrix
+share/ghostty/share/ghostty/themes/Darkside
+share/ghostty/share/ghostty/themes/Dayfox
+share/ghostty/share/ghostty/themes/Deep
+share/ghostty/share/ghostty/themes/Desert
+share/ghostty/share/ghostty/themes/Detuned
+share/ghostty/share/ghostty/themes/Dimidium
+share/ghostty/share/ghostty/themes/Dimmed Monokai
+share/ghostty/share/ghostty/themes/Django
+share/ghostty/share/ghostty/themes/Django Reborn Again
+share/ghostty/share/ghostty/themes/Django Smooth
+share/ghostty/share/ghostty/themes/Doom One
+share/ghostty/share/ghostty/themes/Doom Peacock
+share/ghostty/share/ghostty/themes/Dot Gov
+share/ghostty/share/ghostty/themes/Dracula
+share/ghostty/share/ghostty/themes/Dracula+
+share/ghostty/share/ghostty/themes/Duckbones
+share/ghostty/share/ghostty/themes/Duotone Dark
+share/ghostty/share/ghostty/themes/ENCOM
+share/ghostty/share/ghostty/themes/Earthsong
+share/ghostty/share/ghostty/themes/Electron Highlighter
+share/ghostty/share/ghostty/themes/Elegant
+share/ghostty/share/ghostty/themes/Elemental
+share/ghostty/share/ghostty/themes/Elementary
+share/ghostty/share/ghostty/themes/Embark
+share/ghostty/share/ghostty/themes/Embers Dark
+share/ghostty/share/ghostty/themes/Espresso
+share/ghostty/share/ghostty/themes/Espresso Libre
+share/ghostty/share/ghostty/themes/Everblush
+share/ghostty/share/ghostty/themes/Everforest Dark   Hard
+share/ghostty/share/ghostty/themes/Everforest Light   Med
+share/ghostty/share/ghostty/themes/Fahrenheit
+share/ghostty/share/ghostty/themes/Fairyfloss
+share/ghostty/share/ghostty/themes/Farmhouse Dark
+share/ghostty/share/ghostty/themes/Farmhouse Light
+share/ghostty/share/ghostty/themes/Fideloper
+share/ghostty/share/ghostty/themes/Firefly Traditional
+share/ghostty/share/ghostty/themes/Firefox Dev
+share/ghostty/share/ghostty/themes/Firewatch
+share/ghostty/share/ghostty/themes/Fish Tank
+share/ghostty/share/ghostty/themes/Flat
+share/ghostty/share/ghostty/themes/Flatland
+share/ghostty/share/ghostty/themes/Flexoki Dark
+share/ghostty/share/ghostty/themes/Flexoki Light
+share/ghostty/share/ghostty/themes/Floraverse
+share/ghostty/share/ghostty/themes/Forest Blue
+share/ghostty/share/ghostty/themes/Framer
+share/ghostty/share/ghostty/themes/Front End Delight
+share/ghostty/share/ghostty/themes/Fun Forrest
+share/ghostty/share/ghostty/themes/Galaxy
+share/ghostty/share/ghostty/themes/Galizur
+share/ghostty/share/ghostty/themes/Ghostty Default Style Dark
+share/ghostty/share/ghostty/themes/GitHub
+share/ghostty/share/ghostty/themes/GitHub Dark
+share/ghostty/share/ghostty/themes/GitHub Dark Colorblind
+share/ghostty/share/ghostty/themes/GitHub Dark Default
+share/ghostty/share/ghostty/themes/GitHub Dark Dimmed
+share/ghostty/share/ghostty/themes/GitHub Dark High Contrast
+share/ghostty/share/ghostty/themes/GitHub Light Colorblind
+share/ghostty/share/ghostty/themes/GitHub Light Default
+share/ghostty/share/ghostty/themes/GitHub Light High Contrast
+share/ghostty/share/ghostty/themes/GitLab Dark
+share/ghostty/share/ghostty/themes/GitLab Dark Grey
+share/ghostty/share/ghostty/themes/GitLab Light
+share/ghostty/share/ghostty/themes/Glacier
+share/ghostty/share/ghostty/themes/Grape
+share/ghostty/share/ghostty/themes/Grass
+share/ghostty/share/ghostty/themes/Grey Green
+share/ghostty/share/ghostty/themes/Gruber Darker
+share/ghostty/share/ghostty/themes/Gruvbox Dark
+share/ghostty/share/ghostty/themes/Gruvbox Dark Hard
+share/ghostty/share/ghostty/themes/Gruvbox Light
+share/ghostty/share/ghostty/themes/Gruvbox Light Hard
+share/ghostty/share/ghostty/themes/Gruvbox Material
+share/ghostty/share/ghostty/themes/Guezwhoz
+share/ghostty/share/ghostty/themes/HaX0R Blue
+share/ghostty/share/ghostty/themes/HaX0R Gr33N
+share/ghostty/share/ghostty/themes/HaX0R R3D
+share/ghostty/share/ghostty/themes/Hacktober
+share/ghostty/share/ghostty/themes/Hardcore
+share/ghostty/share/ghostty/themes/Harper
+share/ghostty/share/ghostty/themes/Havn Daggry
+share/ghostty/share/ghostty/themes/Havn Skumring
+share/ghostty/share/ghostty/themes/Heeler
+share/ghostty/share/ghostty/themes/Highway
+share/ghostty/share/ghostty/themes/Hipster Green
+share/ghostty/share/ghostty/themes/Hivacruz
+share/ghostty/share/ghostty/themes/Homebrew
+share/ghostty/share/ghostty/themes/Hopscotch
+share/ghostty/share/ghostty/themes/Hopscotch.256
+share/ghostty/share/ghostty/themes/Horizon
+share/ghostty/share/ghostty/themes/Horizon Bright
+share/ghostty/share/ghostty/themes/Hurtado
+share/ghostty/share/ghostty/themes/Hybrid
+share/ghostty/share/ghostty/themes/IBM 5153 CGA
+share/ghostty/share/ghostty/themes/IBM 5153 CGA (Black)
+share/ghostty/share/ghostty/themes/IC Green PPL
+share/ghostty/share/ghostty/themes/IC Orange PPL
+share/ghostty/share/ghostty/themes/IR Black
+share/ghostty/share/ghostty/themes/IRIX Console
+share/ghostty/share/ghostty/themes/IRIX Terminal
+share/ghostty/share/ghostty/themes/Iceberg Dark
+share/ghostty/share/ghostty/themes/Iceberg Light
+share/ghostty/share/ghostty/themes/Idea
+share/ghostty/share/ghostty/themes/Idle Toes
+share/ghostty/share/ghostty/themes/Jackie Brown
+share/ghostty/share/ghostty/themes/Japanesque
+share/ghostty/share/ghostty/themes/Jellybeans
+share/ghostty/share/ghostty/themes/JetBrains Darcula
+share/ghostty/share/ghostty/themes/Jubi
+share/ghostty/share/ghostty/themes/Kanagawa Dragon
+share/ghostty/share/ghostty/themes/Kanagawa Wave
+share/ghostty/share/ghostty/themes/Kanagawabones
+share/ghostty/share/ghostty/themes/Kibble
+share/ghostty/share/ghostty/themes/Kitty Default
+share/ghostty/share/ghostty/themes/Kitty Low Contrast
+share/ghostty/share/ghostty/themes/Kolorit
+share/ghostty/share/ghostty/themes/Konsolas
+share/ghostty/share/ghostty/themes/Kurokula
+share/ghostty/share/ghostty/themes/Lab Fox
+share/ghostty/share/ghostty/themes/Laser
+share/ghostty/share/ghostty/themes/Later This Evening
+share/ghostty/share/ghostty/themes/Lavandula
+share/ghostty/share/ghostty/themes/Light Owl
+share/ghostty/share/ghostty/themes/Liquid Carbon
+share/ghostty/share/ghostty/themes/Liquid Carbon Transparent
+share/ghostty/share/ghostty/themes/Liquid Carbon Transparent Inverse
+share/ghostty/share/ghostty/themes/Lovelace
+share/ghostty/share/ghostty/themes/Man Page
+share/ghostty/share/ghostty/themes/Mariana
+share/ghostty/share/ghostty/themes/Material
+share/ghostty/share/ghostty/themes/Material Dark
+share/ghostty/share/ghostty/themes/Material Darker
+share/ghostty/share/ghostty/themes/Material Design Colors
+share/ghostty/share/ghostty/themes/Material Ocean
+share/ghostty/share/ghostty/themes/Mathias
+share/ghostty/share/ghostty/themes/Matrix
+share/ghostty/share/ghostty/themes/Medallion
+share/ghostty/share/ghostty/themes/Melange Dark
+share/ghostty/share/ghostty/themes/Melange Light
+share/ghostty/share/ghostty/themes/Mellifluous
+share/ghostty/share/ghostty/themes/Mellow
+share/ghostty/share/ghostty/themes/Miasma
+share/ghostty/share/ghostty/themes/Midnight In Mojave
+share/ghostty/share/ghostty/themes/Mirage
+share/ghostty/share/ghostty/themes/Misterioso
+share/ghostty/share/ghostty/themes/Molokai
+share/ghostty/share/ghostty/themes/Mona Lisa
+share/ghostty/share/ghostty/themes/Monokai Classic
+share/ghostty/share/ghostty/themes/Monokai Pro
+share/ghostty/share/ghostty/themes/Monokai Pro Light
+share/ghostty/share/ghostty/themes/Monokai Pro Light Sun
+share/ghostty/share/ghostty/themes/Monokai Pro Machine
+share/ghostty/share/ghostty/themes/Monokai Pro Octagon
+share/ghostty/share/ghostty/themes/Monokai Pro Ristretto
+share/ghostty/share/ghostty/themes/Monokai Pro Spectrum
+share/ghostty/share/ghostty/themes/Monokai Remastered
+share/ghostty/share/ghostty/themes/Monokai Soda
+share/ghostty/share/ghostty/themes/Monokai Vivid
+share/ghostty/share/ghostty/themes/Moonfly
+share/ghostty/share/ghostty/themes/N0Tch2K
+share/ghostty/share/ghostty/themes/Neobones Dark
+share/ghostty/share/ghostty/themes/Neobones Light
+share/ghostty/share/ghostty/themes/Neon
+share/ghostty/share/ghostty/themes/Neopolitan
+share/ghostty/share/ghostty/themes/Neutron
+share/ghostty/share/ghostty/themes/Night Lion V1
+share/ghostty/share/ghostty/themes/Night Lion V2
+share/ghostty/share/ghostty/themes/Night Owl
+share/ghostty/share/ghostty/themes/Night Owlish Light
+share/ghostty/share/ghostty/themes/Nightfox
+share/ghostty/share/ghostty/themes/Niji
+share/ghostty/share/ghostty/themes/Nocturnal Winter
+share/ghostty/share/ghostty/themes/Nord
+share/ghostty/share/ghostty/themes/Nord Light
+share/ghostty/share/ghostty/themes/Nord Wave
+share/ghostty/share/ghostty/themes/Novel
+share/ghostty/share/ghostty/themes/Nvim Dark
+share/ghostty/share/ghostty/themes/Nvim Light
+share/ghostty/share/ghostty/themes/Obsidian
+share/ghostty/share/ghostty/themes/Ocean
+share/ghostty/share/ghostty/themes/Oceanic Material
+share/ghostty/share/ghostty/themes/Oceanic Next
+share/ghostty/share/ghostty/themes/Ollie
+share/ghostty/share/ghostty/themes/One Double Dark
+share/ghostty/share/ghostty/themes/One Double Light
+share/ghostty/share/ghostty/themes/One Half Dark
+share/ghostty/share/ghostty/themes/One Half Light
+share/ghostty/share/ghostty/themes/Operator Mono Dark
+share/ghostty/share/ghostty/themes/Overnight Slumber
+share/ghostty/share/ghostty/themes/Oxocarbon
+share/ghostty/share/ghostty/themes/Pale Night Hc
+share/ghostty/share/ghostty/themes/Pandora
+share/ghostty/share/ghostty/themes/Paraiso Dark
+share/ghostty/share/ghostty/themes/Paul Millr
+share/ghostty/share/ghostty/themes/Pencil Dark
+share/ghostty/share/ghostty/themes/Pencil Light
+share/ghostty/share/ghostty/themes/Peppermint
+share/ghostty/share/ghostty/themes/Phala Green Dark
+share/ghostty/share/ghostty/themes/Piatto Light
+share/ghostty/share/ghostty/themes/Pnevma
+share/ghostty/share/ghostty/themes/Popping And Locking
+share/ghostty/share/ghostty/themes/Powershell
+share/ghostty/share/ghostty/themes/Primary
+share/ghostty/share/ghostty/themes/Pro
+share/ghostty/share/ghostty/themes/Pro Light
+share/ghostty/share/ghostty/themes/Purple Rain
+share/ghostty/share/ghostty/themes/Purplepeter
+share/ghostty/share/ghostty/themes/Rapture
+share/ghostty/share/ghostty/themes/Raycast Dark
+share/ghostty/share/ghostty/themes/Raycast Light
+share/ghostty/share/ghostty/themes/Rebecca
+share/ghostty/share/ghostty/themes/Red Alert
+share/ghostty/share/ghostty/themes/Red Planet
+share/ghostty/share/ghostty/themes/Red Sands
+share/ghostty/share/ghostty/themes/Relaxed
+share/ghostty/share/ghostty/themes/Retro
+share/ghostty/share/ghostty/themes/Retro Legends
+share/ghostty/share/ghostty/themes/Rippedcasts
+share/ghostty/share/ghostty/themes/Rose Pine
+share/ghostty/share/ghostty/themes/Rose Pine Dawn
+share/ghostty/share/ghostty/themes/Rose Pine Moon
+share/ghostty/share/ghostty/themes/Rouge 2
+share/ghostty/share/ghostty/themes/Royal
+share/ghostty/share/ghostty/themes/Ryuuko
+share/ghostty/share/ghostty/themes/Sakura
+share/ghostty/share/ghostty/themes/Scarlet Protocol
+share/ghostty/share/ghostty/themes/Sea Shells
+share/ghostty/share/ghostty/themes/Seafoam Pastel
+share/ghostty/share/ghostty/themes/Selenized Dark
+share/ghostty/share/ghostty/themes/Selenized Light
+share/ghostty/share/ghostty/themes/Seoulbones Dark
+share/ghostty/share/ghostty/themes/Seoulbones Light
+share/ghostty/share/ghostty/themes/Seti
+share/ghostty/share/ghostty/themes/Shades Of Purple
+share/ghostty/share/ghostty/themes/Shaman
+share/ghostty/share/ghostty/themes/Slate
+share/ghostty/share/ghostty/themes/Sleepy Hollow
+share/ghostty/share/ghostty/themes/Smyck
+share/ghostty/share/ghostty/themes/Snazzy
+share/ghostty/share/ghostty/themes/Snazzy Soft
+share/ghostty/share/ghostty/themes/Soft Server
+share/ghostty/share/ghostty/themes/Solarized Darcula
+share/ghostty/share/ghostty/themes/Solarized Dark Higher Contrast
+share/ghostty/share/ghostty/themes/Solarized Dark Patched
+share/ghostty/share/ghostty/themes/Solarized Osaka Night
+share/ghostty/share/ghostty/themes/Sonokai
+share/ghostty/share/ghostty/themes/Spacedust
+share/ghostty/share/ghostty/themes/Spacegray
+share/ghostty/share/ghostty/themes/Spacegray Bright
+share/ghostty/share/ghostty/themes/Spacegray Eighties
+share/ghostty/share/ghostty/themes/Spacegray Eighties Dull
+share/ghostty/share/ghostty/themes/Spiderman
+share/ghostty/share/ghostty/themes/Spring
+share/ghostty/share/ghostty/themes/Square
+share/ghostty/share/ghostty/themes/Squirrelsong Dark
+share/ghostty/share/ghostty/themes/Srcery
+share/ghostty/share/ghostty/themes/Starlight
+share/ghostty/share/ghostty/themes/Sublette
+share/ghostty/share/ghostty/themes/Subliminal
+share/ghostty/share/ghostty/themes/Sugarplum
+share/ghostty/share/ghostty/themes/Sundried
+share/ghostty/share/ghostty/themes/Symfonic
+share/ghostty/share/ghostty/themes/Synthwave
+share/ghostty/share/ghostty/themes/Synthwave Alpha
+share/ghostty/share/ghostty/themes/Synthwave Everything
+share/ghostty/share/ghostty/themes/Tango Adapted
+share/ghostty/share/ghostty/themes/Tango Half Adapted
+share/ghostty/share/ghostty/themes/Tearout
+share/ghostty/share/ghostty/themes/Teerb
+share/ghostty/share/ghostty/themes/Terafox
+share/ghostty/share/ghostty/themes/Terminal Basic
+share/ghostty/share/ghostty/themes/Terminal Basic Dark
+share/ghostty/share/ghostty/themes/Thayer Bright
+share/ghostty/share/ghostty/themes/The Hulk
+share/ghostty/share/ghostty/themes/Tinacious Design Dark
+share/ghostty/share/ghostty/themes/Tinacious Design Light
+share/ghostty/share/ghostty/themes/TokyoNight
+share/ghostty/share/ghostty/themes/TokyoNight Day
+share/ghostty/share/ghostty/themes/TokyoNight Moon
+share/ghostty/share/ghostty/themes/TokyoNight Night
+share/ghostty/share/ghostty/themes/TokyoNight Storm
+share/ghostty/share/ghostty/themes/Tomorrow
+share/ghostty/share/ghostty/themes/Tomorrow Night
+share/ghostty/share/ghostty/themes/Tomorrow Night Blue
+share/ghostty/share/ghostty/themes/Tomorrow Night Bright
+share/ghostty/share/ghostty/themes/Tomorrow Night Burns
+share/ghostty/share/ghostty/themes/Tomorrow Night Eighties
+share/ghostty/share/ghostty/themes/Toy Chest
+share/ghostty/share/ghostty/themes/Treehouse
+share/ghostty/share/ghostty/themes/Twilight
+share/ghostty/share/ghostty/themes/Ubuntu
+share/ghostty/share/ghostty/themes/Ultra Dark
+share/ghostty/share/ghostty/themes/Ultra Violent
+share/ghostty/share/ghostty/themes/Under The Sea
+share/ghostty/share/ghostty/themes/Unikitty
+share/ghostty/share/ghostty/themes/Urple
+share/ghostty/share/ghostty/themes/Vague
+share/ghostty/share/ghostty/themes/Vaughn
+share/ghostty/share/ghostty/themes/Vercel
+share/ghostty/share/ghostty/themes/Vesper
+share/ghostty/share/ghostty/themes/Vibrant Ink
+share/ghostty/share/ghostty/themes/Vimbones
+share/ghostty/share/ghostty/themes/Violet Dark
+share/ghostty/share/ghostty/themes/Violet Light
+share/ghostty/share/ghostty/themes/Violite
+share/ghostty/share/ghostty/themes/Warm Neon
+share/ghostty/share/ghostty/themes/Wez
+share/ghostty/share/ghostty/themes/Whimsy
+share/ghostty/share/ghostty/themes/Wild Cherry
+share/ghostty/share/ghostty/themes/Wilmersdorf
+share/ghostty/share/ghostty/themes/Wombat
+share/ghostty/share/ghostty/themes/Wryan
+share/ghostty/share/ghostty/themes/Xcode Dark
+share/ghostty/share/ghostty/themes/Xcode Dark hc
+share/ghostty/share/ghostty/themes/Xcode Light
+share/ghostty/share/ghostty/themes/Xcode Light hc
+share/ghostty/share/ghostty/themes/Xcode WWDC
+share/ghostty/share/ghostty/themes/Zenbones
+share/ghostty/share/ghostty/themes/Zenbones Dark
+share/ghostty/share/ghostty/themes/Zenbones Light
+share/ghostty/share/ghostty/themes/Zenburn
+share/ghostty/share/ghostty/themes/Zenburned
+share/ghostty/share/ghostty/themes/Zenwritten Dark
+share/ghostty/share/ghostty/themes/Zenwritten Light
+share/ghostty/share/ghostty/themes/iTerm2 Dark Background
+share/ghostty/share/ghostty/themes/iTerm2 Default
+share/ghostty/share/ghostty/themes/iTerm2 Light Background
+share/ghostty/share/ghostty/themes/iTerm2 Pastel Dark Background
+share/ghostty/share/ghostty/themes/iTerm2 Smoooooth
+share/ghostty/share/ghostty/themes/iTerm2 Solarized Dark
+share/ghostty/share/ghostty/themes/iTerm2 Solarized Light
+share/ghostty/share/ghostty/themes/iTerm2 Tango Dark
+share/ghostty/share/ghostty/themes/iTerm2 Tango Light
+share/ghostty/share/man/man1/ghostty.1
+share/ghostty/share/man/man5/ghostty.5
+share/ghostty/share/nvim/site/compiler/ghostty.vim
+share/ghostty/share/nvim/site/ftdetect/ghostty.vim
+share/ghostty/share/nvim/site/ftplugin/ghostty.vim
+share/ghostty/share/nvim/site/syntax/ghostty.vim
+share/ghostty/share/site-terminfo/g/ghostty
+share/ghostty/share/site-terminfo/x/xterm-ghostty
+share/ghostty/share/vim/vimfiles/compiler/ghostty.vim
+share/ghostty/share/vim/vimfiles/ftdetect/ghostty.vim
+share/ghostty/share/vim/vimfiles/ftplugin/ghostty.vim
+share/ghostty/share/vim/vimfiles/syntax/ghostty.vim
+share/ghostty/share/zsh/site-functions/_ghostty
+share/icons/hicolor/1024x1024/apps/ghostty.png
+share/icons/hicolor/128x128/apps/ghostty.png
+share/icons/hicolor/16x16/apps/ghostty.png
+share/icons/hicolor/256x256/apps/ghostty.png
+share/icons/hicolor/32x32/apps/ghostty.png
+share/icons/hicolor/512x512/apps/ghostty.png
