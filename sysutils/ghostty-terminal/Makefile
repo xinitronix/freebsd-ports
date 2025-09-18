@@ -13,6 +13,14 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	ghostty-org
 GH_PROJECT=	ghostty
 
+RUN_DEPENDS=    gtk4-layer-shell>0:x11-toolkits/gtk4-layer-shell \
+		zig>0:lang/zig \
+		ca_root_nss>0:security/ca_root_nss \
+		hs-pandoc>0:textproc/hs-pandoc \
+		gettext-tools>0:devel/gettext-tools \
+		blueprint-compiler>0:devel/blueprint-compiler \
+		libadwaita>0:x11-toolkits/libadwaita
+
 NO_ARCH=	yes
 NO_BUILD=	yes
 
