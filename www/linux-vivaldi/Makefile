@@ -2,7 +2,7 @@ PORTNAME=	vivaldi
 PORTVERSION=	${CHROME_VER}
 CATEGORIES=	www linux
 MASTER_SITES=	https://downloads.vivaldi.com/stable/
-#vivaldi-stable-7.1.3570.39-1.x86_64.rpm
+
 DISTNAME=	vivaldi-stable-${CHROME_VER}-${CHROME_BUILD}.x86_64
 PKGNAMEPREFIX=	linux-
 
@@ -33,7 +33,7 @@ SRC_SUFX?=		.src${EXTRACT_SUFX}
 
 
 
-CHROME_VER?=	7.1.3570.39
+CHROME_VER?=	7.6.3797.52
 CHROME_BUILD?=	1
 
 DATADIR=	${PREFIX}/share/${PORTNAME}
@@ -46,7 +46,7 @@ SUB_FILES=	linux-vivaldi
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/linux-vivaldi ${STAGEDIR}${PREFIX}/bin
-	rm -r ${WRKSRC}/opt/vivaldi/WidevineCdm
+#	rm -r ${WRKSRC}/opt/vivaldi/WidevineCdm
 	cd ${WRKSRC}/opt/ && ${CP} -r vivaldi ${STAGEDIR}${PREFIX}/share
 	cd ${WRKSRC}/usr/share && ${COPYTREE_SHARE} \* ${STAGEDIR}${PREFIX}/share
 	cp files/vivaldi-stable.desktop ${STAGEDIR}${PREFIX}/share/applications
