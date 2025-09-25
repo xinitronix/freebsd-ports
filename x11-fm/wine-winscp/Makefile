@@ -1,6 +1,6 @@
 PORTNAME=	winscp
 DISTVERSION=	v6.3.5
-CATEGORIES=     multimedia
+CATEGORIES=     x11-fm
 MASTER_SITES=   https://download2.portableapps.com/portableapps/WinSCPPortable/
 DISTFILES=      WinSCPPortable_6.3.5.paf.exe
 PKGNAMEPREFIX=	wine-

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/totalcmd
+export VK_ICD_FILENAMES="/usr/local/share/vulkan/icd.d/nvidia_icd.json"
+export WINE_PATH="/usr/local/share/totalcmd/wine-proton/bin/wine64"
+export MC_PATH="/usr/local/share/totalcmd/TOTALCMD64.EXE"
+export WINEPREFIX="$HOME/.config/totalcmd/wine"
+
+exec  wine  "$MC_PATH"   "$@"
+
+
+
+

@@ -1,6 +1,6 @@
 PORTNAME=	explorer++
 DISTVERSION=	v1.4.0
-CATEGORIES=     multimedia
+CATEGORIES=     x11-fm 
 MASTER_SITES=   https://download.explorerplusplus.com/stable/1.4.0/
 DISTFILES=      explorerpp_x64.zip
 PKGNAMEPREFIX=	wine-

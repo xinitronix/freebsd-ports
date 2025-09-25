@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Total Commander Wine
+Exec=/usr/local/bin/wine-totalcmd %U
+StartupNotify=true
+Terminal=false
+Icon=wine-totalcmd
+Type=Application
+MimeType=text/plain
+Categories=System;Utility;Core;FileTools;FileManager;
+
+
+
+
+
