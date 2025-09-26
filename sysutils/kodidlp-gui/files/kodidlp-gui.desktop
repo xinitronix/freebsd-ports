@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Kodidlp GUI
+Exec=/usr/local/bin/kodidlp-gui
+StartupNotify=true
+Terminal=false
+Icon=kodidlp.png
+Type=Application
+Categories=AudioVideo;Audio;Video;Player;TV;
+
+
+
+
+
+
