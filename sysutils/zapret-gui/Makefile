@@ -1,6 +1,6 @@
 PORTNAME=	zapret-gui
 DISTVERSION=	1.0-1
-DISTVERSIONSUFFIX=	-ga038d47
+DISTVERSIONSUFFIX=	-ga9f1f10
 CATEGORIES=	sysutils
 
 USES=           cmake:noninja
