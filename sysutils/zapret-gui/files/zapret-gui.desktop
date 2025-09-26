@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Zapret GUI
+Exec=/usr/local/bin/zapret-gui
+StartupNotify=true
+Terminal=false
+Icon=zapret.png
+Type=Application
+Categories=System;
+
+
+
+
+
+
