@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=VolSndKodi GUI
+Exec=/usr/local/bin/volsndkodi
+StartupNotify=true
+Terminal=false
+Icon=volsndkodi.png
+Type=Application
+Categories=AudioVideo;Audio;Video;Player;TV;
+
+
+
+
+
+
