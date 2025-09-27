@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Kodi GUI
+Exec=/usr/local/bin/kodigui
+StartupNotify=true
+Terminal=false
+Icon=kodigui.png
+Type=Application
+Categories=AudioVideo;Audio;Video;Player;TV;
+
+
+
+
+
+
