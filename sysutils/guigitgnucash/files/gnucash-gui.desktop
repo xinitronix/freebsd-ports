@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=GuiGitGnucash
+Exec=/usr/local/bin/GuiGitGnucash
+StartupNotify=true
+Terminal=false
+Icon=gnucash.png
+Type=Application
+Categories=System;
+
+
+
+
+
+
