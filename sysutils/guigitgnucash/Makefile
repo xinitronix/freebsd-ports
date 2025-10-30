@@ -6,6 +6,10 @@ CATEGORIES=	sysutils
 USES=            desktop-file-utils  \
                 qmake:outsource qt:5 shared-mime-info
 
+RUN_DEPENDS=   	git>0:devel/git \
+		gnupg>0:security/gnupg
+
+
 USE_QT=         buildtools:build 
 USE_GITHUB=	yes
 GH_ACCOUNT=	definitly486
