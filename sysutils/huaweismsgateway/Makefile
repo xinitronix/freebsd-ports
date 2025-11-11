@@ -1,6 +1,6 @@
 PORTNAME=	huaweismsgateway
 DISTVERSION=	1.0-1
-DISTVERSIONSUFFIX=	-g944523d5de2b090b57f3cb0f1552e7ae7c624250
+DISTVERSIONSUFFIX=	-ge3f5341bf176ecc711726bdfd92570b32eef09cc
 CATEGORIES=	sysutils
 
 USES=            desktop-file-utils  \
