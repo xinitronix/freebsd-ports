@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Huawei SMS Gateway
+Exec=/usr/local/bin/huaweismsgateway
+StartupNotify=true
+Terminal=false
+Icon=sms.png
+Type=Application
+Categories=System;
+
+
+
+
+
+
