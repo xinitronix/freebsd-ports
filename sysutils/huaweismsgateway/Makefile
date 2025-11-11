@@ -1,6 +1,6 @@
 PORTNAME=	huaweismsgateway
 DISTVERSION=	1.0-1
-DISTVERSIONSUFFIX=	-gf33b7af
+DISTVERSIONSUFFIX=	-g944523d5de2b090b57f3cb0f1552e7ae7c624250
 CATEGORIES=	sysutils
 
 USES=            desktop-file-utils  \
@@ -14,7 +14,7 @@ BUILD_DEPENDS=  qt6-tools>0:devel/qt6-tools
 
 
 do-install:
-		${INSTALL_SCRIPT} ${WRKDIR}/.build/huaweismsgateway  ${STAGEDIR}${PREFIX}/bin/huaweismsgateway
+		${INSTALL_SCRIPT} ${WRKDIR}/.build/modem_sms  ${STAGEDIR}${PREFIX}/bin/huaweismsgateway
 		${CP}        files/smsgateway.desktop         ${STAGEDIR}${PREFIX}/share/applications
 		${CP}        files/sms.png                  ${STAGEDIR}${PREFIX}/share/pixmaps
 
