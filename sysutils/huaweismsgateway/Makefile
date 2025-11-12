@@ -10,7 +10,9 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	definitly486
 GH_PROJECT=	Huawei-SMS-Gateway
 
-BUILD_DEPENDS=  qt6-tools>0:devel/qt6-tools
+BUILD_DEPENDS=  qt6-tools>0:devel/qt6-tools \
+		tinyxml2>0:textproc/tinyxml2 \
+		qt5-buildtools>0:devel/qt5-buildtools
 
 
 do-install:
