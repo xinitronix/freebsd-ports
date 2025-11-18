@@ -1,6 +1,6 @@
 PORTNAME=	hola-proxy
-DISTVERSION=	v1.15.0
-DISTVERSIONSUFFIX=	-ge2dbbb9
+DISTVERSION=	v1.18.2-2
+DISTVERSIONSUFFIX=	-g25958fd
 CATEGORIES=	www 
 
 
@@ -16,7 +16,7 @@ GH_ACCOUNT=	Snawoot
 
 do-build:
 
-		cd  ${WRKSRC}/  && make
+		cd  ${WRKSRC}/  && make -buildvcs=false
 do-install:
 	
 		cp 	${WRKSRC}/bin/hola-proxy       ${STAGEDIR}${PREFIX}/bin
