@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=VMrun GUI
+Exec=/usr/local/bin/vmrungui
+StartupNotify=true
+Terminal=false
+Icon=vmrungui.png
+Type=Application
+Categories=System;
+
+
+
+
+
+
