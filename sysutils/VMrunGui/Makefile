@@ -1,6 +1,6 @@
 PORTNAME=	VMrunGui
 DISTVERSION=	1.0-1
-DISTVERSIONSUFFIX=	-gf56661cb
+DISTVERSIONSUFFIX=	-g8f07400e6
 CATEGORIES=	sysutils
 
 USES=            desktop-file-utils  \
