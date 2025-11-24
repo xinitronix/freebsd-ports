@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=FreeBSD Config Tool
+Exec=/usr/local/bin/freebsdconfigtool
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/pixmaps/freebsd.jpg
+Type=Application
+Categories=System;
+
+
+
+
+
+

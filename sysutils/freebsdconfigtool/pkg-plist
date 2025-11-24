@@ -1,0 +1,4 @@
+
+bin/freebsdconfigtool
+share/applications/freebsdconfigtool.desktop
+share/pixmaps/freebsd.jpg
