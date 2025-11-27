@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=WiFi Debug Connector
+Exec=/usr/local/bin/WiFiDebugConnector
+StartupNotify=true
+Terminal=false
+Icon=debug.png
+Type=Application
+Categories=System;
+
+
+
+
+
+

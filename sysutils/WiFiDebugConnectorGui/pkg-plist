@@ -1,0 +1,4 @@
+
+bin/WiFiDebugConnector
+share/applications/wifidebug.desktop
+share/pixmaps/debug.png
