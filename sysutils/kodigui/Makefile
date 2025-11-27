@@ -1,6 +1,6 @@
 PORTNAME=	KodiGui
 DISTVERSION=	1.0-2
-DISTVERSIONSUFFIX=	-gf46c3f0290804e
+DISTVERSIONSUFFIX=	-g866e241e1d584
 CATEGORIES=	sysutils
 
 USES=            desktop-file-utils  \
