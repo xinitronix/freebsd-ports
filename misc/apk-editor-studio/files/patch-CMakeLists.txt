@@ -1,0 +1,14 @@
+--- CMakeLists.txt.orig	2025-01-18 23:52:29.000000000 +0300
++++ CMakeLists.txt	2025-12-02 18:58:50.081275000 +0300
+@@ -84,6 +84,11 @@
+ # KSyntaxHighlighting
+ add_subdirectory(lib/KSyntaxHighlighting EXCLUDE_FROM_ALL)
+ 
++# Отключаем libsecret в QtKeychain 0.12.90
++set(LIBSECRET_SUPPORT OFF CACHE BOOL "Disable libsecret backend" FORCE)
++# Добавьте ПЕРЕД add_subdirectory(lib/QtKeychain ...)
++set(QTKEYCHAIN_USE_LIBSECRET OFF CACHE BOOL "Disable libsecret backend" FORCE)
++set(QTKEYCHAIN_USE_LIBGNOMEKEYRING OFF CACHE BOOL "Disable libgnome-keyring backend" FORCE)
+ # QtKeychain
+ set(QTKEYCHAIN_STATIC ON CACHE BOOL "Build QtKeychain statically")
+ set(BUILD_TRANSLATIONS OFF CACHE BOOL "Build QtKeychain translations")
