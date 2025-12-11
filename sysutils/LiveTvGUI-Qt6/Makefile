@@ -11,7 +11,8 @@ GH_ACCOUNT=	vcore486-afk
 GH_PROJECT=	LiveTvGUI
 
 BUILD_DEPENDS=  qt6-tools>0:devel/qt6-tools \
-		qt5-buildtools>0:devel/qt5-buildtools
+		qt5-buildtools>0:devel/qt5-buildtools \
+		qt6-webengine>0:www/qt6-webengine 
 
 
 do-install:
