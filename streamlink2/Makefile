@@ -25,7 +25,7 @@ do-install:
 	cd ${WRKSRC}/ && ${CP} -r  streamlink2/pipx/venvs/streamlink/lib/python3.11/site-packages/attrs  ${STAGEDIR}${PREFIX}/lib/python3.11/site-packages
 	cd ${WRKSRC}/ && ${CP} -r  streamlink2/pipx/venvs/streamlink/lib/python3.11/site-packages/Crypto  ${STAGEDIR}${PREFIX}/lib/python3.11/site-packages
 	cd ${WRKSRC}/ && ${CP} -r  streamlink2/pipx/venvs/streamlink/lib/python3.11/site-packages/isodate  ${STAGEDIR}${PREFIX}/lib/python3.11/site-packages
-	cd ${WRKSRC}/ && ${CP} -r  streamlink2/pipx/venvs/streamlink/lib/python3.11/site-packages/lxml  ${STAGEDIR}${PREFIX}/lib/python3.11/site-packages
+	#cd ${WRKSRC}/ && ${CP} -r  streamlink2/pipx/venvs/streamlink/lib/python3.11/site-packages/lxml  ${STAGEDIR}${PREFIX}/lib/python3.11/site-packages
 	cd ${WRKSRC}/ && ${CP} -r  streamlink2/pipx/venvs/streamlink/lib/python3.11/site-packages/outcome  ${STAGEDIR}${PREFIX}/lib/python3.11/site-packages
 	cd ${WRKSRC}/ && ${CP} -r  streamlink2/pipx/venvs/streamlink/lib/python3.11/site-packages/pycountry  ${STAGEDIR}${PREFIX}/lib/python3.11/site-packages
 	cd ${WRKSRC}/ && ${CP} -r  streamlink2/pipx/venvs/streamlink/lib/python3.11/site-packages/sniffio  ${STAGEDIR}${PREFIX}/lib/python3.11/site-packages

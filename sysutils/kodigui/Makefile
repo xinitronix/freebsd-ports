@@ -10,7 +10,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	definitly486
 
 BUILD_DEPENDS=  qt6-tools>0:devel/qt6-tools \
-		qt5-buildtools>0:devel/qt5-buildtools
+		qt5-buildtools>0:devel/qt5-buildtools \
+		py311-beautifulsoup>0:www/py-beautifulsoup@${PY_FLAVOR}
 
 do-install:
 		${INSTALL_SCRIPT} ${WRKDIR}/.build/kodigui      ${STAGEDIR}${PREFIX}/bin/
