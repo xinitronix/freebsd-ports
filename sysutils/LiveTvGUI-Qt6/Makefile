@@ -1,6 +1,6 @@
 PORTNAME=	LiveTvGUI-Qt6 
 DISTVERSION=	1.0-1
-DISTVERSIONSUFFIX=	-g98344fdd642b
+DISTVERSIONSUFFIX=	-g5a7466eabee41
 CATEGORIES=	sysutils
 
 USES=           desktop-file-utils  \
