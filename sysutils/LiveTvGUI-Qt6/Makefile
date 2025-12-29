@@ -1,10 +1,11 @@
 PORTNAME=	LiveTvGUI-Qt6 
 DISTVERSION=	1.0-1
-DISTVERSIONSUFFIX=	-g5f1eb4d30874f12838e4a815382e
+DISTVERSIONSUFFIX=	-g15fc6b5dcdcf6d4994e6512d
 CATEGORIES=	sysutils
 
 USES=           desktop-file-utils  \
                 qmake:outsource qt:6 shared-mime-info
+WWW=            https://github.com/vcore486-afk/LiveTvGUI
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	vcore486-afk
