@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=
+Exec=/usr/local/bin/byedpi-qt6
+StartupNotify=true
+Terminal=false
+Icon=byedpi.png
+Type=Application
+Categories=System;Utility;Network;;
+
+
+
+
+
+

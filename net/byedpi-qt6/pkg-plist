@@ -1,0 +1,5 @@
+
+bin/byedpi-qt6
+bin/ciadpi
+share/applications/byedpi-qt6.desktop
+share/pixmaps/byedpi.png
