@@ -1,8 +1,8 @@
 PORTNAME=	zapret-gui
 DISTVERSION=	1.0-1
-DISTVERSIONSUFFIX=	-g71f0fe8128
+DISTVERSIONSUFFIX=	-g614256ae08b1464072a
 CATEGORIES=	sysutils
-
+WWW=            https://github.com/vcore486-afk/zapret-gui
 
 USES=           desktop-file-utils  \
                 qmake:outsource qt:6 shared-mime-info
