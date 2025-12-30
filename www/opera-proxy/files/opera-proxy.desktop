@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Opera Proxy
-Exec=opera-proxy.py
+Exec=operaproxy-qt6
 Icon=/usr/local/share/pixmaps/opera-proxy.jpg
 Type=Application
 Terminal=false

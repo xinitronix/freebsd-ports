@@ -1,5 +1,5 @@
 
 bin/opera-proxy
-bin/opera-proxy.py
+bin/operaproxy-qt6
 share/applications/opera-proxy.desktop
 share/pixmaps/opera-proxy.jpg

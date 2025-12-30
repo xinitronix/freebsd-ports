@@ -1,5 +1,5 @@
---- Makefile.orig	2025-01-29 16:58:45.000000000 +0300
-+++ Makefile	2025-06-04 21:11:16.389008000 +0300
+--- vendor/github.com/Snawoot/opera-proxy/Makefile.orig	2025-01-29 16:58:45.000000000 +0300
++++ vendor/github.com/Snawoot/opera-proxy/Makefile	2025-06-04 21:11:16.389008000 +0300
 @@ -3,7 +3,7 @@
  VERSION := $(shell git describe)
  BUILDOPTS = -a -tags netgo -trimpath -asmflags -trimpath
