@@ -1,6 +1,6 @@
 PORTNAME=	zapret-gui
 DISTVERSION=	1.0-1
-DISTVERSIONSUFFIX=	-g614256ae08b1464072a
+DISTVERSIONSUFFIX=	-g98d117a9aa5af9b665eb9a51c
 CATEGORIES=	sysutils
 WWW=            https://github.com/vcore486-afk/zapret-gui
 
