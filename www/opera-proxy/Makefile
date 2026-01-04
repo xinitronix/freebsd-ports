@@ -9,7 +9,7 @@ GH_TUPLE=       Snawoot:opera-proxy:6ddb8d2:Snawoot/vendor/github.com/Snawoot/op
 
 WWW=	      	https://github.com/vcore486-afk/operaproxy-qt6
 
-USES=          qmake:outsource qt:6
+USES=           qmake:outsource qt:6
 
 BUILD_DEPENDS=  qt6-tools>0:devel/qt6-tools \
 		qt5-buildtools>0:devel/qt5-buildtools \
