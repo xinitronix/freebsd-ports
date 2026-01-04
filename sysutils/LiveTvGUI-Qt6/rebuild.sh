@@ -12,7 +12,7 @@ sed -i '' '/^DISTVERSIONSUFFIX=/ s/\(-g\).*/\1/' Makefile
 
 # 2. Вставить аргумент после -d
 sed -i '' "/^DISTVERSIONSUFFIX=/ s/-g/-g$ARG/" Makefile
-
+doas make clean
 doas make makesum
 doas make reinstall
 doas make clean
