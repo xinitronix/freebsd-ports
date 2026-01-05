@@ -1,13 +1,13 @@
 PORTNAME=	tun2socks
 DISTVERSION=	v2.6.0-1
-DISTVERSIONSUFFIX= -g5755035
+DISTVERSIONSUFFIX= -ga8e572b
 CATEGORIES=	net
-WWW=            https://github.com/xjasonlyu/tun2socks
+WWW=            https://github.com/SuzukiHonoka/tun2sock
 
 USES=           go
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	xjasonlyu
+GH_ACCOUNT=	SuzukiHonoka
 
 
 do-build:
