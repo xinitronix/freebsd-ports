@@ -63,5 +63,6 @@ CARGO_TARGET_DIR=       ${WRKSRC}/target
 do-install:
 		cd ${WRKSRC} && cargo build --release
 		cp 	${WRKSRC}/target/release/tun2proxy-bin   ${STAGEDIR}${PREFIX}/bin/tun2proxy
+		cp      files/tun2proxy        ${STAGEDIR}${PREFIX}/etc/rc.d/
 
 .include <bsd.port.mk>

@@ -1,2 +1,3 @@
 
 bin/tun2proxy
+etc/rc.d/tun2proxy

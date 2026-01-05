@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# PROVIDE: tun2proxy
+# REQUIRE: NETWORKING
+# KEYWORD: shutdown
+
+. /etc/rc.subr
+
+name="tun2proxy"
+rcvar="tun2proxy_enable"
+
+# Запуск через /usr/sbin/daemon, так как tun2proxy не форкается сам
+command="/usr/sbin/daemon"
+procname="/usr/local/bin/tun2proxy"
+command_args="-f -p /var/run/${name}.pid ${procname} -t byedpi-tun --proxy socks5://127.0.0.1:8080"
+
+pidfile="/var/run/${name}.pid"
+
+start_precmd="${name}_prestart"
+stop_postcmd="${name}_poststop"
+
+tun2proxy_prestart() {
+    if ! ifconfig byedpi-tun >/dev/null 2>&1; then
+        echo "Creating and configuring byedpi-tun interface..."
+        # Создаём TUN-устройство
+        if ! kldstat -q -m if_tun; then
+            kldload if_tun || return 1
+        fi
+        ifconfig tun0 create name byedpi-tun || return 1
+        ifconfig byedpi-tun inet 192.168.8.110 192.168.8.1 netmask 255.255.255.0 up || return 1
+    else
+        echo "Interface byedpi-tun already exists."
+    fi
+}
+
+tun2proxy_poststop() {
+    if ifconfig byedpi-tun >/dev/null 2>&1; then
+        echo "Destroying byedpi-tun interface..."
+        ifconfig byedpi-tun destroy
+    fi
+}
+
+load_rc_config $name
+run_rc_command "$1"
