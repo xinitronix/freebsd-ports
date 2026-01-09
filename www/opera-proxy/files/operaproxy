@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# PROVIDE: operaproxy
+# REQUIRE: NETWORKING
+# KEYWORD: shutdown
+
+. /etc/rc.subr
+
+name="operaproxy"
+rcvar="operaproxy_enable"
+
+# Сама команда — это daemon, а opera-proxy — её аргумент
+command="/usr/sbin/daemon"
+pidfile="/var/run/${name}.pid"
+logfile="/var/log/${name}.log"
+
+: ${operaproxy_enable:="NO"}
+: ${operaproxy_flags:=""}
+
+# Аргументы для daemon:
+# -f — запускать целевую программу в foreground (она не демонизируется сама)
+# -p — сохранить PID дочернего процесса (opera-proxy)
+# -o — перенаправить вывод в лог
+# -- — разделитель, затем путь к программе и её флаги
+command_args="-f -p ${pidfile} -o ${logfile} /usr/local/bin/opera-proxy ${operaproxy_flags}"
+
+# Указываем procname — имя процесса, за которым следить (важно для stop/status)
+procname="/usr/local/bin/opera-proxy"
+
+# Создаём каталог для лога
+extra_commands="prestart"
+operaproxy_prestart() {
+    install -d -o root -g wheel -m 0755 "$(dirname "${logfile}")"
+}
+
+load_rc_config "${name}"
+run_rc_command "$1"

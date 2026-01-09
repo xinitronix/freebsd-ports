@@ -1,5 +1,6 @@
 
 bin/opera-proxy
 bin/operaproxy-qt6
+etc/rc.d/operaproxy
 share/applications/opera-proxy.desktop
 share/pixmaps/opera-proxy.jpg
