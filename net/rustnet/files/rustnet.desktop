@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=rustnet
+Exec=doas rustnet
+Icon=/usr/local/share/pixmaps/rustnet.jpg
+Type=Application
+Terminal=false
+Categories=Network;
+Name[ru_RU]=rustnet
+Terminal=true
