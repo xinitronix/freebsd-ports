@@ -1,6 +1,6 @@
 PORTNAME=	GuiGitGnucash
 DISTVERSION=	1.0-1
-DISTVERSIONSUFFIX=	-g744fd3a
+DISTVERSIONSUFFIX=	-g6f6cc81ca6acbadf2fc
 CATEGORIES=	sysutils
 
 USES=            desktop-file-utils  \
