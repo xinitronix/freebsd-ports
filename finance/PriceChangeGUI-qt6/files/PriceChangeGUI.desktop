@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Price Change
+Exec=/usr/local/bin/PriceChangeGUI
+StartupNotify=true
+Terminal=false
+Icon=price.png
+Type=Application
+Categories=Office;Finance;
+
+
+
+
+
+
