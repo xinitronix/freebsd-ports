@@ -76,8 +76,8 @@ share/ghostty/share/ghostty/themes/Brogrammer
 share/ghostty/share/ghostty/themes/Builtin Dark
 share/ghostty/share/ghostty/themes/Builtin Light
 share/ghostty/share/ghostty/themes/Builtin Pastel Dark
-share/ghostty/share/ghostty/themes/Builtin Solarized Dark
-share/ghostty/share/ghostty/themes/Builtin Solarized Light
+
+
 share/ghostty/share/ghostty/themes/Builtin Tango Dark
 share/ghostty/share/ghostty/themes/Builtin Tango Light
 share/ghostty/share/ghostty/themes/C64
@@ -139,8 +139,7 @@ share/ghostty/share/ghostty/themes/Embers Dark
 share/ghostty/share/ghostty/themes/Espresso
 share/ghostty/share/ghostty/themes/Espresso Libre
 share/ghostty/share/ghostty/themes/Everblush
-share/ghostty/share/ghostty/themes/Everforest Dark   Hard
-share/ghostty/share/ghostty/themes/Everforest Light   Med
+
 share/ghostty/share/ghostty/themes/Fahrenheit
 share/ghostty/share/ghostty/themes/Fairyfloss
 share/ghostty/share/ghostty/themes/Farmhouse Dark
@@ -236,7 +235,7 @@ share/ghostty/share/ghostty/themes/Lavandula
 share/ghostty/share/ghostty/themes/Light Owl
 share/ghostty/share/ghostty/themes/Liquid Carbon
 share/ghostty/share/ghostty/themes/Liquid Carbon Transparent
-share/ghostty/share/ghostty/themes/Liquid Carbon Transparent Inverse
+
 share/ghostty/share/ghostty/themes/Lovelace
 share/ghostty/share/ghostty/themes/Man Page
 share/ghostty/share/ghostty/themes/Mariana

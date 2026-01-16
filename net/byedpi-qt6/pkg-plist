@@ -1,5 +1,6 @@
 
 bin/byedpi-qt6
 bin/ciadpi
+etc/rc.d/ciadpi
 share/applications/byedpi-qt6.desktop
 share/pixmaps/byedpi.png

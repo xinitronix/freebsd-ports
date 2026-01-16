@@ -24,5 +24,6 @@ do-install:
 		${CP}        files/byedpi-qt6.desktop                ${STAGEDIR}${PREFIX}/share/applications
 		cd ${WRKDIR}/byedpi-${TAG} && make -j6
 		${CP} ${WRKDIR}/byedpi-${TAG}/ciadpi                 ${STAGEDIR}${PREFIX}/bin/
+		${CP}   files/ciadpi                                 ${STAGEDIR}${PREFIX}/etc/rc.d/
 
 .include <bsd.port.mk>
