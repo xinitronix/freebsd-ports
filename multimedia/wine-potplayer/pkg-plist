@@ -1,0 +1,187 @@
+
+bin/wine-potplayer
+share/PotPlayer/ATextOut64.dll
+share/PotPlayer/AviSynth/ColorBars.avs
+share/PotPlayer/AviSynth/FastTrueMotion.avs
+share/PotPlayer/AviSynth/FastTrueMotionNoGPU.avs
+share/PotPlayer/AviSynth/FasterTrueMotion.avs
+share/PotPlayer/AviSynth/FastestTrueMotion.avs
+share/PotPlayer/AviSynth/OverlayText.avs
+share/PotPlayer/AviSynth/TrueMotion.avs
+share/PotPlayer/AviSynth/TrueMotion2.avs
+share/PotPlayer/AviSynth/TrueMotion2NoGPU.avs
+share/PotPlayer/AviSynth/TrueMotionNoGPU.avs
+share/PotPlayer/CaptureUWP64.dll
+share/PotPlayer/CmdLine64.txt
+share/PotPlayer/DTDrop64.exe
+share/PotPlayer/DaumCrashHandler64.dll
+share/PotPlayer/DesktopHook.dll
+share/PotPlayer/DesktopHook.exe
+share/PotPlayer/DesktopHook64.dll
+share/PotPlayer/DesktopHook64.exe
+share/PotPlayer/Extension/Media/PlayParse/MediaPlayParse - YouTube.as
+share/PotPlayer/Extension/Media/PlayParse/MediaPlayParse - YouTube.ico
+share/PotPlayer/Extension/Media/UrlList/MediaUrlList - YouTube.as
+share/PotPlayer/Extension/Media/UrlList/MediaUrlList - YouTube.ico
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - Napisy24.as
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - Napisy24.ico
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - OpenSubtitle.as
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - OpenSubtitle.ico
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - SubDL.as
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - SubDL.ico
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - podnapisi.as
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - podnapisi.ico
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - titlovi.as
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - titlovi.ico
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - ysubs.as
+share/PotPlayer/Extension/Subtitle/Search/SubtitleSearch - ysubs.ico
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - DeepL.as
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - DeepL.ico
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - Libre.as
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - Libre.ico
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - Yandex.as
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - Yandex.ico
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - bing.as
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - bing.ico
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - google.as
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - google.ico
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - papagoNMT.as
+share/PotPlayer/Extension/Subtitle/Translate/SubtitleTranslate - papagoNMT.ico
+share/PotPlayer/Extension/api.txt
+share/PotPlayer/GameCaptureHook.dll
+share/PotPlayer/GameCaptureHook64.dll
+share/PotPlayer/History/Bulgarian.txt
+share/PotPlayer/History/Chinese(Simplified).txt
+share/PotPlayer/History/Chinese(Traditional).txt
+share/PotPlayer/History/English.txt
+share/PotPlayer/History/Hungarian.txt
+share/PotPlayer/History/Japanese.txt
+share/PotPlayer/History/Korean.txt
+share/PotPlayer/History/Kurdish.txt
+share/PotPlayer/History/Polish.txt
+share/PotPlayer/History/Russian.txt
+share/PotPlayer/History/Serbian.txt
+share/PotPlayer/History/Turkish.txt
+share/PotPlayer/History/Ukrainian.txt
+share/PotPlayer/Html/ErrorList.htm
+share/PotPlayer/Html/ErrorListMini.htm
+share/PotPlayer/Html/Init.htm
+share/PotPlayer/Html/InitMini.htm
+share/PotPlayer/Html/loading.gif
+share/PotPlayer/IconPack/OldIconPack.dll
+share/PotPlayer/IconPack/PotIconsNew.dll
+share/PotPlayer/KakaoUtil64.dll
+share/PotPlayer/KakaoUtil64.exe
+share/PotPlayer/KillPot64.exe
+share/PotPlayer/LGPL.TXT
+share/PotPlayer/Language/Arabic.ini
+share/PotPlayer/Language/Armenian.ini
+share/PotPlayer/Language/Azerbaijan.ini
+share/PotPlayer/Language/Belarusian.ini
+share/PotPlayer/Language/Bulgarian.ini
+share/PotPlayer/Language/Catalan.ini
+share/PotPlayer/Language/Chinese(Simplified).ini
+share/PotPlayer/Language/Chinese(Traditional).ini
+share/PotPlayer/Language/Czech.ini
+share/PotPlayer/Language/Dutch.ini
+share/PotPlayer/Language/English.ini
+share/PotPlayer/Language/French.ini
+share/PotPlayer/Language/German.ini
+share/PotPlayer/Language/Greek.ini
+share/PotPlayer/Language/Hebrew.ini
+share/PotPlayer/Language/Hongkonglocale.ini
+share/PotPlayer/Language/Hungarian.ini
+share/PotPlayer/Language/Indonesian.ini
+share/PotPlayer/Language/Italian.ini
+share/PotPlayer/Language/Japanese.ini
+share/PotPlayer/Language/Korean.ini
+share/PotPlayer/Language/Kurdish.ini
+share/PotPlayer/Language/Persian.ini
+share/PotPlayer/Language/Polish.ini
+share/PotPlayer/Language/Portuguese.ini
+share/PotPlayer/Language/Russian.ini
+share/PotPlayer/Language/Serbian.ini
+share/PotPlayer/Language/Spanish.ini
+share/PotPlayer/Language/Swedish.ini
+share/PotPlayer/Language/Tajik(Cyrillic).ini
+share/PotPlayer/Language/Tamil.ini
+share/PotPlayer/Language/Thai.ini
+share/PotPlayer/Language/Turkish.ini
+share/PotPlayer/Language/Ukrainian.ini
+share/PotPlayer/Language/Uzbek(Latin).ini
+share/PotPlayer/License.txt
+share/PotPlayer/Logos/PotPlayer.png
+share/PotPlayer/MediaDB64.dll
+share/PotPlayer/Menus/SimpleMenu.xml
+share/PotPlayer/Module/AcmVorbis64.dll
+share/PotPlayer/Module/Bass64/OptimFROG.dll
+share/PotPlayer/Module/Bass64/bass.dll
+share/PotPlayer/Module/Bass64/bass_ape.dll
+share/PotPlayer/Module/Bass64/bass_flac.dll
+share/PotPlayer/Module/Bass64/bass_mpc.dll
+share/PotPlayer/Module/Bass64/bass_ofr.dll
+share/PotPlayer/Module/Bass64/bass_tta.dll
+share/PotPlayer/Module/Bass64/bass_wv.dll
+share/PotPlayer/Module/FFmpeg62/FFmpegMininum64.dll
+share/PotPlayer/Module/MediaInfo64.dll
+share/PotPlayer/Module/OpenCodec/OpenCodecUnity64.dll
+share/PotPlayer/Module/QuickSync64.dll
+share/PotPlayer/Module/Whisper/CPU/main64.exe
+share/PotPlayer/Module/Whisper/CPU/whisper64.dll
+share/PotPlayer/Module/Whisper/Const-me/Whisper.dll
+share/PotPlayer/Module/Whisper/Const-me/main.exe
+share/PotPlayer/Module/Whisper/Vulkan/main64.exe
+share/PotPlayer/Module/Whisper/Vulkan/whisper64.dll
+share/PotPlayer/Module/Whisper/whisper.bin
+share/PotPlayer/Playlist/My Computer.dpl
+share/PotPlayer/Playlist/PotPlayerMini64.dpl
+share/PotPlayer/PotIcons64.dll
+share/PotPlayer/PotPlayer64.dll
+share/PotPlayer/PotPlayerMini64.exe
+share/PotPlayer/PotScreenSaver64.scr
+share/PotPlayer/PxShader/Adaptive sharpen(Contrast).txt
+share/PotPlayer/PxShader/Adaptive sharpen.txt
+share/PotPlayer/PxShader/BT601BT709.txt
+share/PotPlayer/PxShader/Contour.txt
+share/PotPlayer/PxShader/Deinterlace (blend).txt
+share/PotPlayer/PxShader/Denoise.txt
+share/PotPlayer/PxShader/DisplayLessThan16 v1_1.txt
+share/PotPlayer/PxShader/EdgeSharpen v1_1(jim ro).txt
+share/PotPlayer/PxShader/EdgeSharpen v1_1.txt
+share/PotPlayer/PxShader/Emboss.txt
+share/PotPlayer/PxShader/GrayScale.txt
+share/PotPlayer/PxShader/HorzFlip.txt
+share/PotPlayer/PxShader/Invert.txt
+share/PotPlayer/PxShader/LCD angle correction.txt
+share/PotPlayer/PxShader/Letterbox.txt
+share/PotPlayer/PxShader/Levels.txt
+share/PotPlayer/PxShader/Levels2.txt
+share/PotPlayer/PxShader/MaskBox.txt
+share/PotPlayer/PxShader/NightVision.txt
+share/PotPlayer/PxShader/Procamp.txt
+share/PotPlayer/PxShader/Remap_16_235.txt
+share/PotPlayer/PxShader/Sharpen.txt
+share/PotPlayer/PxShader/SharpenComplex (jim ro).txt
+share/PotPlayer/PxShader/SharpenComplex2.txt
+share/PotPlayer/PxShader/SharpenFlou (jim ro).txt
+share/PotPlayer/PxShader/Sharpen_3x3.txt
+share/PotPlayer/PxShader/Sharpen_5x5.txt
+share/PotPlayer/PxShader/Sphere.txt
+share/PotPlayer/PxShader/Spotlight.txt
+share/PotPlayer/PxShader/Undot.txt
+share/PotPlayer/PxShader/Unsharp mask.txt
+share/PotPlayer/PxShader/VertFlip.txt
+share/PotPlayer/PxShader/Wave.txt
+share/PotPlayer/PxShader/YV12 Chroma Upsampling.txt
+share/PotPlayer/Skins/Default.dsf
+share/PotPlayer/Skins/WindowFrame.dsf
+share/PotPlayer/UrlList/Radio.asx
+share/PotPlayer/UrlList/TV.asx
+share/PotPlayer/VapourSynth/Histogram.vpy
+share/PotPlayer/VapourSynth/motioninterpolation.vpy
+share/PotPlayer/WebView2Loader64.dll
+share/PotPlayer/d3dcompiler_47.dll
+share/PotPlayer/ffcodec64.dll
+share/PotPlayer/uninstall.exe
+share/applications/PotPlayer.desktop
+share/pixmaps/potplayer.png

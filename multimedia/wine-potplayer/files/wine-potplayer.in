@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/PotPlayer
+
+export WINE_PATH="/usr/local/bin/wine"
+export MC_PATH="/usr/local/share/PotPlayer"
+export WINEPREFIX="$HOME/.config/PotPlayer/wine"
+
+exec  "$WINE_PATH" "$MC_PATH/PotPlayerMini64.exe"   "$@"
+
+
+
+
