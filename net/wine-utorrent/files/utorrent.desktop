@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Name=Utorrent (Wine)
+Categories=AudioVideo;Player;
+Exec=/usr/local/bin/wine-utorrent  %U
+StartupNotify=true
+Terminal=false
+Icon=utorrent
+Type=Application
+Categories=Network;WebBrowser;
+
+
+
+
+
+

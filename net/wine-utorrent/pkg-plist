@@ -1,0 +1,12 @@
+
+bin/wine-utorrent
+share/applications/utorrent.desktop
+share/pixmaps/utorrent.png
+%%DATADIR%%/INetC.dll
+%%DATADIR%%/System.dll
+%%DATADIR%%/bt_datachannel.dll
+%%DATADIR%%/modern-wizard.bmp
+%%DATADIR%%/nsDialogs.dll
+%%DATADIR%%/nsisFirewall.dll
+%%DATADIR%%/updates/3.6.0_46922/utorrentie.exe
+%%DATADIR%%/utorrent.exe
