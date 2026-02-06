@@ -1,7 +1,9 @@
 PORTNAME=	KodiGui
 DISTVERSION=	1.0-2
-DISTVERSIONSUFFIX=	-g5d36a169cf2b6fde9045
+DISTVERSIONSUFFIX=	-g452aa866fd4914d5
 CATEGORIES=	sysutils
+
+WWW=            https://github.com/definitly486/KodiGui
 
 USES=            desktop-file-utils  \
                 qmake:outsource qt:6 shared-mime-info
