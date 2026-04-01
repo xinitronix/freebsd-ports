@@ -11,6 +11,7 @@ USES=		python
 USE_PYTHON=	pep517 autoplist
 
 BUILD_DEPENDS=	rust>0:lang/rust \
-		${PYTHON_PKGNAMEPREFIX}hatchling>=0:devel/py-hatchling
+		${PYTHON_PKGNAMEPREFIX}hatchling>=0:devel/py-hatchling \
+		${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${PY_FLAVOR}
 
 .include <bsd.port.mk>
