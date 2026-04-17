@@ -13,7 +13,7 @@ command="/usr/local/bin/ciadpi"  # Убедитесь, что путь к ciadpi
 pidfile="/var/run/${name}.pid"
 
 # Параметры запуска
-ciadpi_flags="--ip 127.0.0.1 --debug 1 -p 8080 --hosts /home/definitly/whitelist --auto=none -Ku -a1 -An -o1 -At,r,s -d1"
+ciadpi_flags="--ip 127.0.0.1 --debug 1 -p 8080  --auto=none -Ku -a1 -An -o1 -At,r,s -d1"
 
 # Используем daemon(8) для запуска в фоне и записи PID
 procname="${command}"
