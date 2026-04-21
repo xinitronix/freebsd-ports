@@ -1,6 +1,6 @@
 PORTNAME=	wine-sdrsharp-x64-next
 PORTVERSION=	1.0
-CATEGORIES=	www 
+CATEGORIES=	comms
 MASTER_SITES=	https://airspy.com/downloads/
 DISTNAME=	sdrsharp-x64-next
 
