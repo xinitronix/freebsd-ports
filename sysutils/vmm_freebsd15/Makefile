@@ -11,7 +11,7 @@ KERNBRANCH!=	uname  -v | awk '{print $$3}'
 .if ${KERNBRANCH:Mreleng/15.1*}
 DISTNAME=	vmm_win_releng_FreeBSD15.1
 .elif ${KERNBRANCH:Mstable/15*}
-DISTNAME=	vmm_win_FreeBSD15
+DISTNAME=	vmm_win_stable_FreeBSD15
 .else
 DISTNAME=	vmm_win_FreeBSD15
 .endif
