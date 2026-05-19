@@ -1,4 +1,4 @@
 #!/bin/sh
 mkdir -p $HOME/.config/oscdimg
 export WINEPREFIX="$HOME/.config/oscdimg/wine"
-WINEDEBUG=-all wine /usr/local/share/oscdimg/oscdimg.exe
+WINEDEBUG=-all wine /usr/local/share/oscdimg/oscdimg.exe   "$@"
