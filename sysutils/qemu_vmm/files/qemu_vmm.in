@@ -67,4 +67,5 @@ else
     fi
 fi
 
+export LD_LIBRARY_PATH=/usr/local/share/qemu_vmm:$LD_LIBRARY_PATH  
 /usr/local/share/qemu_vmm/qemu-system-x86_64  "$@"
