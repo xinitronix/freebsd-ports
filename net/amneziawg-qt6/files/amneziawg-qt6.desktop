@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Amneziawg
+Exec=amneziawg-qt6
+Icon=/usr/local/share/pixmaps/amneziawg.png
+Type=Application
+Terminal=false
+Categories=Network;
+Name[ru_RU]=Amneziawg
