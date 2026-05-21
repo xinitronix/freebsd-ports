@@ -1,0 +1,4 @@
+bin/qemu_vmm
+%%DATADIR%%/libvmmapi.so.7
+%%DATADIR%%/qemu-system-x86_64
+%%DATADIR%%/vmm.ko

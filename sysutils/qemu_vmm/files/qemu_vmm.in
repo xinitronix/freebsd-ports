@@ -1,0 +1,70 @@
+#!/bin/sh
+
+OLD_MODULE_PATH="/boot/kernel/vmm.ko"
+NEW_MODULE_PATH="/usr/local/share/qemu_vmm/vmm.ko"
+MODULE_NAME="vmm"
+
+MODULE_FILE=$(kldstat -v | grep "$MODULE_NAME.ko" | awk '{gsub(/[()]/,"",$6); print $6}')
+
+# Проверка, занят ли модуль через /dev/vmm
+is_vmm_busy() {
+    [ -d /dev/vmm ] && [ "$(ls -A /dev/vmm)" != "" ]
+}
+
+# Уничтожение всех VM, найденных в /dev/vmm
+destroy_all_vmm() {
+    if [ -d /dev/vmm ]; then
+        for VM in $(ls -A /dev/vmm); do
+            echo "Уничтожаем VM: $VM"
+            bhyvectl --destroy --vm=$VM
+        done
+        sleep 2
+    fi
+}
+
+# Основная логика
+if [ -n "$MODULE_FILE" ]; then
+    echo "Модуль $MODULE_NAME загружен из $MODULE_FILE"
+
+    if [ "$MODULE_FILE" = "$OLD_MODULE_PATH" ]; then
+
+        if is_vmm_busy; then
+            echo "Модуль занят, уничтожаем все VM через /dev/vmm..."
+            destroy_all_vmm
+        fi
+
+        if is_vmm_busy; then
+            echo "Ошибка: /dev/vmm всё ещё занят. Выгрузка модуля невозможна."
+            echo "Требуется перезагрузка системы."
+            exit 1
+        fi
+
+        echo "Выгружаем старый модуль..."
+        if kldunload "$MODULE_NAME.ko"; then
+            echo "Старый модуль успешно выгружен."
+            echo "Загружаем новый модуль..."
+            if kldload "$NEW_MODULE_PATH"; then
+                echo "Модуль успешно обновлен."
+            else
+                echo "Ошибка: не удалось загрузить новый модуль."
+                exit 1
+            fi
+        else
+            echo "Ошибка: модуль vmm.ko занят системой. Выгрузка невозможна."
+            echo "Требуется перезагрузка системы."
+            exit 1
+        fi
+    else
+        echo "Модуль уже загружен не из $OLD_MODULE_PATH, ничего не делаем."
+    fi
+else
+    echo "Модуль $MODULE_NAME не загружен. Загружаем новую версию..."
+    if kldload "$NEW_MODULE_PATH"; then
+        echo "Модуль загружен."
+    else
+        echo "Ошибка: не удалось загрузить модуль."
+        exit 1
+    fi
+fi
+
+/usr/local/share/qemu_vmm/qemu-system-x86_64  "$@"
