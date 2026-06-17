@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=SwitchToWindows
+Exec=/usr/local/bin/SwitchToWindows
+StartupNotify=true
+Terminal=false
+Icon=windows.png
+Type=Application
+Categories=System;
+
+
+
+
+
+
