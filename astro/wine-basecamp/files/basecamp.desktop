@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Garmin BaseCamp(Wine)
+Comment=
+Exec=basecamp
+Icon=/usr/local/share/pixmaps/basecamp.jpg
+Terminal=false
+Type=Application
+Categories=Audio;
+StartupWMClass=avz.exe
+
+
+
+
