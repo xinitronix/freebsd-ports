@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=SASPlanet(Wine)
+Comment=
+Exec=sasplanet
+Icon=/usr/local/share/pixmaps/sasplanet.jpg
+Terminal=false
+Type=Application
+Categories=Audio;
+
+
+
+
+

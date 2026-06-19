@@ -1,0 +1,12 @@
+#!/bin/sh
+
+mkdir -p $HOME/.config/sasplanet
+cd $HOME/.config/sasplanet
+export WINE_PATH="wine"
+export MC_PATH="/usr/local/share/sasplanet/SASPlanet.exe"
+export WINEPREFIX="$HOME/.config/sasplanet/wine"
+exec  "$WINE_PATH" "$MC_PATH"   "$@"
+
+
+
+
