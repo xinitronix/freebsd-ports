@@ -4,7 +4,7 @@ mkdir -p $HOME/.config/basecamp
 export WINE_PATH="wine"
 export MC_PATH="/usr/local/share/basecamp/BaseCamp/BaseCamp.exe"
 export WINEPREFIX="$HOME/.config/basecamp/wine"
-winetricks -q dotnet46 
+WINEARCH=win32 winetricks -q dotnet46 
 exec  "$WINE_PATH" "$MC_PATH"   "$@"
 
 
