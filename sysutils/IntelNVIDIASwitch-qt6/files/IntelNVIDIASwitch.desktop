@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=IntelNVIDIASwitch
+Exec=doas /usr/local/bin/SwitchToi915
+StartupNotify=true
+Terminal=false
+Icon=SwitchToWindows.png
+Type=Application
+Categories=System;
+
+
+
+
+
+
