@@ -1,0 +1,14 @@
+
+bin/depotdownloader
+lib/depotdownloader/DepotDownloader
+lib/depotdownloader/DepotDownloader.deps.json
+lib/depotdownloader/DepotDownloader.dll
+lib/depotdownloader/DepotDownloader.pdb
+lib/depotdownloader/DepotDownloader.runtimeconfig.json
+lib/depotdownloader/LICENSE
+lib/depotdownloader/QRCoder.dll
+lib/depotdownloader/SteamKit2.dll
+lib/depotdownloader/System.IO.Hashing.dll
+lib/depotdownloader/ZstdSharp.dll
+lib/depotdownloader/protobuf-net.Core.dll
+lib/depotdownloader/protobuf-net.dll

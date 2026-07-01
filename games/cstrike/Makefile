@@ -1,10 +1,10 @@
 PORTNAME=	cstrike
-DISTVERSION=    1.16
+DISTVERSION=    1.16-1
 DISTVERSIONSUFFIX=	-g2998568
 CATEGORIES=	games
 
 BUILD_DEPENDS=  python>0:lang/python \
-		clang17:devel/llvm17 \
+		clang19:devel/llvm17 \
 		freetype2>0:print/freetype2 
 
 GH_PROJECT=     source-engine
