@@ -1,0 +1,10 @@
+
+bin/cs16
+%%DATADIR%%/filesystem_stdio.so
+%%DATADIR%%/libmenu.so
+%%DATADIR%%/libref_gl.so
+%%DATADIR%%/libref_soft.so
+%%DATADIR%%/libxash.so
+%%DATADIR%%/valve/extras.pk3
+%%DATADIR%%/valve/gfx.wad
+%%DATADIR%%/xash3d

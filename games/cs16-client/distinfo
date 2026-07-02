@@ -1,0 +1,15 @@
+TIMESTAMP = 1782989367
+SHA256 (Velaron-cs16-client-1.0-1-g934a366_GH0.tar.gz) = bdb55f7b9bd13361e957c58f397bfdfeb140f9ad2bc31ddc53e406d6d7bf1a75
+SIZE (Velaron-cs16-client-1.0-1-g934a366_GH0.tar.gz) = 13434245
+SHA256 (Velaron-ReGameDLL_CS-d1af1363e1aa91553ee5773217070208bf1e941f_GH0.tar.gz) = 1a290ceb10f91774edb2861baf67a22a866aad644a4b70b6f99540afacc8cce9
+SIZE (Velaron-ReGameDLL_CS-d1af1363e1aa91553ee5773217070208bf1e941f_GH0.tar.gz) = 33103042
+SHA256 (yapb-yapb-4967a220ba3a58c461ee1cef8b6fb37c6fd93b5e_GH0.tar.gz) = 93b6ff4910ae055c5f1d608f5ec5a9f1a2da9cfcd8eadb34df752108fca266d0
+SIZE (yapb-yapb-4967a220ba3a58c461ee1cef8b6fb37c6fd93b5e_GH0.tar.gz) = 441521
+SHA256 (Velaron-mainui_cpp-aeb40bf2e0bf4809f1d5ab355b016b93f7a89099_GH0.tar.gz) = dcd443c9c35b1b17810ea08bd721290b9168152d2fafb2d883a70587e6da7300
+SIZE (Velaron-mainui_cpp-aeb40bf2e0bf4809f1d5ab355b016b93f7a89099_GH0.tar.gz) = 320782
+SHA256 (FWGS-MiniUTL-048a416f4c54c501dfd728fd792bfdc9f2883f51_GH0.tar.gz) = 3d7a0b313e7a22124cea12b9887365c77f505e64d860b070d74ccc7589087574
+SIZE (FWGS-MiniUTL-048a416f4c54c501dfd728fd792bfdc9f2883f51_GH0.tar.gz) = 71925
+SHA256 (yapb-crlib-7efccddc085dbaef20e1310f3e270f07cb2b0eff_GH0.tar.gz) = 1b4ad86a40e3a6e4c5e5e7acd854be5ad88a2091f0c87801a330c3a1e9dfdbbf
+SIZE (yapb-crlib-7efccddc085dbaef20e1310f3e270f07cb2b0eff_GH0.tar.gz) = 131983
+SHA256 (yapb-linkage-a21540a52d7559333ad9d8326411daf78af62891_GH0.tar.gz) = be551aefe050ff41bac2ff00d3c94930eaac9c7e44fa179cdaff3f89982573df
+SIZE (yapb-linkage-a21540a52d7559333ad9d8326411daf78af62891_GH0.tar.gz) = 27905

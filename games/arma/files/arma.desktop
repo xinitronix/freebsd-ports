@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Arma:Cold War Assault
+Exec=/usr/local/bin/arma %U
+StartupNotify=true
+Terminal=false
+Icon=/usr/local/share/pixmaps/arma.jpg
+Type=Application
+Categories=Games;Game

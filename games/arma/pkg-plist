@@ -1,0 +1,5 @@
+
+bin/arma
+share/applications/arma.desktop
+%%DATADIR%%/PoseidonGame
+share/pixmaps/arma.jpg

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export GAME_PATH="/usr/local/share/arma/PoseidonGame"
+exec "$GAME_PATH"  "$@"

@@ -1,0 +1,13 @@
+--- CMakeLists.txt	2026-07-02 10:40:04.215499000 +0300
++++ CMakeLists.txt	2026-07-02 09:23:10.939934000 +0300
+@@ -19,6 +19,10 @@
+ option(BUILD_MAINUI "Build menu library." ON)
+ option(BUILD_SERVER "Build server library." ON)
+ 
++
++set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--undefined-version")
++set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--undefined-version")
++
+ set(GAME_DIR "cstrike" CACHE STRING "Game directory name.")
+ set(CLIENT_INSTALL_DIR "cl_dlls" CACHE STRING "Client library location.")
+ set(SERVER_INSTALL_DIR "dlls" CACHE STRING "Server library location.")
