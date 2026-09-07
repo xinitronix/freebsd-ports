@@ -1,6 +1,6 @@
 PORTNAME=	SwitchToWindows-Qt6 
 DISTVERSION=	1.0-1
-DISTVERSIONSUFFIX=	-g96dd86a
+DISTVERSIONSUFFIX=	-g381149b7ea8a5cee4f721
 CATEGORIES=	sysutils
 
 USES=           cmake  \
