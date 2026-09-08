@@ -1,12 +1,12 @@
 #!/bin/sh
 
 
-PKG=$(ls $HOME/2TB/All15 | grep LiveTvGUI-Qt6 )
+PKG=$(ls $HOME/2TB/All15 | grep SwitchToWindows-Qt6 )
 
 doas rm $HOME/2TB/All15/$PKG
 sshpass -p 639639 ssh pi@192.168.8.45 "rm ~/All15/$PKG"
 cd $HOME/2TB/All15/
-doas pkg create LiveTvGUI-Qt6 
+doas pkg create SwitchToWindows-Qt6
 cd -
 doas pkg repo /ntfs-2TB/All15
 
