@@ -1,0 +1,500 @@
+diff -ruN WoWee.orig/CMakeLists.txt WoWee/CMakeLists.txt
+--- CMakeLists.txt	2026-09-08 16:53:42.524780000 +0300
++++ CMakeLists.txt	2026-09-08 11:02:26.472886000 +0300
+@@ -2,6 +2,21 @@
+ project(wowee VERSION 1.0.0 LANGUAGES C CXX)
+ include(GNUInstallDirs)
+ 
++
++add_library(wowee_glm INTERFACE)
++
++if(TARGET glm::glm-header-only)
++    target_link_libraries(wowee_glm INTERFACE glm::glm-header-only)
++elseif(TARGET glm::glm)
++    target_link_libraries(wowee_glm INTERFACE glm::glm)
++elseif(EXISTS "/usr/local/include/glm/glm.hpp")
++    target_include_directories(wowee_glm SYSTEM INTERFACE
++        /usr/local/include
++    )
++else()
++    message(FATAL_ERROR "GLM not found")
++endif()
++
+ set(CMAKE_CXX_STANDARD 20)
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+@@ -312,8 +327,11 @@
+     # they have unused parameters that this build treats as errors. It is
+     # vendored, so the warning is turned off for the one unit that compiles it
+     # rather than patched out of the header.
+-    set_source_files_properties(src/audio/audio_engine.cpp PROPERTIES
+-                                COMPILE_OPTIONS "-Wno-unused-parameter")
++set_source_files_properties(
++    ${CMAKE_CURRENT_SOURCE_DIR}/src/audio/audio_engine.cpp
++    PROPERTIES
++        COMPILE_OPTIONS "-Wno-error=unused-function;-Wno-error=unused-parameter"
++)
+ else()
+     find_package(SDL2 REQUIRED)
+ endif()
+@@ -1213,6 +1231,11 @@
+     add_library(wowee SHARED ${WOWEE_SOURCES} ${WOWEE_HEADERS} ${WOWEE_PLATFORM_SOURCES} ${WOWEE_MACOS_SOURCES})
+ else()
+     add_executable(wowee ${WOWEE_SOURCES} ${WOWEE_HEADERS} ${WOWEE_PLATFORM_SOURCES} ${WOWEE_MACOS_SOURCES})
++set_source_files_properties(
++    ${CMAKE_CURRENT_SOURCE_DIR}/src/audio/audio_engine.cpp
++    PROPERTIES
++        COMPILE_OPTIONS "-Wno-error=unused-parameter"
++)
+ endif()
+ 
+ # Tracy profiler - zero overhead when WOWEE_ENABLE_TRACY is OFF
+Binary files WoWee.orig/assets/shaders/editor_water.frag.spv and WoWee/assets/shaders/editor_water.frag.spv differ
+Binary files WoWee.orig/assets/shaders/editor_water.vert.spv and WoWee/assets/shaders/editor_water.vert.spv differ
+Binary files WoWee.orig/assets/shaders/grass.frag.spv and WoWee/assets/shaders/grass.frag.spv differ
+Binary files WoWee.orig/assets/shaders/grass.vert.spv and WoWee/assets/shaders/grass.vert.spv differ
+Binary files WoWee.orig/assets/shaders/grass_cull.comp.spv and WoWee/assets/shaders/grass_cull.comp.spv differ
+Binary files WoWee.orig/assets/shaders/hiz_build.comp.spv and WoWee/assets/shaders/hiz_build.comp.spv differ
+Binary files WoWee.orig/assets/shaders/m2_cull_hiz.comp.spv and WoWee/assets/shaders/m2_cull_hiz.comp.spv differ
+Binary files WoWee.orig/assets/shaders/world_map_fog.frag.spv and WoWee/assets/shaders/world_map_fog.frag.spv differ
+diff -ruN WoWee.orig/extern/vk-bootstrap/src/VkBootstrap.cpp WoWee/extern/vk-bootstrap/src/VkBootstrap.cpp
+--- extern/vk-bootstrap/src/VkBootstrap.cpp	2026-09-08 17:00:55.956059000 +0300
++++ extern/vk-bootstrap/src/VkBootstrap.cpp	2026-09-08 11:58:22.650744000 +0300
+@@ -26,7 +26,7 @@
+ #include <windows.h>
+ #endif // _WIN32
+ 
+-#if defined(__linux__) || defined(__APPLE__)
++#if defined(__linux__) || defined(__APPLE__) || defined(__FreeBSD__)
+ #include <dlfcn.h>
+ #endif
+ 
+@@ -114,7 +114,7 @@
+     private:
+     std::mutex init_mutex;
+ 
+-#if defined(__linux__) || defined(__APPLE__)
++#if defined(__linux__) || defined(__APPLE__) || defined(__FreeBSD__)
+     void* library = nullptr;
+ #elif defined(_WIN32)
+     HMODULE library = nullptr;
+@@ -125,7 +125,7 @@
+         if (library) {
+             return true;
+         }
+-#if defined(__linux__)
++#if defined(__linux__) || defined(__FreeBSD__)
+         library = dlopen("libvulkan.so.1", RTLD_NOW | RTLD_LOCAL);
+         if (!library) library = dlopen("libvulkan.so", RTLD_NOW | RTLD_LOCAL);
+ #elif defined(__APPLE__)
+@@ -143,14 +143,14 @@
+     }
+ 
+     template <typename T> void load_func(T& func_dest, const char* func_name) {
+-#if defined(__linux__) || defined(__APPLE__)
++#if defined(__linux__) || defined(__APPLE__) || defined(__FreeBSD__)
+         func_dest = reinterpret_cast<T>(dlsym(library, func_name));
+ #elif defined(_WIN32)
+         func_dest = reinterpret_cast<T>(GetProcAddress(library, func_name));
+ #endif
+     }
+     void close() {
+-#if defined(__linux__) || defined(__APPLE__)
++#if defined(__linux__) || defined(__APPLE__) || defined(__FreeBSD__)
+         dlclose(library);
+ #elif defined(_WIN32)
+         FreeLibrary(library);
+@@ -661,7 +661,7 @@
+         bool added_window_exts = check_add_window_ext("VK_KHR_android_surface");
+ #elif defined(_DIRECT2DISPLAY)
+         bool added_window_exts = check_add_window_ext("VK_KHR_display");
+-#elif defined(__linux__)
++#elif defined(__linux__) || defined(__FreeBSD__)
+         // make sure all three calls to check_add_window_ext, don't allow short circuiting
+         bool added_window_exts = check_add_window_ext("VK_KHR_xcb_surface");
+         added_window_exts = check_add_window_ext("VK_KHR_xlib_surface") || added_window_exts;
+diff -ruN WoWee.orig/extern/vk-bootstrap/trap.cpp'  WoWee/extern/vk-bootstrap/trap.cpp' 
+--- WoWee.orig/extern/vk-bootstrap/trap.cpp' 	1970-01-01 03:00:00.000000000 +0300
++++ WoWee/extern/vk-bootstrap/trap.cpp' 	2026-09-08 09:30:39.864098000 +0300
+@@ -0,0 +1 @@
++[33m2e7c8e8[m[33m ([m[1;34mgrafted[m[33m, [m[1;36mHEAD[m[33m, [m[1;33mtag: [m[1;33mv1.3.302[m[33m)[m Update to latest Vulkan-Headers
+diff -ruN WoWee.orig/src/audio/audio_engine.cpp WoWee/src/audio/audio_engine.cpp
+--- src/audio/audio_engine.cpp	2026-09-08 16:53:42.942302000 +0300
++++ src/audio/audio_engine.cpp	2026-09-08 11:04:01.813782000 +0300
+@@ -4,7 +4,13 @@
+ #include "pipeline/asset_manager.hpp"
+ 
+ 
++#pragma clang diagnostic push
++#pragma clang diagnostic ignored "-Wunused-parameter"
++#pragma clang diagnostic ignored "-Wunused-function"
++
+ #include "../../extern/miniaudio.h"
++
++#pragma clang diagnostic pop
+ 
+ #include <cstring>
+ #include <cstdlib>
+diff -ruN WoWee.orig/src/core/memory_monitor.cpp WoWee/src/core/memory_monitor.cpp
+--- src/core/memory_monitor.cpp	2026-09-08 16:53:42.946857000 +0300
++++ src/core/memory_monitor.cpp	2026-09-08 11:24:50.911154000 +0300
+@@ -1,43 +1,74 @@
+ #include "core/memory_monitor.hpp"
+ #include "core/logger.hpp"
++
+ #include <fstream>
+ #include <string>
+ #include <sstream>
++
+ #ifdef _WIN32
++
+ #include <windows.h>
++
+ #elif defined(__APPLE__)
++
+ #include <mach/mach.h>
+ #include <sys/types.h>
+ #include <sys/sysctl.h>
+-#else
++
++#elif defined(__FreeBSD__)
++
++#include <sys/types.h>
++#include <sys/sysctl.h>
++
++#elif defined(__linux__)
++
+ #include <sys/sysinfo.h>
++
+ #endif
+ 
+ namespace wowee {
+ namespace core {
+ 
+-#if !defined(_WIN32) && !defined(__APPLE__)
++#if defined(__linux__)
++
+ namespace {
++
+ size_t readMemAvailableBytesFromProc() {
+     std::ifstream meminfo("/proc/meminfo");
+-    if (!meminfo.is_open()) return 0;
++    if (!meminfo.is_open()) {
++        return 0;
++    }
+ 
+     std::string line;
++
+     while (std::getline(meminfo, line)) {
+-        // /proc/meminfo format: "MemAvailable:  123456789 kB"
+-        static constexpr size_t kFieldPrefixLen = 13; // strlen("MemAvailable:")
+-        if (line.rfind("MemAvailable:", 0) != 0) continue;
++        // /proc/meminfo format:
++        // "MemAvailable:  123456789 kB"
++        static constexpr size_t kFieldPrefixLen = 13;
++
++        if (line.rfind("MemAvailable:", 0) != 0) {
++            continue;
++        }
++
+         std::istringstream iss(line.substr(kFieldPrefixLen));
++
+         size_t kb = 0;
+         iss >> kb;
+-        if (kb > 0) return kb * 1024ull;
++
++        if (kb > 0) {
++            return kb * 1024ull;
++        }
++
+         break;
+     }
++
+     return 0;
+ }
++
+ } // namespace
+-#endif // !_WIN32 && !__APPLE__
+ 
++#endif // __linux__
++
+ MemoryMonitor& MemoryMonitor::getInstance() {
+     static MemoryMonitor instance;
+     return instance;
+@@ -45,12 +76,15 @@
+ 
+ void MemoryMonitor::initialize() {
+     constexpr size_t kOneGB = 1024ull * 1024 * 1024;
++
+     // Fallback if OS API unavailable - 16 GB is a safe conservative estimate
+     // that prevents over-aggressive asset caching on unknown hardware.
+     constexpr size_t kFallbackRAM = 16 * kOneGB;
+ 
+ #ifdef _WIN32
++
+     ULONGLONG totalKB = 0;
++
+     if (GetPhysicallyInstalledSystemMemory(&totalKB)) {
+         totalRAM_ = static_cast<size_t>(totalKB) * 1024ull;
+         LOG_INFO("System RAM detected: ", totalRAM_ / kOneGB, " GB");
+@@ -58,9 +92,12 @@
+         totalRAM_ = kFallbackRAM;
+         LOG_WARNING("Could not detect system RAM, assuming 16GB");
+     }
++
+ #elif defined(__APPLE__)
++
+     int64_t physmem = 0;
+     size_t len = sizeof(physmem);
++
+     if (sysctlbyname("hw.memsize", &physmem, &len, nullptr, 0) == 0) {
+         totalRAM_ = static_cast<size_t>(physmem);
+         LOG_INFO("System RAM detected: ", totalRAM_ / kOneGB, " GB");
+@@ -68,87 +105,197 @@
+         totalRAM_ = kFallbackRAM;
+         LOG_WARNING("Could not detect system RAM, assuming 16GB");
+     }
+-#else
++
++#elif defined(__FreeBSD__)
++
++    uint64_t physmem = 0;
++    size_t len = sizeof(physmem);
++
++    if (sysctlbyname("hw.physmem", &physmem, &len, nullptr, 0) == 0) {
++        totalRAM_ = static_cast<size_t>(physmem);
++        LOG_INFO("System RAM detected: ", totalRAM_ / kOneGB, " GB");
++    } else {
++        totalRAM_ = kFallbackRAM;
++        LOG_WARNING("Could not detect system RAM, assuming 16GB");
++    }
++
++#elif defined(__linux__)
++
+     struct sysinfo info;
++
+     if (sysinfo(&info) == 0) {
+-        totalRAM_ = static_cast<size_t>(info.totalram) * info.mem_unit;
++        totalRAM_ =
++            static_cast<size_t>(info.totalram) *
++            static_cast<size_t>(info.mem_unit);
++
+         LOG_INFO("System RAM detected: ", totalRAM_ / kOneGB, " GB");
+     } else {
+         totalRAM_ = kFallbackRAM;
+         LOG_WARNING("Could not detect system RAM, assuming 16GB");
+     }
++
++#else
++
++    totalRAM_ = kFallbackRAM;
++    LOG_WARNING("Could not detect system RAM, assuming 16GB");
++
+ #endif
+ }
+ 
+ size_t MemoryMonitor::getAvailableRAM() const {
++
+ #ifdef _WIN32
++
+     MEMORYSTATUSEX status;
+     status.dwLength = sizeof(status);
++
+     if (GlobalMemoryStatusEx(&status)) {
+         return static_cast<size_t>(status.ullAvailPhys);
+     }
++
+     return totalRAM_ / 2;
++
+ #elif defined(__APPLE__)
+-    // hw.usermem is a 32-bit kernel sysctl on macOS: on systems with ≥16 GB RAM
+-    // the value overflows signed int32, truncating to ~2 GB and causing false
+-    // severe-pressure reports.  Use the Mach VM statistics API instead, which
+-    // is the same source that Activity Monitor and `vm_stat` use.
+-    {
+-        mach_port_t host_port = mach_host_self();
+-        vm_size_t page_size = 0;
+-        host_page_size(host_port, &page_size);
+-        if (page_size > 0) {
+-            mach_msg_type_number_t count = HOST_VM_INFO64_COUNT;
+-            vm_statistics64_data_t vm_stat;
+-            if (host_statistics64(host_port, HOST_VM_INFO64,
+-                                  reinterpret_cast<host_info64_t>(&vm_stat),
+-                                  &count) == KERN_SUCCESS) {
+-                // free + inactive pages are reclaimable on demand
+-                return (static_cast<size_t>(vm_stat.free_count) +
+-                        static_cast<size_t>(vm_stat.inactive_count)) *
+-                       static_cast<size_t>(page_size);
+-            }
++
++    // Use Mach VM statistics instead of hw.usermem.
++    // hw.usermem is a 32-bit kernel sysctl on macOS and can overflow
++    // on systems with large amounts of RAM.
++
++    mach_port_t host_port = mach_host_self();
++
++    vm_size_t page_size = 0;
++
++    host_page_size(host_port, &page_size);
++
++    if (page_size > 0) {
++        mach_msg_type_number_t count = HOST_VM_INFO64_COUNT;
++        vm_statistics64_data_t vm_stat;
++
++        if (host_statistics64(
++                host_port,
++                HOST_VM_INFO64,
++                reinterpret_cast<host_info64_t>(&vm_stat),
++                &count) == KERN_SUCCESS) {
++
++            // Free + inactive pages are reclaimable on demand.
++            return (
++                static_cast<size_t>(vm_stat.free_count) +
++                static_cast<size_t>(vm_stat.inactive_count)
++            ) * static_cast<size_t>(page_size);
+         }
+     }
++
+     return totalRAM_ / 2;
+-#else
++
++#elif defined(__FreeBSD__)
++
++    uint64_t free_pages = 0;
++    uint64_t inactive_pages = 0;
++    uint64_t page_size = 0;
++
++    size_t len = sizeof(free_pages);
++
++    if (sysctlbyname(
++            "vm.stats.vm.v_free_count",
++            &free_pages,
++            &len,
++            nullptr,
++            0) != 0) {
++        return totalRAM_ / 2;
++    }
++
++    len = sizeof(inactive_pages);
++
++    if (sysctlbyname(
++            "vm.stats.vm.v_inactive_count",
++            &inactive_pages,
++            &len,
++            nullptr,
++            0) != 0) {
++        return totalRAM_ / 2;
++    }
++
++    len = sizeof(page_size);
++
++    if (sysctlbyname(
++            "vm.stats.vm.v_page_size",
++            &page_size,
++            &len,
++            nullptr,
++            0) != 0) {
++        return totalRAM_ / 2;
++    }
++
++    return static_cast<size_t>(
++        (free_pages + inactive_pages) * page_size
++    );
++
++#elif defined(__linux__)
++
+     // Best source on Linux for reclaimable memory headroom.
+-    if (size_t memAvailable = readMemAvailableBytesFromProc(); memAvailable > 0) {
++    if (size_t memAvailable = readMemAvailableBytesFromProc();
++        memAvailable > 0) {
++
+         return memAvailable;
+     }
+ 
++    // Fallback if /proc/meminfo is unavailable.
+     struct sysinfo info;
++
+     if (sysinfo(&info) == 0) {
+-        // Fallback approximation if /proc/meminfo is unavailable.
+-        size_t freeBytes = static_cast<size_t>(info.freeram) * info.mem_unit;
+-        size_t bufferBytes = static_cast<size_t>(info.bufferram) * info.mem_unit;
++        size_t freeBytes =
++            static_cast<size_t>(info.freeram) *
++            static_cast<size_t>(info.mem_unit);
++
++        size_t bufferBytes =
++            static_cast<size_t>(info.bufferram) *
++            static_cast<size_t>(info.mem_unit);
++
+         size_t available = freeBytes + bufferBytes;
+-        return (totalRAM_ > 0 && available > totalRAM_) ? totalRAM_ : available;
++
++        return (totalRAM_ > 0 && available > totalRAM_)
++            ? totalRAM_
++            : available;
+     }
+-    return totalRAM_ / 2;  // Fallback: assume 50% available
++
++    return totalRAM_ / 2;
++
++#else
++
++    return totalRAM_ / 2;
++
+ #endif
+ }
+ 
+ size_t MemoryMonitor::getRecommendedCacheBudget() const {
+     size_t available = getAvailableRAM();
++
+     // Use 50% of available RAM for caches, hard-capped at 16 GB.
+-    static constexpr size_t kHardCapBytes = 16ull * 1024 * 1024 * 1024;  // 16 GB
++    static constexpr size_t kHardCapBytes =
++        16ull * 1024 * 1024 * 1024;
++
+     size_t budget = available * 50 / 100;
+-    return budget < kHardCapBytes ? budget : kHardCapBytes;
++
++    return budget < kHardCapBytes
++        ? budget
++        : kHardCapBytes;
+ }
+ 
+ bool MemoryMonitor::isMemoryPressure() const {
+     size_t available = getAvailableRAM();
+-    // Memory pressure if < 10% RAM available
++
++    // Memory pressure if < 10% RAM available.
+     return available < (totalRAM_ * 10 / 100);
+ }
+ 
+ bool MemoryMonitor::isSevereMemoryPressure() const {
+     size_t available = getAvailableRAM();
+-    // Severe pressure if < 15% RAM available - background workers should
+-    // pause entirely to avoid OOM-killing other applications.
++
++    // Severe pressure if < 15% RAM available.
++    // Background workers should pause entirely to avoid OOM-killing
++    // other applications.
+     return available < (totalRAM_ * 15 / 100);
+ }
+ 
+ } // namespace core
+-} // namespace wowee
++} // namespace wowee
+\ No newline at end of file
+diff -ruN WoWee.orig/tests/CMakeLists.txt WoWee/tests/CMakeLists.txt
+--- tests/CMakeLists.txt	2026-09-08 16:53:42.998075000 +0300
++++ tests/CMakeLists.txt	2026-09-08 10:04:50.818367000 +0300
+@@ -1334,7 +1334,10 @@
+     ${TEST_SYSTEM_INCLUDE_DIRS}
+     ${CMAKE_SOURCE_DIR}/extern/nlohmann
+ )
+-target_link_libraries(test_open_format_emitter PRIVATE catch2_main)
++target_link_libraries(test_open_format_emitter PRIVATE
++    catch2_main
++    Threads::Threads
++)
+ wowee_test_link_glm(test_open_format_emitter)
+ add_test(NAME open_format_emitter COMMAND test_open_format_emitter)
+ register_test_target(test_open_format_emitter)

@@ -1,0 +1,7 @@
+TIMESTAMP = 1788874615
+SHA256 (Kelsidavis-WoWee-3.1.22-1-g3f92198_GH0.tar.gz) = 6211d155304b8244e4780dbb37f202d6369d556c31022875255faeeb2efc0a84
+SIZE (Kelsidavis-WoWee-3.1.22-1-g3f92198_GH0.tar.gz) = 97804205
+SHA256 (ocornut-imgui-814c6a194bcb1172df8b8ac9d6520ac0e77654dc_GH0.tar.gz) = e538a7309674ba881245d8f2ed6f6b9e042b4ee76a6a973c4decc5480c28c187
+SIZE (ocornut-imgui-814c6a194bcb1172df8b8ac9d6520ac0e77654dc_GH0.tar.gz) = 2052022
+SHA256 (charles-lunarg-vk-bootstrap-2e7c8e8323c0fe7efc96dc241610fcba35d8f530_GH0.tar.gz) = f8fa92ba7f9c5fb45dafee2704eecb78c50eeccda39392100ac7f47b9dd73d1a
+SIZE (charles-lunarg-vk-bootstrap-2e7c8e8323c0fe7efc96dc241610fcba35d8f530_GH0.tar.gz) = 118080
