@@ -1,0 +1,174 @@
+diff -ruN xboxdrv.orig/CMakeLists.txt xboxdrv/CMakeLists.txt
+--- CMakeLists.txt	2026-09-17 00:02:50.361830000 +0300
++++ CMakeLists.txt	2026-09-16 22:55:52.599697000 +0300
+@@ -16,6 +16,8 @@
+ 
+ cmake_minimum_required(VERSION 3.14)
+ 
++
++include_directories(SYSTEM /usr/local/include)
+ # Source of truth: top-level VERSION (e.g. "0.9.0-dev"), or
+ # -DPROJECT_VERSION_FULL=... from packaging (Nix passes the full
+ # "0.9.0-dev.<revCount>+g<shortRev>" string when building from a flake).
+diff -ruN xboxdrv.orig/external/strutcpp/include/strut/tokenize.hpp xboxdrv/external/strutcpp/include/strut/tokenize.hpp
+--- external/strutcpp/include/strut/tokenize.hpp	2026-09-17 00:02:50.379343000 +0300
++++ external/strutcpp/include/strut/tokenize.hpp	2026-09-16 23:15:14.121871000 +0300
+@@ -34,10 +34,22 @@
+ 
+   for(std::string::size_type i = 0; i != text.size();)
+   {
+-    while(is_delimiter(text[i]) && i != text.size()) { ++i; };
++    while(i != text.size() && is_delimiter(text[i])) {
++      ++i;
++    }
++
++    if (i == text.size()) {
++      break;
++    }
++
+     const std::string::size_type start = i;
+-    while(!is_delimiter(text[i]) && i != text.size()) { ++i; };
++
++    while(i != text.size() && !is_delimiter(text[i])) {
++      ++i;
++    }
++
+     const std::string::size_type end = i;
++
+     if (start != end) {
+       result.emplace_back(text.substr(start, end - start));
+     }
+@@ -53,10 +65,22 @@
+ 
+   for(std::string::size_type i = 0; i != text.size();)
+   {
+-    while(text[i] == delimiter && i != text.size()) { ++i; }
++    while(i != text.size() && text[i] == delimiter) {
++      ++i;
++    }
++
++    if (i == text.size()) {
++      break;
++    }
++
+     const std::string::size_type start = i;
+-    while(text[i] != delimiter && i != text.size()) { ++i; }
++
++    while(i != text.size() && text[i] != delimiter) {
++      ++i;
++    }
++
+     const std::string::size_type end = i;
++
+     if (start != end) {
+       result.emplace_back(text.substr(start, end - start));
+     }
+@@ -95,24 +119,35 @@
+     bool operator==(iterator const& other) const = default;
+     bool operator!=(iterator const& other) const = default;
+ 
+-    iterator& operator++() {
++    iterator& operator++()
++    {
+       if (m_i == m_parent->m_text.size()) {
+         return *this = iterator();
+-      } else {
+-        while(m_parent->m_text[m_i] == m_parent->m_delimiter && m_i != m_parent->m_text.size()) { ++m_i; }
+-        m_start = m_i;
+-        while(m_parent->m_text[m_i] != m_parent->m_delimiter && m_i != m_parent->m_text.size()) { ++m_i; }
+-        m_end = m_i;
++      }
+ 
+-        if (m_start == m_end) {
+-          operator++();
+-        }
++      while(m_i != m_parent->m_text.size() &&
++            m_parent->m_text[m_i] == m_parent->m_delimiter) {
++        ++m_i;
++      }
+ 
+-        return *this;
++      if (m_i == m_parent->m_text.size()) {
++        return *this = iterator();
+       }
++
++      m_start = m_i;
++
++      while(m_i != m_parent->m_text.size() &&
++            m_parent->m_text[m_i] != m_parent->m_delimiter) {
++        ++m_i;
++      }
++
++      m_end = m_i;
++
++      return *this;
+     }
+ 
+-    std::string_view operator*() const {
++    std::string_view operator*() const
++    {
+       return m_parent->m_text.substr(m_start, m_end - m_start);
+     }
+ 
+diff -ruN xboxdrv.orig/src/axis_event.cpp xboxdrv/src/axis_event.cpp
+--- src/axis_event.cpp	2026-09-17 00:02:50.390157000 +0300
++++ src/axis_event.cpp	2026-09-16 23:05:01.008566000 +0300
+@@ -27,6 +27,8 @@
+ 
+ namespace xboxdrv {
+ 
++AxisEvent::~AxisEvent() = default;
++
+ AxisEvent::AxisEvent(AxisEventHandler* handler) :
+   m_last_raw_value(0),
+   m_last_send_value(0),
+diff -ruN xboxdrv.orig/src/axis_event.hpp xboxdrv/src/axis_event.hpp
+--- src/axis_event.hpp	2026-09-17 00:02:50.390211000 +0300
++++ src/axis_event.hpp	2026-09-16 22:58:49.535259000 +0300
+@@ -36,7 +36,7 @@
+ {
+ public:
+   AxisEvent(AxisEventHandler* handler);
+-  ~AxisEvent() {}
++  ~AxisEvent();
+ 
+   void add_filter(AxisFilterPtr filter);
+ 
+diff -ruN xboxdrv.orig/src/controller/evdev_controller.cpp xboxdrv/src/controller/evdev_controller.cpp
+--- src/controller/evdev_controller.cpp	2026-09-17 00:02:50.395176000 +0300
++++ src/controller/evdev_controller.cpp	2026-09-16 23:00:04.808366000 +0300
+@@ -15,7 +15,10 @@
+ **  You should have received a copy of the GNU General Public License
+ **  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
++#include <cstdint>
+ 
++using __u16 = uint16_t;
++using __s16 = int16_t;
+ #include "controller/evdev_controller.hpp"
+ 
+ #include <unistd.h>
+diff -ruN xboxdrv.orig/src/util/string.cpp xboxdrv/src/util/string.cpp
+--- src/util/string.cpp	2026-09-17 00:02:50.402234000 +0300
++++ src/util/string.cpp	2026-09-16 23:01:12.184153000 +0300
+@@ -16,6 +16,7 @@
+ **  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+ 
++#include <exception>
+ #include "util/string.hpp"
+ 
+ #include <format>
+diff -ruN xboxdrv.orig/src/xboxdrv.cpp xboxdrv/src/xboxdrv.cpp
+--- src/xboxdrv.cpp	2026-09-17 00:02:50.402679000 +0300
++++ src/xboxdrv.cpp	2026-09-16 23:02:22.976602000 +0300
+@@ -237,7 +237,8 @@
+ 
+   if (opts.usb_debug)
+   {
+-    libusb_set_option(NULL, LIBUSB_OPTION_LOG_LEVEL, 3);
++   libusb_set_debug(NULL, 3);
++
+   }
+ 
+   if (!opts.detach)

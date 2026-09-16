@@ -1,0 +1,10 @@
+*.o
+*~
+/build*/
+/doc/doxygen/
+/doc/xboxdrv-daemon.html/
+/doc/xboxdrv.ent
+/doc/xboxdrv.html/
+/incoming/
+/result
+old
