@@ -1,0 +1,9 @@
+
+bin/jadx
+%%DATADIR%%/LICENSE
+%%DATADIR%%/README.md
+%%DATADIR%%/bin/jadx
+%%DATADIR%%/bin/jadx-gui
+%%DATADIR%%/bin/jadx-gui.bat
+%%DATADIR%%/bin/jadx.bat
+%%DATADIR%%/lib/jadx-1.5.6-all.jar
