@@ -1,0 +1,12 @@
+#!/bin/sh
+#!/bin/sh
+#!/bin/sh
+
+export MC_PATH="/usr/local/share/android-sdk-build-tools/zipalign"
+
+
+exec  "$MC_PATH"   "$@"
+
+
+
+

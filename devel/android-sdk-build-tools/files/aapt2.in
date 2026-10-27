@@ -1,0 +1,10 @@
+#!/bin/sh
+#!/bin/sh
+
+export MC_PATH="/usr/local/share/android-sdk-build-tools/aapt2"
+
+
+exec  "$MC_PATH"   "$@"
+
+
+
