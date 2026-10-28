@@ -1,0 +1,10 @@
+#!/bin/sh
+
+export MC_PATH="/usr/local/share/android-sdk-build-tools/apksigner"
+
+
+exec  "$MC_PATH"   "$@"
+
+
+
+

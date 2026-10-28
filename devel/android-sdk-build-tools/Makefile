@@ -9,12 +9,13 @@ NO_WRKSUBDIR=	yes
 
 EXTRACT_SUFX?=	.zip
 
-SUB_FILES=	aapt aapt2 zipalign
+SUB_FILES=	aapt aapt2 zipalign apksigner
 
 do-install:
 		${INSTALL_SCRIPT} ${WRKDIR}/aapt                                           ${STAGEDIR}${PREFIX}/bin
 		${INSTALL_SCRIPT} ${WRKDIR}/aapt2                                          ${STAGEDIR}${PREFIX}/bin
 		${INSTALL_SCRIPT} ${WRKDIR}/zipalign                                       ${STAGEDIR}${PREFIX}/bin
+		${INSTALL_SCRIPT} ${WRKDIR}/apksigner                                      ${STAGEDIR}${PREFIX}/bin
 		mkdir -p                                                                   ${STAGEDIR}${PREFIX}/share/android-sdk-build-tools
 		cd ${WRKSRC}/android-sdk-build-tools  && ${CP} -r *                                                ${STAGEDIR}${PREFIX}/share/android-sdk-build-tools
 

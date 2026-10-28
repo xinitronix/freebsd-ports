@@ -1,6 +1,7 @@
 
 bin/aapt
 bin/aapt2
+bin/apksigner
 bin/zipalign
 %%DATADIR%%/NOTICE.txt
 %%DATADIR%%/aapt
