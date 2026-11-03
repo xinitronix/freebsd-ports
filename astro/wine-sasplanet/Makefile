@@ -5,7 +5,7 @@ MASTER_SITES=   https://github.com/definitly486/wine-apps/releases/download/SASP
 DISTFILES=      SASPlanet_260404.zip
 PKGNAMEPREFIX=	wine-
 
-RUN_DEPENDS=    wine>0:emulators/wine \
+RUN_DEPENDS=    wine-devel>0:emulators/wine \
 		winetricks>0:emulators/winetricks
 
 NO_BUILD=	yes
