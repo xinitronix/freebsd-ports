@@ -14,5 +14,5 @@ ncftpput  -R -z -r 10 -v -u "pi" -p     "639639"     192.168.8.45             /h
 ncftpput     -z -r 10 -v -u "pi" -p     "639639"     192.168.8.45             /home/pi/$REPO   /ntfs-2TB/$REPO/packagesite.txz
 ncftpput     -z -r 10 -v -u "pi" -p     "639639"     192.168.8.45             /home/pi/$REPO   /ntfs-2TB/$REPO/meta.txz
 ncftpput     -z -r 10 -v -u "pi" -p     "639639"     192.168.8.45             /home/pi/$REPO        /ntfs-2TB/$REPO/packagesite.txz
-sshpass -p 639639 ssh pi@192.168.8.45 'chmod -R 777 /home/pi/$REPO'
+sshpass -p 639639 ssh pi@192.168.8.45 "chmod -R 755 /home/pi/All15"
 
