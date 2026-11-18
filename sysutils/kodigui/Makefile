@@ -1,6 +1,6 @@
 PORTNAME=	KodiGui
 DISTVERSION=	1.0-2
-DISTVERSIONSUFFIX=	-gc8638fa
+DISTVERSIONSUFFIX=	-gdf527b1
 CATEGORIES=	sysutils
 
 WWW=            https://github.com/definitly486/KodiGui
