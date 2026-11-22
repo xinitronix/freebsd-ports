@@ -1,0 +1,16 @@
+#!/bin/sh
+
+JAVA="${JAVA:-/usr/local/openjdk17/bin/java}"
+APKTOOL_JAR="/usr/local/share/apktool/apktool.jar"
+
+if [ ! -x "$JAVA" ]; then
+    echo "apktool: Java not found: $JAVA" >&2
+    exit 1
+fi
+
+if [ ! -f "$APKTOOL_JAR" ]; then
+    echo "apktool: JAR not found: $APKTOOL_JAR" >&2
+    exit 1
+fi
+
+exec "$JAVA" -jar "$APKTOOL_JAR" "$@"

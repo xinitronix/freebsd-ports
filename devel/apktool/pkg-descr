@@ -1,0 +1,7 @@
+Apktool is a tool for reverse engineering Android APK files.
+
+It can decode resources to nearly original form, rebuild decoded
+resources back to binary APK, and disassemble DEX files to smali.
+
+Apktool is useful for debugging, analyzing and modifying Android
+applications.
